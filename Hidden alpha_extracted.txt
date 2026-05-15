@@ -1,0 +1,3724 @@
+ 
+Contents lists available at ScienceDirect
+Journal of Financial Economics
+journal homepage: www.elsevier.com/locate/finec
+ 
+Hidden alpha$
+Manuel Ammann a, Alexander Cochardt b,a, Lauren Cohen b,c, Stephan Heller b,a,∗
+a University of St. Gallen, Switzerland
+b Harvard Business School, United States of America
+c National Bureau of Economic Research, United States of America
+A R T I C L E  I N F O
+Dataset link: https://data.mendeley.com/datas
+ets/tjjf39mjng/2
+Keywords:
+Insider trading
+Hidden networks
+Information provision
+Information revelation
+Portfolio choice
+ 
+A B S T R A C T
+We provide novel evidence suggestive of insider trading through concealed relationships identified using 
+information from over 100,000 Facebook profiles and their 35 million friends. Focusing on connections 
+between fund managers and firm officers, we demonstrate that hidden ties are linked to substantial abnormal 
+returns averaging 135 basis points per month (exceeding 16% alpha annually, t-stat = 3.54) across the universe 
+of mutual funds and public firms. These hidden ties emerge as the most powerful predictor of future stock 
+returns among documented network characteristics, with predictive power increasing over time through the 
+present day. The premium associated with such connections arises not from endogenous selection or familiarity 
+bias; instead, fund managers exhibit specific timing ability in deciding when to hold (or avoid) stocks of firm 
+officers linked through hidden ties. The value of trading information rises with the degree of concealment and 
+is concentrated around earnings and M&A events. The premium is absent in index funds, where strategic stock 
+selection and timing are infeasible. Our findings on the value of hidden ties remain robust across industries, 
+investment styles, time periods, and firm types.
+Insider trading remains a central concern in securities markets and 
+continues to attract substantial attention from regulators and academics 
+alike. This interest is reflected in the U.S. Securities and Exchange 
+Commission’s (SEC’s) ongoing expansion of both the scope of its over-
+sight and the size of its enforcement workforce, a pattern mirrored 
+by many regulators in other jurisdictions. However, monitoring and 
+measuring insider trading is challenging, and regulators have achieved 
+$ Dimitris Papanikolaou was the editor for this article and provided valuable comments. We thank an anonymous referee for very constructive feedback. We also 
+express our gratitude to Vikas Agarwal, Kenneth Ahern, Andres Almazan, David Andolfatto, Andrea Barbon, Martin Brown, Jonathan Cohn, Shaun Davies, Martin 
+Eling, David Feldman (discussant), Amit Goyal, Mark Grinblatt, Valentin Haddad, Dario Heinisch, Tobias Hemauer, Jerry Hoberg, Dayong Huang (discussant), 
+Stephan Kessler, Ron Kaniel (discussant), Luca Liebi, Juhani Linnainmaa (discussant), Mingyong Liu, Edouard Mattille, Tyler Muir, Dmitrii Pugachev, Xiao Qiao 
+(discussant), Sahil Raina, Rex Renjie (discussant), Angelo Ranaldo, Clemens Sialm, Esad Smajlbegovic (discussant), Laura Starks, Lorien Stice-Lawrence, René 
+Stulz, Noah Stoffman (discussant), Lin Sun (discussant), Allan Timmermann, Sheridan Titman, Simon Trimborn, Emma Vinestock, Annette Vissing-Jørgensen, 
+Jonathan Wallen, Ivo Welch, Wei Wu, Moto Yogo, Scott Yonker (discussant), and Dexin Zhou (discussant) for helpful comments and suggestions. We extend our 
+thanks to seminar and conference participants at University of Alberta, BlackRock, Blackstone, Chinese University of Hong Kong, University of Colorado Boulder, 
+Fudan University, University of Georgia, Harvard University, HEC Lausanne, HEC Montréal, Morgan Stanley, Ohio State University, University of St. Gallen, Texas 
+A&M University, University of Texas at Austin, University of Washington, Queen Mary University of London, AFA 2023, CCAF 2022, CETAFE 2022, CICF 2022, 
+the CQA Fall Conference 2022, the 22nd EdukCircle ICB 2021, EFA 2022, EFMA 2022, the CityU Hong Kong Conference for Fintech, AI, and Big Data in Business 
+2022, the Inquire Europe Joint Spring Seminar 2025, NZFM 2021, the Paris December Finance Meeting 2022, the Red Rock Finance Conference 2022, SFA 2022, 
+the UCLA Fink Conference on Financial Markets 2022, and WFA 2022. Stephan Heller acknowledges financial support from the CQA 2022 Annual Academic 
+Competition (first-prize award), the Inquire Europe Research Grant 2022, the SBF-HSG Sponsors Association, and the Swiss Academy of Humanities and Social 
+Sciences.
+∗Corresponding author.
+E-mail address: stephan.heller@unisg.ch (S. Heller).
+1 Assessing insider trading is challenging because only the detected portion is observable and direct evidence is scarce; see Cline and Posylnaya (2019).
+mixed success in detection and enforcement.1 Empirically studying 
+such behavior requires systematically identifying situations in which 
+traders may have access to material non-public information and trade 
+in patterns consistent with its use. In our study, we introduce a novel 
+empirical proxy for such situations among large institutional investors, 
+in particular mutual fund managers. Specifically, we examine their 
+endogenous choices to reveal or hide their social ties and relate these 
+choices to their trading performance.
+https://doi.org/10.1016/j.jfineco.2025.104225
+Received 5 February 2025; Received in revised form 6 December 2025; Accepted 13 December 2025
+Journal of Financial Economics 178 (2026) 104225 
+Available online 3 February 2026 
+0304-405X/© 2025 Elsevier B.V. All rights are reserved, including those for text and data mining, AI training, and similar technologies. 
+M. Ammann et al.
+Focusing on the nuances of Facebook friendships, we find com-
+pelling evidence that choosing to hide friendships is strategic rather 
+than random. When fund managers hide their Facebook friends—and 
+these friends include firm officers whose stocks they trade—they realize 
+significantly higher abnormal returns, a pattern further amplified when 
+those firm officers also hide their friends. To our knowledge, we are the 
+first paper to show the significance of the endogenous decision to dis-
+close network information. By choosing to either reveal or obscure their 
+relationships, or by making the availability of such information more 
+or less costly, fund managers and firm officers exercise a subtle yet 
+powerful behavioral choice—one that proves to be more informative 
+than any other publicly observable network feature and, specifically, 
+emerges as the most predictive aspect of networks for future stock 
+prices.
+Leveraging information from Facebook (facebook.com), a leading 
+social networking platform with over 200 million monthly U.S. users, 
+this study examines more than 100,000 manually identified profiles of 
+fund managers and firm officers active between 1984 and 2020, along 
+with their 35 million Facebook friends. By analyzing their connections 
+and interactions, we classify each friendship tie as either publicly 
+disclosed or hidden by one or both parties, then analyze how these ties 
+influence investment decisions and subsequent returns. This rich type 
+of information offers several key advantages over traditional proxies 
+for social networks in financial research. Notably, we observe the 
+visibility of each tie and gauge its intensity through user interactions, 
+such as likes, comments, and tags. Our analysis directly captures the 
+extent to which agents in financial markets know and interact with one 
+another, offering a more precise alternative to commonly used indirect 
+proxies—such as geographic proximity or shared employment—which 
+can be imprecise and prone to misclassifying individuals as connected. 
+More importantly, by uncovering hidden connections among financial 
+professionals, we reveal substantial information that would otherwise 
+remain unseen through publicly exposed and observable ties alone. Our 
+findings indicate that these hidden connections hold, on average, the 
+highest value within the network, and overlooking them leads to an 
+incomplete understanding of some of the most pivotal relationships in 
+financial markets.
+To illustrate our approach, consider an example from our sample 
+involving Ms. Vinestock, who served as CEO and board member of 
+several firms in the technology sector.2 One of her friends, Mr. Schiller, 
+is a fund manager of a large actively managed mutual fund, with ex-
+tensive experience across various buy-side institutions. He describes his 
+investment style as one based on deep fundamental analysis for port-
+folio selection. Vinestock and Schiller are active Facebook users, but 
+share what we term a FullyHidden connection, where both users hide 
+their friends lists, making their connection invisible to conventional 
+social network analysis. They do not share any common network ties 
+via common schools, workplaces, or geographic locations, nor is there 
+documented evidence of a connection. To uncover their connection, we 
+leverage a unique aspect of the Facebook platform: even when users 
+hide their friends lists, a few profile elements remain visible to non-
+friends but can only be engaged with by friends (see Section 1.3 for 
+details). These engagements can be as subtle as a single like among 
+many on a photo, which may itself be removed or replaced a few 
+months later. By analyzing such traces, we infer friendships between 
+users even when both parties hide their friends lists, leveraging the 
+platform’s design that evolved from initially prioritizing connectivity 
+to later incorporating increased privacy features, likely resulting in the 
+observed inconsistencies.
+Given their FullyHidden connection, we analyze Schiller’s perfor-
+mance on trades involving firms where Vinestock held senior roles, 
+including when she became independent chair of a large technology 
+2 The examples are drawn from our sample, but individual names are 
+anonymized.
+company in mid-2015. At the time, his fund held no position in the 
+stock. Within a quarter (see Fig. 1), it began acquiring shares at around 
+$20 and continued building its position over the next four years. Dur-
+ing this period, the firm experienced several positive developments—
+including the acquisition of a key rival, European expansion, and 
+new domestic partnerships—that substantially boosted its stock price. 
+Schiller exited the position at over $200 per share, realizing more than 
+a tenfold return. After his exit, the firm faced significant challenges, 
+including a difficult acquisition integration and new competitors, which 
+drove the stock down by over 60%. Schiller’s fund remained out of 
+the stock during this period. Importantly, this was not an isolated case: 
+across different periods and funds, he traded four stocks where Vine-
+stock held management roles, earning an average of 264 basis points 
+per month in abnormal returns (t = 2.31). Zooming out to the broader 
+portfolio level, Schiller’s trades linked to hidden connections averaged 
+208 basis points per month in abnormal returns (t = 2.41), compared to 
+just 12 basis points (t = 0.69) for non-connected holdings—suggesting 
+that his superior performance was unlikely to reflect general systematic 
+ability in portfolio selection.
+This example reflects a systematic pattern across the universe of 
+Facebook-identified fund managers and firm officers throughout our 
+full sample period from 1984 to 2020. The most hidden connections—
+those concealed by both sides of a connected pair—yield abnormal
+risk-adjusted returns of 135 basis points per month on average
+(t-stat = 3.54). Yet fund managers hiding their network connections 
+are not inherently better performers: their non-connected holdings 
+generate risk-adjusted returns that are small and statistically indis-
+tinguishable from zero. The outperformance of hidden connections 
+also appears uncorrelated with known return determinants, as a long–
+short strategy’s monthly value-weighted alpha of 136 basis points 
+(t-stat = 3.57) is nearly identical to the strategy’s raw return of 148 
+basis points (t-stat = 3.88). Consistent with the impression that hidden 
+connections confer significant informational advantages, we observe 
+abnormal returns moving monotonically with the degree of hiddenness. 
+While connections hidden by both sides generate annualized risk-
+adjusted returns exceeding 16% (t-stat = 3.54), one-sided concealment 
+is associated with more modest returns: 6.7% per year (t-stat = 1.81) 
+when hidden only by fund managers, and 3.6% per year (t-stat = 1.12) 
+when hidden only by firm officers. In contrast, visibly connected stocks 
+yield risk-adjusted returns of just 1.3% per year, which are statisti-
+cally insignificant (t-stat = 0.43). Taken together, these findings align 
+closely with the notion of informed trading, suggesting that the degree 
+of connection concealment serves as a proxy for access to material 
+nonpublic information.
+The paper also explores the individuals’ investment behavior vis-
+a-vis their connections. In particular, we ask whether fund managers 
+overweight connected stocks and find that the most hidden connec-
+tions are again those associated with the most abnormal weights. 
+More precisely, while we see a 46% weight increase in stocks of vis-
+ible connections, the overweight rises to almost 200% for FullyHidden
+connections, and remains statistically large and significant when con-
+trolling for time and firm fixed effects—for example, when comparing 
+the weights of two fund managers over the same time period, one of 
+which is visibly connected to the firm’s active firm officers, while the 
+other is not.
+To explore the mechanism in more depth, we examine the extent 
+to which our results could be driven by either a familiarity or a 
+selection mechanism. For instance, fund managers may prefer to invest 
+in their friends’ ventures not because of any information possibly being 
+passed along the network (hidden or not), but because of familiarity 
+toward such stocks. However, a familiarity bias can neither explain the 
+outperformance of connected stocks relative to non-connected stocks, 
+nor why it increases along with the connections’ hiddenness.
+In contrast, a more refined version of the argument includes selec-
+tion. Selection might be able to drive both the dispersion in average 
+Journal of Financial Economics 178 (2026) 104225 
+2 
+M. Ammann et al.
+Fig. 1. Holding status of Vinestock’s firm’s stock by Schiller’s fund.
+This figure shows the evolution of the stock price of the firm chaired by Vinestock and the holding status of Schiller’s fund in this stock between mid-2015 and 
+mid-2022. The blue line with circular markers represents the monthly closing prices of the stock. The green shaded areas indicate periods during which the stock 
+was held by the fund, while the red shaded areas represent periods when the stock was not held by the fund. The y-axis denotes the stock price in USD, and the 
+x-axis represents the time period in months. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this 
+article.)
+performance between returns earned on connected relative to non-
+connected stocks and the dispersion in average performance earned on 
+stocks associated with more-hidden relative to less-hidden connections. 
+First, successful individuals may select to or be more likely to jointly 
+match (i.e., the more successful the fund manager, the more likely 
+the firm officer to match with the fund manager, if the firm officer 
+too is successful). Second, unobserved characteristics (e.g., skill or 
+ability) may simultaneously affect both the likelihood of a connection 
+to be hidden and the likelihood of a connection to be associated with 
+performance. In both these scenarios—that is, if our story is either 
+one of a correlation between mutual success and the likelihood of 
+forming friendship ties, or if it is one of an unobserved characteristic 
+which causes hidden connections to select on better quality stock-
+fund pairs—we would expect to find identical returns on both the 
+hiddenly-connected stocks that the fund managers invest in and the 
+hiddenly-connected stocks that the fund managers choose to avoid 
+(because these two groups sort on the same characteristics). Having 
+said that, we find holdings of such stocks to outperform significantly 
+in times when they are held by fund managers relative to times when 
+they are not held—by 119 basis points in abnormal returns per month 
+(t-stat = 2.59), or 14% per year. This finding is inconsistent with both 
+a selection or even a joint-selection story, and instead strongly supports 
+the notion of hidden connections themselves driving the behaviors we 
+find, with the returns solely being driven by the times of joint holdings 
+between the hiddenly-connected fund manager–firm officer pairs (not 
+a selected characteristic of the two).
+Another concern might be that the formation and concealment of 
+these ties could be endogenous to past performance: successful fund 
+managers may attract or curate friendships with successful firm officers 
+ex post. We directly examine this possibility and find no evidence 
+that it drives our results. Facebook-identified fund managers and firm 
+officers are observably similar to their peers, returns accrue only during 
+periods while connected stocks are actually held, and interaction timing 
+points to contemporaneous information flows rather than post-hoc 
+networking.
+Additionally, we run a series of supplementary tests and subsample 
+analyses to better understand the mechanisms underlying our results 
+and assess their robustness. While we find that returns are concen-
+trated around corporate news announcements, we also observe that 
+the results are not confined to any specific industry, investment style, 
+or subperiod; instead, they remain large and significant across all of 
+these categories. Moreover, the results are not explicitly concentrated 
+in small stocks—all results we report are value-weighted returns and 
+structurally based on the universe of firms traded by actively managed 
+mutual funds, which biases toward more liquid names. Finally, we ex-
+amine the persistence of these returns in a multivariate framework that 
+controls for additional return determinants, with coefficients remaining 
+large and statistically significant.
+To further probe the mechanism, we show that insider trading 
+cases filed and pursued by the SEC are significantly more likely to 
+involve FullyHidden connections. We also decompose the abnormal 
+returns and document that they are highly concentrated around earn-
+ings announcements and M&A events—contexts in which access to 
+privileged information is especially valuable. We further show that 
+hidden ties with CFOs are particularly powerful in generating abnormal 
+returns, consistent with CFOs’ central role in the shaping and timing of 
+corporate disclosures.
+The data observed between January 2020 and August 2023 captures 
+relationships that extend as far back as 1984, thereby reflecting long-
+standing ties formed decades earlier (e.g., among hometown friends, 
+high school classmates, college roommates, or work colleagues). In 
+this setting, Facebook connections serve merely as footprints of these 
+established ties. However, because Facebook was not introduced until 
+2004—even though many of the underlying ties predate the platform—
+one might worry that fund managers appearing earlier in the sample 
+are selectively identified, potentially introducing selection bias. To 
+address this concern, we split the sample into periods before and after 
+2004. Contrary to the selection hypothesis, we find that the results are 
+actually larger and more statistically significant in the later period, with 
+the effects strengthening steadily through the present day.
+Finally, we conduct a placebo test using the same measure of 
+friendship visibility on index funds, where active portfolio decisions 
+are constrained by design, thereby mitigating the potential impact of 
+hidden ties between fund managers and firm officers. We find precisely 
+Journal of Financial Economics 178 (2026) 104225 
+3 
+M. Ammann et al.
+this to be true: while the effects are strong and robust across actively 
+managed funds, they are absent in index funds. More broadly, we 
+find that the abnormal returns accruing to hiddenly-connected stocks 
+persist for an extended period following the trading. Moreover, and 
+importantly, we observe no sign of any return reversal in the future, 
+indicating that the information associated with these trades is integral 
+to the fundamental firm value and is eventually fully incorporated into 
+it.
+Our paper connects to the growing body of empirical literature 
+examining the impact of social ties on information transmission among 
+agents in financial markets. Papers in this spirit include Cohen et al. 
+(2008), who find that fund managers tend to execute larger and more 
+profitable trades on firms managed by personnel with whom they 
+share educational backgrounds; Engelberg et al. (2012), who provide 
+evidence that social connections between firms and banks lead to the 
+issuance of loans with lower interest rates and fewer covenants; Cai 
+and Sevilir (2012), who document that connections between board 
+members of acquirer and target firms are associated with positive an-
+nouncement returns for the acquirer; Engelberg et al. (2013), who show 
+that CEOs with social connections to outsiders bring more valuable 
+information into the firm and receive higher compensation; Pool et al. 
+(2015), who find that fund managers favor investments in companies 
+that are held by other fund managers living in the neighborhood, am-
+plified by shared ethnicity, Ahern (2017), who provides direct evidence 
+that inside information flows through strong and persistent social ties 
+which underpin illegal insider trading networks; and Jagolinzer et al. 
+(2020), who show that politically connected corporate insiders gain 
+information advantages through government connections.
+The remainder of the paper is organized as follows. Section 1 
+outlines the data sources, sample construction, and summary statistics. 
+Section 2 presents the primary outcomes related to the predictability 
+patterns of returns associated with the hidden friendships identified 
+in our data. Section 3 deepens the analysis by linking the timing and 
+nature of the returns to specific firm news, executive roles, analyst 
+coverage, and SEC enforcement actions. Section 4 conducts robustness 
+tests and explores the horizon of the return effect. Section 5 concludes.
+1. Data and sample construction
+In this paper, we combine data from multiple sources. To determine 
+the presence and visibility of friendship ties between the individuals 
+in our sample, we use publicly accessible data observed on Facebook. 
+Information on mutual fund holdings, mutual fund returns, and mutual 
+fund managers are obtained from Morningstar Direct (MS Direct). De-
+tails on management personnel of stocks held within the fund portfolios 
+are from BoardEx by Management Diagnostics (BoardEx). Stock returns 
+originate from the Center for Research in Security Prices (CRSP). Stock 
+characteristics come from Compustat. Firm-level news data are from 
+RavenPack Analytics (RavenPack). Analyst coverage data are drawn 
+from the Institutional Brokers’ Estimate System (IBES).
+1.1. Facebook profiles
+This study explores how hidden personal relationships between fund 
+managers and firm officers shape mutual fund holdings and returns, us-
+ing Facebook friendship characteristics as a laboratory network metric. 
+As a first step, we construct an indicator variable that identifies whether 
+a fund manager and a firm officer are connected on Facebook. This 
+process involves locating their Facebook profiles, which are personal 
+pages featuring the user’s name, profile picture, cover photo, friends 
+list, timeline, photos, and an ‘‘about’’ section that includes biographi-
+cal and descriptive details like work history, educational background, 
+places lived, relationship status, and family members. Facebook profiles 
+serve as organizational tools, enabling users to form connections with 
+other users that typically parallel their real-life relationships, such as 
+friends, family, classmates, co-workers, or romantic partners. Users can 
+establish a connection between their profiles by mutually confirming 
+their friendship on the platform. As a result, they will appear in each 
+other’s friends list, may have greater access privileges to each other’s 
+content, and may receive updates on information produced by or linked 
+with the other.
+The process of identifying an individual’s Facebook profile can be 
+challenging for a variety of reasons. First, due to Facebook’s widespread 
+adoption, many of the attributes that are useful for searching profiles 
+and resolving their creators’ identities (e.g., name, workplace, edu-
+cation, and location) are widely shared among Facebook’s user base, 
+decreasing their discriminative power. Second, users can restrict the 
+visibility of certain profile attributes by adjusting their privacy settings, 
+which may impede the identification of their profiles and necessitate 
+additional data to support the matching process. Third, users do not 
+necessarily fill in all available data fields, resulting in incomplete pro-
+files with limited identifying information. Lastly, Facebook has imposed 
+limitations on data access in recent times, phasing out broad API 
+availability and confining accessibility to information that is observable 
+through their web interface.3
+1.2. Matching methodology
+As we attempt to identify the Facebook profiles of a large group 
+of individuals, we define a three-step identification procedure to stan-
+dardize the matching of Facebook profiles. First, for each individual 
+of interest (target) in our sample, we compile a set of potentially 
+matching user profiles (candidates) that exhibit attributes similar to the 
+target’s known characteristics. Second, we determine each candidate’s 
+probability of matching its respective target by calculating a confidence 
+score based on a variety of similarity and proximity measures. Third, 
+we arrange each target’s candidates based on said confidence scores and 
+attempt to manually match the target’s true profile from its particular 
+set of candidates. The matching operation was conducted during a 
+single continuous data campaign running from January 2020 to August 
+2023. We provide a detailed account of this three-step identification 
+procedure in the following description:
+In the first step, for each target in our sample, we assemble a list 
+of candidates that exhibit attributes consistent with the target’s known 
+characteristics. These attributes may include, for example, location, 
+workplace, or education.
+In the second step, for each candidate that is associated with a 
+target, we calculate a confidence score indicating the likelihood of the 
+identity behind the candidate being equivalent to the target. The score 
+is calculated based on a range of measures representing similarities 
+between the candidate and the target. With each measure, we focus on 
+capturing a different aspect of potential similarity. Using semantic mea-
+sures, we analyze a candidate’s various profile attributes (e.g., screen 
+name,4 username, education, workplace, location) and compare their 
+values to those held by the target. Before the comparison of attributes, 
+we selectively augment the target’s attributes with their semantically 
+equivalent representations, if applicable. For instance, the name value 
+‘‘Robert’’ may be augmented by ‘‘Rob’’ and ‘‘Bob’’, the alma mater 
+value ‘‘University of Mississippi’’ may be augmented by ‘‘Ole Miss’’, 
+and the employer value ‘‘Alphabet’’ may be augmented by ‘‘Google’’. 
+For some measures, in addition to looking for perfect matches between 
+3 Major endpoints of Facebook’s main API (‘‘Graph API’’) were depre-
+cated in April 2018. Further restrictions were imposed in June 2019 when 
+the semantic search engine (‘‘Graph Search’’) was disabled. These measures 
+have limited the capacity to read Facebook’s social graph and associated 
+information.
+4 Facebook’s real-name policy mandates users to use the name that they 
+are commonly known by in their everyday life. The name must correspond 
+with their identification documents, which they must submit upon request to 
+verify their identity. If a nickname is used, it must be a derivative of the user’s 
+authentic name.
+Journal of Financial Economics 178 (2026) 104225 
+4 
+M. Ammann et al.
+entire strings of attributes, we consider flexible matching schemes to 
+capture partial overlaps between the attributes’ meaningful units. For 
+various other measures, we use attributes that are not observed but 
+inferred from information associated with the user. For example, for 
+candidates with a Facebook user ID between zero and 350 million, 
+we leverage our finding that these IDs were not assigned sequentially 
+but instead segmented by college, reflecting the period when Facebook 
+membership was restricted to individuals with email addresses from 
+selected schools. Based on this structure, we may infer the educational 
+institution of the candidate from the numeric range of their user ID, 
+irrespective of whether the education attribute is visible on the profile.5
+In addition to inferring attributes from the user’s information, we 
+may also draw inferences from information about their connections. 
+Specifically, for certain measures, we examine the plurality of the user’s 
+friends and determine the most frequently appearing attribute value 
+among them. For example, if a significant percentage of a candidate’s 
+friends attended a certain college or reside in a certain city, we infer 
+that the user is likely associated with that institution or location. Each 
+inferred attribute is weighted by a confidence reflecting its reliability. 
+If, for instance, the alma mater is inferred based on a large number of 
+the candidate’s friends having attended this institution, the confidence 
+in the inferred attribute is high; otherwise, it is low. Some measures are 
+adjusted to reflect the rarity of a match. For example, if the alma mater 
+‘‘Coe College’’ of a candidate with the common name ‘‘James Miller’’ 
+matches the alma mater of the target, we denominate the probability 
+of the match by the number of Coe College graduates in our sample 
+by the name of James Miller. Following the calculation of the above 
+measures, we aggregate the values produced for each candidate–target 
+pairing into a single confidence score.
+In the third step, we identify a target’s genuine profile from the 
+pool of scored candidates, where applicable. In order to conserve hu-
+man resources, any candidate whose confidence score does not exceed 
+a predetermined threshold is eliminated. The remaining candidates 
+for a particular target are ranked based on their respective scores 
+and reviewed in descending order, beginning with the highest-ranked 
+candidate and progressing to lower ranks. To ensure accuracy, visual 
+confirmation is generally required to establish a match.6 If a candidate’s 
+privacy settings restrict such confirmation, we attempt to validate the 
+match indirectly by linking the candidate to an immediate family 
+member of the target (i.e., spouse, parent, or child). If we identify the 
+Facebook profile of such a family member and determine—based on an 
+observable friends list—that the target is not among their friends, we 
+conclude that the target does not maintain a Facebook profile, and no 
+further matching is conducted.
+1.3. Friendship ties
+After identifying the Facebook profiles of our sampled individu-
+als, two complementary approaches are adopted to determine their 
+friendship connections.
+The first approach involves identifying all users listed in the indi-
+viduals’ friends lists. If a particular user’s friends list is not publicly 
+observable, we may still be able to determine some of their connections 
+5 Each Facebook user is assigned a unique numeric ID upon registration. 
+These IDs were assigned based on the registration email domain of the 
+educational institution, with distinct ID ranges allocated to specific schools. 
+For example, registrants affiliated with the University of Waterloo (students 
+and alumni using ‘‘@uwaterloo.ca’’) were assigned IDs between 122,600,000 
+and 122,699,999. We manually identify such clusters for 2,708 schools in the 
+Facebook user ID space between zero and 350 million.
+6 The validation of Facebook profiles was aided by trained research 
+assistants.
+through ‘‘backlinks’’ from their friends’ friends lists.7 The disclosure of 
+backlinks may be enhanced by drawing on Facebook’s Mutual–Friends 
+feature, which requires two user IDs A and B as input and returns a 
+list of mutual friends if certain conditions are met. Specifically, if A’s 
+friends list is private while B’s friends list is public, the feature can 
+return all of B’s friends who are connected with A and who publicly 
+disclose the connection on their end. A recursive iteration can then 
+be implemented, pairing each target with users likely to share mutual 
+friends with the target (pivot users), and using all newly identified 
+friends returned at each step as additional pivot users for further 
+iterations. Once initiated for a given target, such an iteration would 
+continue until all pivot users are paired with the target and no further 
+friends are disclosed. The feature itself was deactivated by Facebook in 
+August 2021.
+The second approach infers friendship ties from user interactions. 
+On the platform, although users may choose to hide their friends list, 
+this does not entirely remove all traces that their friends may leave 
+on publicly accessible parts of their profile, which can still make the 
+friendship identifiable. In particular, Facebook users can interact with 
+each other through likes, comments, and tags on posted content, and 
+the posting user may restrict the audience that can see the content, en-
+gage with it, or see who has engaged with it (e.g., limiting its visibility 
+to their friends). While such content is then no longer visible to the 
+general public, the visibility of a small subset of profile items classified 
+as ‘‘public information’’ cannot be restricted by the user, including the 
+currently selected profile picture and cover photo. These images remain 
+visible even to non-friends for as long as they are selected; however, the 
+set of users who can interact with them is still, by default, limited to the 
+user’s friends. This unique constellation enables us to infer connections 
+between users by observing which accounts react to these images, even 
+if both sides hide their friends lists, provided that certain additional 
+criteria are met. For instance, a photo cannot be used for evaluation if 
+other users besides the profile holder are tagged in it, as the audience 
+of this photo (i.e., those who can interact with it) will automatically 
+extend to include the friends of the tagged users. Friendships derived 
+from such interactions may be visible only for a limited period of time, 
+until the particular photo is replaced. It will then no longer fall into 
+the public information category and thus may no longer be visible to 
+non-friends.
+After determining the friendship ties between our sample indi-
+viduals, we proceed by classifying the degree of visibility of these
+connections, which produces the key variable for our study
+(FriendshipVisibility). This variable is a vector of four dummy variables 
+capturing the degree of visibility of a Facebook friendship observed 
+between a fund manager and a firm officer depending on whether 
+the friendship is publicly observable through both the fund manager’s 
+and the firm officer’s friends lists (FullyVisible); observable through the 
+fund manager’s friends list but not through the firm officer’s friends 
+list (FirmOfcrHides); not observable through the fund manager’s friends 
+list but observable through the backlink from the firm officer’s friends 
+list (FundMgrHides); or neither observable through the fund manager’s 
+friends list nor through the firm officer’s friends list (FullyHidden).
+1.4. Mutual fund sample
+In this section, we detail the construction of the sample of funds and 
+fund holdings for our study. The universe of fund-month observations 
+whose fund managers’ Facebook profiles we identify will determine the 
+relevant stock-month observations, which in turn will span the universe 
+of firm officers whose Facebook profiles we are interested in matching.
+7 Facebook is structured as an undirected graph in which mutual consent 
+is required for a connection to form between two users. Thus, a connection 
+between two users A and B can be disclosed with certainty either by showing 
+that A is connected to B or by showing that B is connected to A.
+Journal of Financial Economics 178 (2026) 104225 
+5 
+M. Ammann et al.
+The original sample of funds contains the universe of actively man-
+aged U.S.-domiciled U.S. equity mutual funds covered by MS Direct. 
+While most prior studies in the mutual fund literature rely on the 
+Thomson Reuters Mutual Fund Holdings (TR Holdings) database for 
+holdings data, we chose Morningstar for several reasons. First, we find 
+that fund holdings data from MS Direct are more frequently available 
+than those from TR Holdings. Second, we corroborate prior claims 
+that MS Direct provides a more comprehensive representation of the 
+actual compositions of the funds’ portfolios (e.g., Elton et al. (2011)). 
+Third, MS Direct are recognized for their higher accuracy in reporting 
+the funds’ portfolio managers (e.g., Massa et al. (2010) and Patel and 
+Sarkissian (2017)).
+We construct our sample of funds by including both defunct and 
+active fund share classes to avoid a potential survivorship bias. We 
+obtain the funds’ historical Morningstar categories from historical time 
+series data. To ensure an equitable comparison basis for fund managers, 
+we limit the sample to domestic and actively managed U.S. equity 
+funds (i.e., we exclude index funds, international funds, money market 
+funds, and funds that focus on bonds, commodities, nontraditional 
+equity, or alternative asset classes). We adhere to standard protocol by 
+eliminating funds with titles that include the terms ‘‘index’’ or ‘‘idx’’. 
+Since funds may be offered in various share classes that differ in their 
+fee structures but provide exposure to the same portfolio of securities, 
+we consolidate observations for funds with multiple share classes into 
+one. For each fund that passes the aforementioned filters, we pull 
+historical management data from MS Direct, which includes the names 
+of the fund managers, start and end dates of their management periods, 
+brief biographies, and educational background information. We exclude 
+fund-month observations for which these data are unavailable. For the 
+stocks held by the funds, we obtain one-month-ahead return data from 
+the CRSP Monthly Stock Files and link these returns to the funds’ 
+holdings using historical CUSIP numbers. Following this procedure, our 
+sample comprises 415,676 fund-month observations spanning January 
+1984 through December 2020. This sample includes 5,053 unique 
+funds, with an average of 1,386 funds per calendar quarter. We use 
+this sample, hereafter referred to as the benchmark universe of funds, 
+when constructing weights for our benchmark portfolios.
+1.5. Fund manager sample
+The 5,053 mutual funds that pass the initial filtering process are 
+managed by a total of 10,036 fund managers.8 To prepare for match-
+ing their Facebook profiles according to the methodology outlined in 
+Section 1.2, we collect additional biographical data on the individu-
+als. We begin by determining their most complete names (including 
+middle names, nicknames, birth names, surnames adopted upon mar-
+riage, and suffixes) using the Financial Industry Regulatory Author-
+ity’s BrokerCheck database, the Securities and Exchange Commission’s 
+(SEC’s) Investment Adviser Public Disclosure database, and the Char-
+tered Financial Analyst’s (CFA’s) Institute’s member directory. Next, 
+we gather information on vital dates, portraits, places of residence, 
+family members, academic degrees, graduation years, and occupational 
+backgrounds through a cross-database search of various sources such 
+as LinkedIn profiles, Bloomberg executive profiles, The Wall Street 
+8 Our fund manager sample is subject to two adjustments. First, we ad-
+dress instances where multiple individual records pertain to the same entity 
+by consolidating them (309 individuals were consolidated into 153). These 
+duplications often arise due to name changes (e.g., Katherine Lieberman née 
+Buck being referred to as either ‘‘Katherine Buck’’ or ‘‘Katherine Lieberman’’) 
+or pseudonyms (e.g., Langton C. ‘‘Tony’’ Garvin being referred to as either 
+‘‘Langton C. Garvin’’ or ‘‘Tony Garvin’’). Second, we exclude any fund man-
+agers who passed away before the launch of Facebook in February 2004 (39 
+individuals). Those who died after the threshold are retained in the sample, 
+as they would have had the opportunity to create a Facebook profile that may 
+still be accessible or preserved online.
+Transcript profiles, biographies published by fund firms, filings with the 
+SEC, obituaries on legacy.com, alumni publications on ancestry.com, 
+and newspaper articles on newspapers.com.
+We then proceed with matching the fund managers’ profiles on 
+Facebook and successfully identify 4,198 (41.8%) out of the 10,036 
+fund managers present in the benchmark universe of funds. This ratio 
+aligns well with general figures on Facebook usage in the United 
+States, which suggest that approximately six in ten adults use or have 
+used Facebook at some point in their lives. The left subfigure of 
+Fig. 2 illustrates the percentage of Facebook-identified fund managers 
+with respect to the total number of fund managers meeting the pre-
+established criteria in the benchmark universe throughout the sample 
+period. Note that the upward trend in this percentage over time reflects 
+the growing share of fund managers who entered the sample in later 
+years—particularly the 2000s onward—and who are more likely to 
+have active Facebook profiles. We then restrict the sample of funds to 
+only those managed by fund managers whose Facebook profiles we are 
+able to identify. Team-managed funds are included if we identify the 
+Facebook profile of at least one team member. These steps result in a 
+sample reduction to 265,320 of 415,676 fund-month observations and 
+4,100 of 5,053 funds.
+1.6. Firm officer sample
+We obtain employment data and biographical information on the 
+firm officers leading the firms whose stocks are held by our sample of 
+Facebook-identified funds from BoardEx, a data purveyor that collects 
+and consolidates public domain information on management personnel 
+of publicly quoted and large private companies in North America and 
+around the world. BoardEx data come from multiple sources, such as 
+the SEC, press releases, primary websites, and U.S. stock exchanges, 
+and have been used in various economic studies to analyze the impact 
+of social networks (Cohen et al., 2008, 2010; Engelberg et al., 2012; 
+Chen et al., 2020). BoardEx offers comprehensive overviews of the 
+composition of boards and senior management, with data collecting 
+beginning in 1999, although most individual company records extend 
+back further in time. BoardEx provides information on the current 
+and past roles of firm officers at active and inactive firms, including 
+start/end dates for their roles, educational backgrounds, and affiliations 
+with charitable or volunteer organizations.
+BoardEx data are categorized into four geographical regions to 
+which firms are allocated based on the most recent location of their 
+headquarters.9 To assemble the sample of firm officers for this study, 
+we begin by combining the management personnel of both currently 
+and formerly U.S.-headquartered public companies from the four files 
+into one file. We proceed by merging the data with the funds’ portfolio 
+holdings using historical linking tables furnished by Wharton Research 
+Data Services (WRDS), which provide a link between the respective 
+firm identifiers of BoardEx (companyid) and CRSP (permco). We dis-
+card employment records for which BoardEx does not provide the start 
+date of an individual’s role at a company. If BoardEx does not specify 
+an end date for a role, we adhere to the provider’s instructions and 
+assume that the position is still held by the individual. Additionally, 
+we exclude individuals for whom BoardEx’s records indicate that they 
+passed away prior to Facebook’s launch in February 2004. After apply-
+ing the aforementioned filters, we are left with 281,829 distinct firm 
+officers involved in the management of 8,646 distinct firms held by 
+the Facebook-identified funds. Next, for the purpose of matching the 
+9 BoardEx assigns each firm to one of four geographically-themed files—
+North America, United Kingdom, Europe, Rest of World—based on the current 
+location of its headquarter. For instance, if a firm’s headquarter is relocated 
+from the U.S. to Europe, BoardEx will transfer all observations associated with 
+that firm into the Europe file, including those pertaining to years when the firm 
+was headquartered in the U.S.
+Journal of Financial Economics 178 (2026) 104225 
+6 
+M. Ammann et al.
+Fig. 2. Ratios of Facebook-identified fund managers and firm officers.
+This figure presents annual coverage rates of Facebook-identified fund managers and firm officers over the 1984–2020 sample period. Panel A shows identification 
+coverage for fund managers, based on individuals populating the benchmark universe of mutual funds defined in Section 1.4. Panel B shows identification coverage 
+for firm officers, based on the benchmark universe of firms defined in Section 1.6. In each panel, the left 𝑦-axis indicates the proportion of individuals identified 
+on Facebook (ranging from 0 to 1), while the right 𝑦-axis shows the number of individuals per year. The stacked bars represent the annual counts of individuals 
+in the respective benchmark universe (light bars) and those identified on Facebook (dark bars). The solid line traces the corresponding identification ratio—the 
+share of Facebook-identified individuals each year. Across the full sample period, 4,198 of 10,036 fund managers and 101,866 of 281,829 firm officers were 
+identified on Facebook.
+firm officers’ profiles on Facebook, we collect their biographical in-
+formation from various BoardEx files including comprehensive names, 
+educational backgrounds and work histories.
+With this data available, we successfully identify the Facebook 
+profiles of 101,866 (36.1%) of the 281,829 firm officers in the full 
+sample. These individuals are managing 8,444 of the 8,646 firms in 
+the full sample. The right subfigure of Fig. 2 illustrates the percentage 
+of Facebook-identified firm officers with respect to the total number 
+of firm officers meeting the pre-established criteria in the benchmark 
+universe throughout the sample period.
+1.7. Descriptive statistics
+This study leverages a uniquely large body of individual-level in-
+formation observed on Facebook. Between January 2020 and August 
+2023, we identified 4,198 fund managers and 101,866 firm officers 
+along with their profile information. Many of the underlying friend-
+ships were formed decades earlier—some tracing back to high-school 
+cohorts in the early 1980s—but the Facebook variables we analyze 
+reflect each profile as it appeared during the observation window, 
+thereby providing the richest available cross-section of contemporane-
+ous visibility settings and interactions.
+Across these profiles, a wide range of attributes is observable. Where 
+available, these include screen names, usernames (unique alphanu-
+meric identifiers), user IDs (unique numerical strings), gender, date 
+of birth, contact information, relationship status, number of friends, 
+the screen names and usernames of friends, family members, and rela-
+tionships, details on workplaces, high schools, and colleges attended, 
+information on current city, hometown, and places lived, details on 
+life events, and all uploaded photos, including profile pictures, cover 
+photos, photos in miscellaneous albums, and timeline posts with pho-
+tographic elements. Each photo is examined for upload date, user-
+provided descriptions, and the screen names and usernames of any 
+users who are tagged in it, expressed liking toward it, or provided 
+comments on it, as well as the contents of said comments.
+In Table 1, we present a summary of profile-level data available 
+on the Facebook profiles of fund managers and firm officers. For 
+each data category, we report both the percentage share and the 
+total number of profiles in which such information was observed. The 
+profiles of the two cohorts exhibit no substantial differences in terms 
+of the information displayed. Screen names, usernames, and user IDs 
+are fully available across the sample, as these attributes cannot be 
+concealed from the public. Friends lists are accessible for slightly more 
+than 50% of both fund managers’ and firm officers’ profiles. Profile 
+pictures and cover photos are observable in about 90% of profiles, 
+respectively, while additional photos, such as those uploaded to miscel-
+laneous albums, are displayed in about 70% of profiles. The data types 
+typically provided by users to assist their real-life friends in finding and 
+connecting with them on the platform, such as work, college, current 
+city, and hometown, are prevalent in the mid-thirties to lower fifties 
+range. The availability of more sensitive data types, such as relationship 
+status and family members, is less frequent, with percentages ranging 
+in the lower twenties. It is noteworthy that the quality of the disclosed 
+information may vary widely, depending on various factors such as the 
+method by which the user submitted the data.10
+In Table 2, we present descriptive statistics on item-level data 
+associated with the sample individuals’ Facebook friends, photos, and 
+reactions. For each variable, we report the mean, median, standard 
+deviation, total number of data items observed, and the number of pro-
+files in which such items appeared within that category. The statistics 
+are computed based on observations with non-missing values. Across 
+the sample, we count a total of 35.2 million Facebook friends for our 
+sample individuals, with 1.1 million associated with 4,066 of the 4,198 
+fund managers and 34.1 million associated with 100,193 of the 101,866 
+firm officers. The median number of friends per fund manager and 
+firm officer is 167 and 188, respectively. These friends stem not only 
+from the individuals’ profiles but also from others sources, such as 
+backlinks of other users’ friends lists and reactions given to photos 
+uploaded by other users on their profiles (refer to Section 1.3 for 
+our approaches to assessing friends). We report figures on friends 
+segmented by the different approaches through which they were ob-
+servable, including friends observed in publicly disclosed friends lists 
+(Friends–Published), friends inferred through backlinks from other users’ 
+friends lists (Friends–Backlinks),11 and friends inferred from reactions 
+10 By way of example, the user may have entered certain information 
+manually (‘‘Went to Bayreuth’’), or declared it through a menu interface 
+designed to assist users in aligning an entry with a concept that is known 
+to Facebook (‘‘Studied at Uni Bayreuth’’). In the latter case, a standardized 
+entry is established, which includes a hyperlink directing to the Facebook page 
+devoted to the corresponding concept.
+11 The lower incidence of disclosed friends for firm officers via backlinks 
+arises from Facebook’s discontinuation of the Mutual-Friends feature in Au-
+gust 2021 (see Section 1.3). However, because connections for all fund 
+managers had already been established while the feature was active, the 
+connection counts between fund managers and firm officers in this study 
+remain unaffected.
+Journal of Financial Economics 178 (2026) 104225 
+7 
+M. Ammann et al.
+Table 1
+Profile-level Facebook data.
+ 
+Fund Managers
+Firm Officers
+ 
+(N Profiles = 4,198)
+(N Profiles = 101,866)
+ 
+% Share
+N Profiles
+% Share
+N Profiles
+ Screen Name
+1
+4,198
+1
+101,866
+ Username
+1
+4,198
+1
+101,866
+ User ID
+1
+4,198
+1
+101,866
+ Gender
+.79
+3,320
+.71
+72,127
+ Date of Birth
+.01
+37
+.02
+1,884
+ Friends List
+.56
+2,353
+.53
+54,423
+ Relationship Status
+.21
+885
+.21
+21,542
+ Family Members
+.24
+988
+.23
+23,554
+ Profile Picture
+.90
+3,793
+.94
+96,153
+ Cover Photo
+.88
+3,707
+.89
+90,864
+ Other Photos
+.67
+2,815
+.77
+78,023
+ Work
+.33
+1,379
+.36
+36,774
+ College
+.46
+1,939
+.52
+52,776
+ High School
+.37
+1,548
+.44
+45,070
+ Current City
+.53
+2,245
+.48
+49,172
+ Hometown
+.43
+1,815
+.43
+43,428
+ Other Places Lived
+.22
+919
+.17
+17,818
+ Life Events
+.25
+1,054
+.33
+33,209
+This table presents the full set of profile-level data fields observable on the Facebook profiles of the 4,198 
+fund managers and 101,866 firm officers included in our sample, which covers 4,100 mutual funds and 
+their stock holdings over the period 1984–2020. These data fields include basic identifiers (screen name, 
+username, user ID), demographic attributes (gender, date of birth), social network indicators (friends list, 
+relationship status, family members), visual content (profile picture, cover photo, other photos), educational 
+and professional history (work, college, high school), and geographic background (current city, hometown, 
+other places lived), as well as life events. For each data field, we report the percentage of profiles in which 
+the field is populated (% Share) and the number of such profiles (N Profiles), separately for fund managers 
+and firm officers.
+Table 2
+Item-level Facebook data.
+ 
+Fund managers (N Profiles = 4,198)
+Firm officers (N Profiles = 101,866)
+ 
+Mean
+Median
+SD
+N Items
+N Profiles
+Mean
+Median
+SD
+N Items
+N Profiles
+ Friends
+269
+167
+394
+1,095,018
+4,066
+341
+188
+635
+34,148,303
+100,193
+  Friends–Published
+310
+213
+425
+728,897
+2,353
+443
+275
+561
+24,102,607
+54,423
+  Friends–Backlinks
+110
+66
+144
+180,951
+1,648
+10
+5
+19
+402,652
+41,613
+  Friends–Reactions
+126
+69
+199
+180,058
+1,425
+196
+111
+664
+7,932,927
+40,540
+ Photos
+56
+6
+321
+187,328
+3,374
+110
+12
+420
+9,831,174
+89,294
+ Reactions
+663
+118
+2,601
+2,138,914
+3,226
+695
+215
+2,039
+59,448,651
+85,512
+  Likes
+525
+91
+2,094
+1,666,017
+3,173
+598
+184
+1,752
+50,593,776
+84,627
+  Comments
+148
+33
+537
+435,814
+2,954
+105
+35
+322
+8,283,007
+78,817
+  Tags
+37
+5
+144
+37,083
+1,014
+17
+5
+67
+571,868
+33,803
+This table reports descriptive statistics on item-level Facebook data observed for friends, photos, and reactions associated with the 4,198 fund 
+managers and 101,866 firm officers in the Facebook-identified sample of 4,100 mutual funds and their stock holdings in the period 1984–2020. 
+The statistics reported for each variable include the mean, median, standard deviation (SD), total number of data items observed (N Items), and 
+number of profiles in which such items were observable within that category (N Profiles). Statistics are computed based on observations with 
+nonmissing values. Figures reported on friends are further segmented by the different approaches through which they were observed (refer to 
+Section 1.3 for our approaches to observing friends), including friends identified through publicly disclosed friends lists (Friends–Published), 
+friends identified through backlinks from other users’ friends lists (Friends–Backlinks), and friends inferred from reactions received on or given 
+to restricted photos (Friends–Reactions). Photos include profile pictures, cover photos, and those in miscellaneous albums. Reactions refer to 
+engagements with photos uploaded to profiles, excluding the reactions users gave to their own uploads.
+received on or given to restricted photos (Friends–Reactions). Addition-
+ally, we report statistics on observable photos which include a total of 
+ten million photos uploaded by the sample individuals. Of these, 187 
+thousand photos appeared on 3,374 of the 4,198 fund manager profiles, 
+and 9.8 million photos appeared on 89,294 of the 101,866 firm officer 
+profiles. Lastly, the table presents statistics on reactions (i.e., likes, 
+comments, and tags) received by these uploaded photos, excluding 
+reactions that the individuals gave themselves to their uploads. In total, 
+we observe 61.6 million reactions across the sample individuals, with 
+3,226 of the 4,198 fund managers receiving 2.1 million reactions, and 
+85,512 of the 101,866 firm officers receiving 59.4 million reactions. Of 
+these reactions, 85% are likes, 14% are comments, and 1% are tags.
+In Table 3, we provide summary statistics reflecting the annual 
+composition of the Facebook-identified sample of funds, including de-
+tails on fund managers, the funds’ common stock holdings, and man-
+agement personnel of the firms whose stock is held by the funds. 
+The sample comprises 265,320 fund-month observations managed by 
+4,198 Facebook-identified fund managers in the period 1984–2020. 
+The Morningstar benchmark universe used to calculate percentage 
+coverages for the funds is the sample consisting of 415,676 fund-month 
+observations whose construction we detail in Section 1.4. The BoardEx 
+benchmark universe used to calculate percentage coverages for firm 
+officers is the sample constructed in Section 1.6. The statistics reported 
+for each variable include the mean, median, minimum, maximum, and 
+standard deviation. In median terms, the sample includes 1,508 funds 
+per year, accounting for an annual coverage of 59% of the 5,053 
+funds in the benchmark universe over the study period or 53% of the 
+benchmark universe’s total net assets under management. The sample 
+of Facebook-identified fund managers includes 1,166 individuals per 
+year, corresponding to an annual coverage of 38% of the 10,036 
+fund managers active in the benchmark universe during the study 
+period. The Facebook-identified funds invest in 4,267 firms per year, 
+Journal of Financial Economics 178 (2026) 104225 
+8 
+M. Ammann et al.
+Table 3
+Summary statistics for Facebook-identified funds.
+ 
+Mean
+Median
+Min.
+Max.
+SD
+ 
+ Facebook-identified Funds (FB Funds)
+1,126
+1,508
+23
+1,985
+755
+ 
+  % of Funds in MS Universe
+.53
+.59
+.15
+.75
+.19
+ 
+  % of TNA in MS Universe
+.50
+.53
+.09
+.79
+.22
+ 
+ Facebook-identified Fund Managers
+934
+1,166
+22
+1,584
+614
+ 
+  % of Fund Managers in MS Universe
+.35
+.38
+.13
+.47
+.11
+ 
+ Stocks held by FB funds
+3,768
+4,267
+310
+5,314
+1,443  
+  % of Stocks in CRSP Universe
+.50
+.57
+.05
+.70
+.19
+ 
+  % of Market Cap. in CRSP Universe
+.85
+.96
+.32
+1
+.18
+ 
+ Firm Officers held by FB Funds
+59,949
+64,050
+1,122
+115,811
+45,273 
+  % of Firm Officers in BoardEx Universe
+.95
+.99
+.56
+1
+.10
+ 
+ Facebook-identified Firm Officers
+22,116
+18,405
+169
+55,596
+19,903 
+  % of Firm Officers held by FB Funds
+.29
+.29
+.15
+.52
+.11
+ 
+This table provides summary statistics reflecting the annual composition of the Facebook-identified sample 
+of mutual funds (FB Funds), fund managers, the funds’ common stock holdings, and management personnel 
+of the firms whose stock is held by the funds. The sample comprises the 265,320 fund-month observations 
+managed by the 4,198 Facebook-identified fund managers in the period 1984–2020. The statistics reported 
+for each variable include the mean, median, minimum, maximum, and standard deviation (SD). The 
+Morningstar benchmark universe (MS Universe) used to calculate percentage coverages for the funds is 
+the sample whose construction we detail in Section 1.4. The BoardEx benchmark universe used to calculate 
+percentage coverages for firm officers is the sample constructed in Section 1.6.
+representing an annual coverage of 57% of the stocks covered by 
+the CRSP universe and covering 96% of the CRSP universe’s market 
+capitalization. These firms are managed by 64,050 firm officers per 
+year, or an annual coverage of 99% of the 281,829 firm officers present 
+in the BoardEx benchmark universe. The sample of Facebook-identified 
+firm officers includes 18,405 individuals per year, accounting for an 
+annual coverage of 29% of the aforementioned firm officers whose 
+firms’ stock is held by the Facebook-identified funds.
+In Table 4, we present data on the Facebook friendships that we 
+observe between the fund managers and firm officers in our sam-
+ple, broken down by the friendships’ visibility levels as defined in 
+Section 1.3. We report on three types of fund manager–firm offi-
+cer friendships: total friendships (Friendships–All), tradable friendships 
+(Friendships–Tradable), and traded friendships (Friendships–Traded). A 
+friendship is deemed ‘‘tradable’’ if the fund manager’s tenure at the 
+fund coincides with the firm officer’s tenure at the firm and if the 
+firm’s stock, during the given month, is held by at least one fund 
+in the same Morningstar category as the relevant fund. Similarly, a 
+friendship is deemed ‘‘traded’’ if the fund manager’s fund holds the 
+firm’s stock during the firm officer’s tenure at the firm. We provide 
+information on tradable friendships (in addition to total and traded 
+friendships) as supplementary information to enhance the context of 
+the results. Tradable friendships exclude those that could not have 
+been traded due to the connected fund manager and firm officer not 
+simultaneously managing the fund and the firm, as well as friendships 
+that are unlikely to be traded as per the fund’s objectives (approximated 
+through holdings of peers in the same Morningstar category), such as 
+the friendship between a fund manager of a large-cap value fund and 
+a firm officer of a small-cap growth firm. The table reports figures on 
+the number of connected pairs, the number of distinct fund managers 
+and firm officers involved in these pairs, the number of stocks asso-
+ciated with the pairs, and the number of underlying fund-month-stock 
+observations. In total, our analysis reveals 18,478 Facebook friendships 
+between 2,803 fund managers and 10,748 firm officers. With regard to 
+tradable friendships, we observe 9,012 friendships between 2,107 fund 
+managers and 6,050 firm officers. Of these friendships, 2,908 (32%) are 
+traded, involving 1,052 fund managers and 2,143 firm officers. When 
+categorizing the traded friendships based on their visibility levels, 
+930 (32%) are assigned to the FullyVisible category, 959 (33%) are 
+classified as FundMgrHides, 758 (26%) are classified as FirmOfcrHides, 
+and 261 (9%) are classified as FullyHidden. Notably, a comparison 
+between the tradable and traded friendships indicates that the desire to 
+hide Facebook friends lists coincides with a higher likelihood of these 
+friendships being activated. Specifically, while only about 28% of the
+FullyVisible friendships are traded, this percentage increases to 31% for
+FirmOfcrHides friendships and to 37% and 44% for FundMgrHides and
+FullyHidden friendships, respectively.
+Table 4 also suggests that the sample of connected pairs is not 
+dominated by a few super-connectors but instead involves a large 
+number of individuals from both groups—fund managers and firm 
+officers. These individuals are dispersed across various funds and firms. 
+To illustrate this distribution, Fig. 3 presents a network graph depicting 
+Facebook-identified connections between fund managers (represented 
+by blue nodes) and firm officers (represented by red nodes) classified 
+as tradable at any point throughout our sample period. The darker 
+shades within the graph indicate traded connections within the subset 
+of tradable connections. Each node represents an individual, and edges 
+signify Facebook friendships between fund managers and firm officers. 
+Individuals are clustered by their current or most recent employer. In 
+cases of multiple affiliations, individuals are assigned to the firm where 
+they hold their most senior role. This graph visually demonstrates 
+the extensive and intricate network of connections, emphasizing the 
+dispersion and complexity of these relationships across different funds 
+and firms. It underscores the widespread nature and potential influence 
+of these hidden connections on fund managers’ investment decisions.
+2. Main results
+2.1. Portfolio weights
+In this section, we examine whether fund managers’ hidden friend-
+ships have an effect on the funds’ holdings. If fund managers with 
+non-public connections to company executives are better informed, 
+they may allocate a larger proportion of their funds to securities 
+managed by those individuals. To assess this possibility, we calculate 
+the portfolio weights in Facebook-connected stocks for each fund-
+month observation as the dollar investment in these stocks divided by 
+the fund’s total dollar holdings during that period. We then estimate 
+various forms of the regression equation 
+𝑤𝑖,𝑘,𝑡= 𝛼0 + 𝛽′FriendshipVisibility𝑖,𝑘,𝑡+ 𝛤′𝐶𝑜𝑛𝑡𝑟𝑜𝑙𝑠𝑖,𝑘,𝑡+ 𝜖𝑖,𝑘,𝑡,
+(1)
+where 𝑤𝑖,𝑘,𝑡 is the weight of fund 𝑖 in stock 𝑘 at time 𝑡;
+FriendshipVisibility𝑖,𝑘,𝑡 is a set of dummy variables reflecting the visibility 
+of the Facebook friendship between a fund manager of fund 𝑖 and a 
+firm officer of firm 𝑘, as defined in Section 1.3; and 𝛤′𝐶𝑜𝑛𝑡𝑟𝑜𝑙𝑠𝑖,𝑘,𝑡
+is a vector of control variables including Style, the percentage of the 
+fund’s total net assets invested in the style corresponding to the stock 
+being considered (style is calculated as in Daniel et al. (1997)), market 
+value of equity (ME), book to market (BM), and past 12-month return 
+Journal of Financial Economics 178 (2026) 104225 
+9 
+M. Ammann et al.
+Table 4
+Statistics on Facebook friendships by visibility.
+ 
+N Pairs
+N Fund Mgrs.
+N Firm Offcs.
+N Stocks
+N Obs.
+ Friendships–All
+18,478
+2,803
+10,748
+–
+–
+  FullyVisible
+6,748
+1,583
+4,590
+–
+–
+  FirmOfcrHides
+6,211
+1,438
+3,968
+–
+–
+  FundMgrHides
+4,235
+927
+3,008
+–
+–
+  FullyHidden
+1,284
+426
+993
+–
+–
+ Friendships–Tradable
+9,012
+2,107
+6,050
+3,371
+–
+  FullyVisible
+3,298
+1,105
+2,516
+2,043
+–
+  FirmOfcrHides
+3,084
+1,007
+2,253
+1,730
+–
+  FundMgrHides
+2,038
+658
+1,600
+1,354
+–
+  FullyHidden
+592
+273
+486
+461
+–
+ Friendships–Traded
+2,908
+1,052
+2,143
+1,510
+171,755
+  FullyVisible
+930
+459
+768
+755
+45,542
+  FirmOfcrHides
+959
+441
+779
+680
+45,020
+  FundMgrHides
+758
+343
+618
+576
+51,350
+  FullyHidden
+261
+136
+214
+245
+29,495
+This table presents data on the Facebook friendships that we observe between the fund managers 
+and firm officers in our sample, broken down by the friendships’ visibility levels. We report on three 
+types of fund manager–firm officer friendships: total friendships (Friendships–All), tradable friendships 
+(Friendships–Tradable), and traded friendships (Friendships–Traded). The table reports figures on the number 
+of connected pairs (N Pairs), the number of distinct fund managers (N Fund Mgrs.) and firm officers 
+(N Firm Offcs.) involved in these pairs, the number of stocks associated with the pairs (N Stocks), and 
+the number of underlying fund-month-stock observations (N Obs.). A friendship is deemed ‘‘tradable’’ if the 
+fund manager’s tenure at the fund coincides with the firm officer’s tenure at the firm and if the firm’s 
+stock, during the given month, is held by at least one fund in the same Morningstar category as the 
+relevant fund. A friendship is deemed ‘‘traded’’ if the fund manager’s fund holds the firm’s stock during the 
+firm officer’s tenure at the firm. We denote the visibility of a Facebook friendship depending on whether 
+the friendship is publicly observable through both the fund manager’s and the firm officer’s friends lists 
+(FullyVisible); observable through the fund manager’s friends list but not through the firm officer’s friends list 
+(FirmOfcrHides); not observable through the fund manager’s friends list but observable through the backlink 
+from the firm officer’s friends list (FundMgrHides); or neither observable through the fund manager’s friends 
+list nor through the firm officer’s friends list (FullyHidden).
+Fig. 3. Network of tradable friendships between fund managers and firm officers.
+This figure visualizes Facebook-identified friendships between fund managers and firm officers that were tradable at least once during the 1984–2020 sample 
+period (see Section 1.7 for the tradability definition). Blue nodes represent fund managers; red nodes represent firm officers. The graph is static and pools all 
+such relationships throughout the entire sample period. The darker shades represent fund manager-firm officer ties with traded connections within the subset of 
+tradable connections. Each node is labeled by its current (or most recent) employer and is assigned to that organization’s cluster; in cases of multiple affiliations, 
+we use the role in which the individual holds the greatest seniority. Edges denote Facebook friendships; their lengths have no economic interpretation. The layout 
+is produced with a circle-packing algorithm that groups nodes by employer and then arranges the clusters within the overall graph. (For interpretation of the 
+references to colour in this figure legend, the reader is referred to the web version of this article.)
+Journal of Financial Economics 178 (2026) 104225 
+10 
+M. Ammann et al.
+(R12). If fund managers tilt their portfolios toward the firms managed 
+by their non-public firm officer friends, we would expect to find that 𝛽
+is positive and statistically significant.12
+In Table 5, we present coefficient estimates and standard errors 
+clustered at the fund and period levels from Panel OLS estimations of 
+various specifications of Eq. (1). All regressions include period fixed 
+effects, and the unit of observation is stock-fund-month. The main re-
+sults are shown in columns 1–4, each including one visibility indicator 
+from the set FriendshipVisibility𝑖,𝑘,𝑡 and a constant in the regression. 
+Columns 1–4 reveal over-allocations to securities of friends that vary 
+significantly depending on whether or not the friendship between a 
+fund manager and a firm officer is publicly visible through their friends 
+lists. Specifically, fund managers invest an additional 35.2 basis points 
+in securities of firms managed by firm officers friends in the FullyVisible
+category, compared to the average weight of 74.6 basis points. They 
+allocate 63.9 additional basis points to securities of friends in the
+FirmOfcrHides category, 95.8 additional basis points to securities of 
+friends in the FundMgrHides category, and 136.5 additional basis points 
+to securities of friends in the FullyHidden category. In columns 5 and 6, 
+the regressions from columns 1 and 4 are estimated with fund fixed 
+effects, focusing solely on variation at the stock level (i.e., firm officer 
+changes). While fund fixed effects explain the variation in fund man-
+agers’ portfolio allocations toward FullyVisible friends, the coefficient 
+on FullyHidden friends remains statistically significant at 50.9 basis 
+points. Finally, columns 7 and 8 estimate both specifications with firm 
+fixed effects to control for the average weight funds have in each 
+stock. This approach relies on the variation at the fund level over 
+time (i.e., fund manager changes) to explain portfolio weights. After 
+controlling for firm fixed effects, the results indicate that fund managers 
+allocate significantly more capital to securities of both FullyVisible
+and FullyHidden friends, with the latter effect being 2.5 times larger. 
+These findings are economically important. In conclusion, the different 
+specifications indicate a consistent pattern: Fund managers invest more 
+heavily in their friends’ securities, and these allocations appear to be 
+highly dependent on the visibility of their friendships.13
+2.2. Performance
+Our findings thus far indicate that fund managers allocate signif-
+icantly more capital to firms managed by hiddenly-connected firm 
+officer Facebook friends. We now explore whether this trend is asso-
+ciated with superior performance; that is, if the funds’ holdings in the 
+fund managers’ hiddenly-connected stocks outperform their holdings in 
+visibly connected and non-connected stocks. If fund managers benefit 
+from managing the visibility of their friendships, we would expect to 
+observe positive returns in stocks associated with such connections. 
+In contrast, if fund managers allocate money to these stocks for other 
+reasons, such as familiarity, we would anticipate nonpositive results. To 
+investigate this question, we use a conventional calendar-time portfolio 
+approach similar to Coval and Moskowitz’s (2001) to create replicating 
+portfolios based on the funds’ holdings. In this process, we sort the 
+funds’ connected stocks into portfolios depending on their FriendshipVis-
+ibility levels. For the sake of brevity in the following descriptions, 
+we subsume the various expressions of this variable under the term 
+‘‘connected’’. For each fund-month observation, we assign the stocks 
+12 The variation in this test arises from fund managers trading in and out of 
+stocks with different FriendshipVisibility characteristics. Furthermore, turnover 
+among fund managers or firm officers also contributes: when a fund manager 
+leaves, or when a connected firm officer steps down and is replaced by 
+someone not connected on Facebook, the connection typically dissolves and 
+the stock is no longer considered connected.
+13 In specifications not reported, we control for industry fixed effects (based 
+on the 48-industry classification used in Fama and French (1997)) and fund 
+fixed effects (using the fund’s Morningstar categories), both leading to more 
+pronounced results than the specification in column 8.
+in a fund’s portfolio into subportfolios based on whether any of the 
+fund’s managers maintain a Facebook friendship with any of the firm’s 
+same-month officers.14 We calculate monthly portfolio returns for each 
+fund under the assumption that the funds did not change their holdings 
+between two reporting dates as 
+𝑅𝑁
+𝑖,𝑡=
+∑
+𝑘𝜖
+(
+𝑤𝑖,𝑘,𝑡
+∑
+𝑘𝜖𝑤𝑖,𝑘,𝑡
+)
+𝑟𝑘,𝑡+1
+(2)
+and 
+𝑅𝑂
+𝑖,𝑡=
+∑
+𝑘𝜖
+(
+𝑤𝑖,𝑘,𝑡
+∑
+𝑘𝜖𝑤𝑖,𝑘,𝑡
+)
+𝑟𝑘,𝑡+1
+(3)
+where  is the set of stocks of a firm with an officer connected 
+to at least one of fund 𝑖’s fund managers, and  is the set of non-
+connected stocks in fund 𝑖’s portfolio. Following stock assignments into 
+‘‘Connected’’ and ‘‘Non-Connected’’ subportfolios, we keep stocks in 
+the subportfolios until the next reporting date, when the portfolios are 
+rebalanced to reflect changes in holdings. We weight stocks by their 
+dollar values in the fund’s respective subportfolio. We then compute 
+value-weighted averages of the returns in Eqs. (2) and (3) across 
+funds at time 𝑡, weighting each fund portfolio return by the fund’s 
+total net asset value in the subportfolio. This approach assigns greater 
+weight to funds that have larger dollar values of investments, and 
+effectively corresponds to a simple investment strategy of investing in 
+the entirety of connected and non-connected stocks in proportion to 
+the amounts held by our sample of funds.15 The sample averages 169 
+Facebook-connected funds per month, with each fund each month on 
+average holding two connected stocks and 146 non-connected stocks. 
+To assess the performance of the calendar-time portfolios, we employ 
+three distinct measures: simple raw returns, risk-adjusted returns, and 
+characteristics-adjusted returns. Risk-adjusted returns are computed 
+based on the four-factor model of Carhart (1997), using the intercept 
+from a regression of monthly excess returns on explanatory variables 
+that include the monthly returns from the three (Fama and French, 
+1993) factor-mimicking portfolios and Carhart’s (1997) momentum 
+factor; the data are obtained from Ken French’s data library.16 To ad-
+dress potential biases highlighted in prior research (e.g., Cremers et al. 
+(2013)), we also calculate characteristics-adjusted returns following the 
+methodology of Daniel et al. (1997), referred to hereafter as DGTW-
+adjusted returns. Specifically, DGTW-adjusted returns are defined as a 
+stock’s raw return minus the return on a value-weighted benchmark 
+portfolio of all CRSP firms in the same size, book-to-market, and 
+one-year past return quintile.
+Table 6 presents our primary results, emphasizing the role of Friend-
+shipVisibility in determining the performance differences between con-
+nected and non-connected stock portfolios. Across all three perfor-
+mance metrics—raw returns, risk-adjusted returns, and DGTW-adjusted 
+returns—the degree of FriendshipVisibility significantly amplifies the 
+outperformance of connected stocks over their non-connected counter-
+parts.
+14 A given fund-stock-month observation may be assigned to multiple Friend-
+shipVisibility portfolios when individual fund managers of a team-managed 
+fund have connections to firm officers at the same firm that differ in visibility. 
+The same applies when a single fund manager is connected to multiple firm 
+officers at the same firm. In all cases, we evaluate each fund manager–firm 
+officer pair separately, allowing fund-stock-month observations to appear in 
+more than one FriendshipVisibility portfolio within the same month.
+15 When applying equal-weighting schemes instead of value-weighting 
+schemes, the results in this section yield qualitatively similar patterns, with 
+a general tendency toward more pronounced return patterns.
+16 Throughout the remainder of the paper, all references to ‘‘four-factor 
+alpha’’ or ‘‘risk-adjusted return’’ use this same specification, estimated at a 
+monthly or daily frequency depending on the underlying data.
+Journal of Financial Economics 178 (2026) 104225 
+11 
+M. Ammann et al.
+Table 5
+Portfolio weights in connected stocks by visibility.
+ 
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+ 
+ Constant
+74.59***
+74.59***
+74.59***
+74.59***
+1.42
+1.43
+−24.80***
+−24.83*** 
+ 
+[3.21]
+[3.21]
+[3.21]
+[3.21]
+[2.82]
+[2.83]
+[4.05]
+[4.06]
+ 
+ FullyVisible
+35.18***
+1.05
+8.68*
+ 
+ 
+[7.06]
+[1.71]
+[5.10]
+ 
+ FirmOfcrHides
+63.88***
+ 
+ 
+[8.67]
+ 
+ FundMgrHides
+95.80***
+ 
+ 
+[13.22]
+ 
+ FullyHidden
+136.47***
+50.94***
+21.64***  
+ 
+[15.34]
+[7.57]
+[5.46]
+ 
+ Controls
+No
+No
+No
+No
+Yes
+Yes
+Yes
+Yes
+ 
+ Fixed Effects
+Period
+Period
+Period
+Period
+Period
+Period
+Period
+Period
+ 
+ 
+Fund
+Fund
+Firm
+Firm
+ 
+ Adj. R Squared
+0.01
+0.01
+0.01
+0.01
+0.36
+0.36
+0.40
+0.40
+ 
+ N (×106)
+34.49
+34.49
+34.48
+34.47
+31.28
+31.27
+31.28
+31.27
+ 
+This table reports coefficient estimates and standard errors (in basis points) from Panel OLS regressions of funds’ portfolio weights. The dependent 
+variable 𝑤 represents the fund’s dollar investment in a stock as a percentage of the fund’s total net assets. The independent variables measure the 
+level of FriendshipVisibility, defined by a set of four dummy variables capturing the degree of visibility of a Facebook friendship between a fund 
+manager and a firm officer depending on whether the friendship is publicly observable through both the fund manager’s and the firm officer’s 
+friends lists (FullyVisible); observable through the fund manager’s friends list but not through the firm officer’s friends list (FirmOfcrHides); not 
+observable through the fund manager’s friends list but observable through the backlink from the firm officer’s friends list (FundMgrHides); or 
+neither observable through the fund manager’s friends list nor through the firm officer’s friends list (FullyHidden). Control variables, where 
+included, are 𝑆𝑡𝑦𝑙𝑒, defined as the percentage of the fund’s total net assets allocated to the style of the stock under consideration (style is 
+calculated as in Daniel et al. (1997)), and 𝑝𝑀𝐸, 𝑝𝐵𝑀, and 𝑅12, which are percentiles of market value of equity, book to market, and past 
+12-month return, respectively. Each regression includes period fixed effects. Fund and firm fixed effects are included where indicated. The 
+sample spans 1984–2020. Unit of observation is stock-fund-period. Standard errors are clustered at the fund and period levels and reported in 
+brackets. Statistical significance at the 10%, 5%, and 1% levels is indicated by *, **, and ***, respectively.
+Table 6
+Returns on connected stocks by visibility.
+ 
+Raw Return
+Four-Factor Alpha
+DGTW-Adjusted
+ 
+Connected
+Non-Conn.
+LS
+Connected
+Non-Conn.
+LS
+Connected
+Non-Conn.
+LS
+ 
+ FullyVisible
+1.05***
+0.98***
+0.07
+0.11
+−0.00
+0.11
+0.15
+0.03
+0.12
+ 
+ 
+(3.07)
+(3.92)
+(0.28)
+(0.43)
+(−0.14)
+(0.44)
+(0.70)
+(0.63)
+(0.57)  
+ FirmOfcrHides
+1.18***
+0.98***
+0.20
+0.30
+−0.01
+0.32
+0.34
+0.02
+0.32
+ 
+ 
+(3.42)
+(3.72)
+(0.74)
+(1.12)
+(−0.43)
+(1.16)
+(1.62)
+(0.41)
+(1.53)  
+ FundMgrHides
+1.53***
+0.95***
+0.57*
+0.56*
+−0.00
+0.56*
+0.71***
+0.03
+0.69*** 
+ 
+(3.73)
+(3.99)
+(1.87)
+(1.81)
+(−0.02)
+(1.83)
+(2.80)
+(0.67)
+(2.74)  
+ FullyHidden
+2.40***
+0.93***
+1.48***
+1.35***
+−0.00
+1.36***
+1.39***
+0.03
+1.37*** 
+ 
+(5.02)
+(3.62)
+(3.88)
+(3.54)
+(−0.16)
+(3.57)
+(3.84)
+(0.57)
+(3.80)  
+This table reports monthly calendar-time portfolio returns sorted by levels of FriendshipVisibility, which is a vector of four dummy 
+variables capturing the degree of visibility of a Facebook friendship observed between a fund manager and a firm officer depending on 
+whether the friendship is publicly observable through both the fund manager’s and the firm officer’s friends lists (FullyVisible); observable 
+through the fund manager’s friends list but not through the firm officer’s friends list (FirmOfcrHides); not observable through the fund 
+manager’s friends list but observable through the backlink from the firm officer’s friends list (FundMgrHides); or neither observable 
+through the fund manager’s friends list nor through the firm officer’s friends list (FullyHidden). For each fund-month observation, 
+we sort the stocks in each fund portfolio into ‘‘Connected’’ and ‘‘Non-Connected’’ portfolios. ‘‘Connected’’ stocks are defined as firms 
+headed by one of the fund manager’s then-active firm officer friends. Assuming that funds do not modify their holdings between 
+two reporting dates, we construct monthly portfolios by retaining the stocks in the portfolios until the next reporting date, when 
+they are rebalanced to reflect changes in holdings. Within a given portfolio, stock returns are weighted by the fund’s dollar holdings. 
+We then compute value-weighted returns by aggregating across funds, weighting each fund portfolio return by the fund’s total net 
+asset value in the subportfolio. Long-Short (LS) is the monthly return of a zero-cost strategy that buys the Connected portfolio and 
+shorts the Non-Connected portfolio. We report raw returns, four-factor alphas, and DGTW-adjusted returns in the period 1984–2020. 
+𝑡-statistics appear in brackets beneath each estimate. Statistical significance at the 10%, 5%, and 1% levels is indicated by *, **, and 
+***, respectively.
+Notably, stocks classified in the FullyHidden category demonstrate 
+the most substantial abnormal returns, achieving a monthly four-
+factor alpha of 135 basis points (t-stat = 3.54). Furthermore, a long-
+short strategy that involves purchasing FullyHidden stocks and sell-
+ing short the fund managers’ non-connected stocks generates an av-
+erage monthly four-factor alpha of 136 basis points that is highly 
+statistically significant (t-stat = 3.57), underscoring the considerable
+performance advantage associated with hidden connections. Stocks 
+in the FundMgrHides category also exhibit positive abnormal returns, 
+though to a lesser extent, with a monthly four-factor alpha of 56 
+basis points (t-stat = 1.81). Similarly, a long-short strategy involving
+FundMgrHides stocks yields an alpha of comparable magnitude. In 
+contrast, trading FirmOfcrHides and FullyVisible stocks results in posi-
+tive but statistically insignificant four-factor alphas of 30 and eleven 
+basis points, respectively. The findings are consistent across different 
+performance metrics, including DGTW-adjusted returns. In summary, 
+our results indicate that fund managers’ investment ideas in connected 
+stocks experience very different fates: those associated with FullyHidden
+connections generate consistent, large, and significant risk-adjusted 
+returns that outperform trades in visibly connected and non-connected 
+stocks, underscoring the critical role of hidden connections in driving 
+superior investment performance.
+In addition to assessing the performance of hiddenly-connected 
+stocks based on the funds’ holdings, we also examine the fund man-
+agers’ informational advantage based on their trading activity, offering 
+further insight into both buy-side and sell-side behavior. To infer trades 
+from holdings, we follow a method similar to Pool et al. (2015), which 
+zeroes out periods of non-trading in a stock from the return series. 
+Journal of Financial Economics 178 (2026) 104225 
+12 
+M. Ammann et al.
+Table 7
+Trade-based returns on connected stocks.
+ 
+Connected
+Non-Connected
+ 
+ 
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(3)–(6)  
+ 
+Buy
+Sell
+LS
+Buy
+Sell
+LS
+Spread  
+ FullyVisible
+ 
+  All Trades
+0.32
+−0.18
+0.46
+0.05
+0.16
+−0.11
+0.57
+ 
+ 
+(0.54)
+(−0.31)
+(0.55)
+(0.37)
+(1.26)
+(−0.77)
+(0.67)  
+  Extensive Trades
+0.30
+−0.27
+0.60
+0.15
+0.17
+−0.04
+0.64
+ 
+ 
+(0.35)
+(−0.30)
+(0.57)
+(0.97)
+(1.00)
+(−0.20)
+(0.60)  
+  Intensive Trades
+0.35
+−0.11
+0.46
+0.08
+0.16
+−0.09
+0.55
+ 
+ 
+(0.61)
+(−0.25)
+(0.66)
+(0.52)
+(1.18)
+(−0.56)
+(0.75)  
+ FirmOfcrHides
+ 
+  All Trades
+0.48
+−0.23
+0.67
+0.02
+0.11
+−0.11
+0.78
+ 
+ 
+(0.94)
+(−0.45)
+(1.02)
+(0.12)
+(0.92)
+(−0.75)
+(1.17)  
+  Extensive Trades
+0.40
+−0.56
+0.80
+0.18
+0.25
+0.05
+0.75
+ 
+ 
+(0.51)
+(−0.70)
+(0.81)
+(0.96)
+(1.62)
+(0.23)
+(0.79)  
+  Intensive Trades
+0.51
+−0.19
+0.69
+0.02
+0.00
+−0.02
+0.71
+ 
+ 
+(0.96)
+(−0.39)
+(1.10)
+(0.12)
+(0.03)
+(−0.12)
+(1.07)  
+ FundMgrHides   
+  All Trades
+0.77**
+−0.61*
+1.36***
+−0.09
+−0.10
+−0.01
+1.36*** 
+ 
+(2.14)
+(−1.94)
+(3.15)
+(−1.09)
+(−0.91)
+(−0.04)
+(3.01)  
+  Extensive Trades
+1.45**
+−1.04*
+2.29***
+−0.06
+−0.05
+0.12
+2.17*** 
+ 
+(2.00)
+(−1.85)
+(3.06)
+(−0.43)
+(−0.38)
+(0.66)
+(2.86)  
+  Intensive Trades
+0.69*
+−0.28
+0.95**
+−0.05
+−0.09
+0.03
+0.92**  
+ 
+(1.81)
+(−0.89)
+(2.10)
+(−0.55)
+(−0.98)
+(0.30)
+(2.02)  
+ FullyHidden
+ 
+  All Trades
+1.27***
+−0.68
+1.89***
+−0.04
+0.01
+−0.04
+1.93*** 
+ 
+(2.75)
+(−1.34)
+(2.83)
+(−0.34)
+(0.06)
+(−0.31)
+(2.89)  
+  Extensive Trades
+2.25**
+−1.90*
+2.76***
+−0.11
+−0.21
+0.02
+2.74*** 
+ 
+(2.21)
+(−1.84)
+(2.79)
+(−0.71)
+(−1.27)
+(0.14)
+(2.78)  
+  Intensive Trades
+1.12**
+−0.53
+1.56**
+0.02
+0.15
+−0.13
+1.68*** 
+ 
+(2.42)
+(−1.20)
+(2.58)
+(0.18)
+(1.51)
+(−0.96)
+(2.75)  
+This table reports monthly trade-based portfolio returns sorted by levels of FriendshipVisibility, which include the expressions
+FullyVisible, FirmOfcrHides, FundMgrHides, and FullyHidden. To construct the portfolios, we assign connected and non-connected 
+stocks into ‘‘Buy’’ and ‘‘Sell’’ portfolios depending on whether a stock was bought or sold compared to the previous fund-month 
+observation. Within a given subportfolio, stocks are assigned the new dollars allocated relative to the previous month, and 
+stock returns are weighted using the fund’s total new dollar holdings in the subportfolio. We then compute value-weighted 
+returns by aggregating across funds, using their total new subportfolio dollars as weights. Additionally, we differentiate Buy 
+and Sell transactions into extensive (new or fully divested positions) and intensive (increased or decreased holdings) margin 
+trades. Long-Short (LS) is the monthly return of a zero-cost strategy that buys the Buy portfolio and shorts the Sell portfolio. 
+We report monthly four-factor alphas in the period 1984–2020. 𝑡-statistics appear in brackets beneath each estimate. Statistical 
+significance at the 10%, 5%, and 1% levels is indicated by *, **, and ***, respectively.
+Specifically, for each fund-month observation, we assign connected and 
+non-connected stocks into ‘‘Buy’’ and ‘‘Sell’’ portfolios depending on 
+whether a stock was bought or sold compared to the previous fund-
+month observation. The funds’ initial stock transactions are excluded 
+from this process. Within a given subportfolio, stocks are assigned the 
+new dollars allocated relative to the previous month, and stock returns 
+are weighted using the fund’s total new dollar holdings in the subport-
+folio. We then compute value-weighted returns by aggregating across 
+funds, using their total new subportfolio dollars as weights. We further 
+expand our analysis by decomposing ‘‘Buy’’ and ‘‘Sell’’ transactions into 
+extensive and intensive margin trades, depending on whether—relative 
+to the previous month—a fund’s position in a stock is newly established 
+(‘‘extensive margin buy’’), entirely sold off (‘‘extensive margin sell’’), 
+expanded (‘‘intensive margin buy’’), or reduced (‘‘intensive margin 
+sell’’).
+We present the results of our trade-based evaluation of portfolio 
+returns in Table 7. For brevity, we focus on the four-factor alphas, 
+noting that the DGTW-adjusted returns look very similar. Aligning with 
+our earlier findings, the FullyHidden portfolio remains the most notable, 
+yielding a monthly four-factor alpha of 127 basis points (t-stat = 2.75) 
+on the buy side (column 1) and −68 basis points (t-stat = −1.34) on 
+the sell side (column 2). Implementing a long-short strategy that goes 
+long the Buy portfolio and short the Sell portfolio delivers a monthly 
+four-factor alpha of 189 basis points (t-stat = 2.83), as reported in 
+column 3. The observed spread between the long and short legs is plau-
+sibly attributable to mutual funds’ short-selling constraints. Further, 
+segmenting the trades into intensive and extensive categories reveals 
+that intensive buys yield 112 basis points, and extensive buys 225 
+basis points per month. By contrast, intensive sells result in −53 basis 
+points, and extensive sells −190 basis points per month. Notably, the 
+performance ratio of extensive to intensive trades on the sell side is 
+much higher (approximately 3.5 to one) compared to the buy side 
+(roughly two to one). The stark variation in these ratios may signal 
+underlying differences in how fund managers can respond to buy and 
+sell ideas. When considering a stock favorably, a fund manager may 
+establish a new position if the stock is not yet held or increase the 
+position’s size if it is. Conversely, when viewing a stock unfavorably, 
+closing a position may reflect a stronger conviction compared to merely 
+reducing the size of the position, as the latter suggests a deliberate 
+choice not to divest completely.
+Next, we examine whether the managerial information that we 
+appear to capture has implications for longer-term stock valuations. 
+We do this by exploring the portfolios’ connected legs using event-time 
+returns. Specifically, we compute value-weighted cumulative abnormal 
+returns for the first 18 months following a fund’s purchase of a con-
+nected stock, sorting by FriendshipVisibility. Each event window begins 
+when a fund first takes a position in a connected stock (and restarts 
+if the position is later fully liquidated and re-initiated). Abnormal 
+returns are defined as the fund’s stock-level return in excess of the mar-
+ket return, and monthly abnormal returns are value-weighted by the 
+inflation-adjusted dollar size of each position across all connected fund–
+stock pairs within a given FriendshipVisibility bucket. We report the 
+cumulative sums of these value-weighted abnormal returns in Fig. 4.
+Consistent with our main results in Table 6, we find abnormal 
+performance to increase monotonically with the level of FriendshipVis-
+ibility. Over the course of 18 months, the portfolio of stocks formed 
+Journal of Financial Economics 178 (2026) 104225 
+13 
+M. Ammann et al.
+Fig. 4. CARs on connected stocks by friendship visibility.
+This figure presents value-weighted cumulative abnormal returns (CARs) over the 18 months following a fund’s purchase of a stock whose issuing firm includes 
+a firm officer to which the fund manager maintains a Facebook-identified personal tie. The sample covers 1984–2020. Observations are grouped by levels of
+FriendshipVisibility, which include the expressions FullyVisible, FirmOfcrHides, FundMgrHides, and FullyHidden. Each event window starts with the initial purchase 
+of a connected stock; if the position is fully liquidated and later repurchased, this repurchase initiates a new event window. Abnormal returns are calculated 
+as fund-level stock returns net of market returns (based on the Fama–French market factor), and stock values are adjusted for inflation to keep the layered 
+purchase events comparable in real terms. At each event month, monthly returns are value-weighted by the inflation-adjusted dollar size of each position across 
+all connected fund–stock pairs within each visibility bucket. The plotted lines trace the cumulative sums of these value-weighted abnormal returns.
+based on FullyHidden connections does not fall below the portfolios 
+formed based on partially hidden connections—i.e., FundMgrHides or
+FirmOfcrHides—which in turn does not fall below the portfolio of 
+stocks formed based on FullyVisible connections. The figure further 
+indicates that the returns accrue gradually in the months after the 
+initial purchase. In addition, it appears that the information we capture 
+is eventually incorporated into stock prices and does not subsequently 
+reverse.
+2.3. Connected Not-Held portfolios
+Motivated by the results presented in the previous section, we 
+further analyze the relation between the fund managers’ hiddenly-
+connected securities and performance. Given that mutual funds are 
+limited in their ability to engage in short selling, the funds’ active 
+portfolio allocations may not accurately reflect the fund managers’ full 
+informational advantage. If positive information is reflected in the con-
+nected stocks held by the funds, we would expect negative information 
+to be evident in the performance of the fund managers’ connected 
+stocks when they are not held by the funds. To gain further insights into 
+this hypothesis, employing a similar portfolio construction approach 
+to the one used in Section 2.2, we investigate returns on connected 
+stocks that fund managers choose not to hold. In particular, for each 
+fund-month observation, we sort the stocks in each fund portfolio into 
+‘‘Connected Held’’17 and ‘‘Connected Not-Held’’ portfolios. We place 
+stocks in the Connected Not-Held portfolio if they are headed by a fund 
+manager’s then-active firm officer Facebook friend and are not held by 
+17 In Section 2.3 we refer to the portfolio previously labeled ‘‘Connected’’ as 
+‘‘Connected Held’’ to distinguish it terminologically from the newly introduced 
+‘‘Connected Not-Held’’ portfolio, which contains stocks headed by the fund 
+managers’ firm officer friends that are currently not held by the fund.
+the particular fund while being held by at least one other fund in the 
+same Morningstar category in the given month. Assuming that funds do 
+not modify their holdings between two reporting dates, we construct 
+monthly portfolios by retaining the not-held stocks in the portfolio 
+until the next reporting date, when the portfolios are rebalanced to 
+reflect changes in holdings. Within a given portfolio, we weight a 
+stock’s returns by the stock’s respective market capitalization. We then 
+compute value-weighted returns by aggregating across funds, weighting 
+each fund portfolio return by the fund’s total net asset value in the 
+subportfolio. The resulting sample comprises 2,613 distinct funds and 
+177,156 fund-month observations covering the period from January 
+1984 through December 2020. On average, a fund’s Connected Not-
+Held portfolio per month includes 2.96 stocks managed by an average 
+of 2.25 of the fund managers’ then-active firm officer friends.
+Table 8 presents the results of this analysis, indicating that the fund 
+managers’ hiddenly-connected stocks do not exhibit significant outper-
+formance during the periods when they are not held by the funds. This 
+observations holds true whether the assessment is based on four-factor 
+alpha, shown in column 5, or DGTW-adjusted returns, shown in column 
+6. Additionally, we report the returns from a long-short strategy that 
+involves selling short the Connected Not-Held portfolio while buying 
+the Connected Held portfolio. For the FullyHidden portfolio, the set of 
+connected stocks held by the funds outperforms the set of connected 
+stocks not held by 119 basis points per month (t-stat = 2.59) in four-
+factor alpha, as shown in column 8, with DGTW-adjusted returns of a 
+similar magnitude, as shown in column 9.
+Stepping back, the Connected Not-Held results offer a more granular 
+exploration of the same fund manager’s decision to hold versus not hold 
+hiddenly-connected stocks. This analysis provides evidence against a 
+stock-specific selection narrative, as it involves a long-short strategy on 
+the same set of hiddenly-connected stocks—focusing solely on the fund 
+manager’s active decision to hold or forgo these stocks.
+Journal of Financial Economics 178 (2026) 104225 
+14 
+M. Ammann et al.
+Table 8
+Returns on connected not-held stocks.
+ 
+Connected Held (CH)
+Connected Not-Held (CNH)
+Long CH/Short CNH
+ 
+Raw
+Alpha
+DGTW
+Raw
+Alpha
+DGTW
+Raw
+Alpha
+DGTW  
+ FullyVisible
+1.05***
+0.11
+0.15
+1.12***
+0.06
+0.05
+0.05
+0.11
+0.17
+ 
+ 
+(3.07)
+(0.43)
+(0.70)
+(3.09)
+(0.30)
+(0.28)
+(0.15)
+(0.35)
+(0.63)  
+ FirmOfcrHides
+1.18***
+0.30
+0.34
+1.18***
+0.09
+0.16
+−0.09
+0.10
+0.08
+ 
+ 
+(3.42)
+(1.12)
+(1.62)
+(3.44)
+(0.56)
+(0.97)
+(−0.26)
+(0.31)
+(0.30)  
+ FundMgrHides
+1.53***
+0.56*
+0.71***
+0.98***
+−0.02
+0.01
+0.54
+0.57*
+0.71**  
+ 
+(3.73)
+(1.81)
+(2.80)
+(2.93)
+(−0.09)
+(0.05)
+(1.59)
+(1.66)
+(2.57)  
+ FullyHidden
+2.40***
+1.35***
+1.39***
+1.10**
+0.16
+0.20
+1.30***
+1.19***
+1.20*** 
+ 
+(5.02)
+(3.54)
+(3.84)
+(2.41)
+(0.50)
+(0.67)
+(2.75)
+(2.59)
+(2.73)  
+This table reports monthly calendar-time portfolio returns for the funds’ Connected Held and Connected Not-Held portfolios. 
+Portfolios are sorted by levels of FriendshipVisibility, which include the expressions FullyVisible, FirmOfcrHides, FundMgrHides, 
+and FullyHidden. For each fund-month observation, we sort the stocks in each fund portfolio into Connected Held (CH) and 
+Connected Not-Held (CNH) portfolios. We place stocks in the Connected Not-Held portfolio if they are headed by a fund 
+manager’s then-active firm officer Facebook friend and are not held by the particular fund while being held by at least one 
+other fund in the same Morningstar category in the given month. Assuming that funds do not modify their holdings between 
+two reporting dates, we construct monthly portfolios by retaining the not-held stocks in the portfolio until the next reporting 
+date, when the portfolios are rebalanced to reflect changes in holdings. Within a given portfolio, we weight a stock’s returns by 
+the stock’s respective market capitalization. We then compute value-weighted returns by aggregating across funds, weighting 
+each fund portfolio return by the fund’s total net asset value in the subportfolio. Long CH/Short CNH is the monthly return 
+of a zero cost portfolio that buys the CH portfolio and sells short the CNH portfolio. We report raw returns (Raw), four-factor 
+alphas (Alpha), and DGTW-adjusted returns (DGTW) in the period 1984–2020. 𝑡-statistics appear in brackets beneath each 
+estimate. Statistical significance at the 10%, 5%, and 1% levels is indicated by *, **, and ***, respectively.
+2.4. Friendship intensity
+If the systematic outperformance patterns we document are re-
+lated to the varying visibility of social ties that we observe and mea-
+sure, we would anticipate that more intense interactions among fi-
+nancial agents lead to stronger results. To explore this, we leverage 
+a unique aspect of Facebook data, which offers advantages over the 
+traditional network membership measures: the ability to assess not 
+only the existence of connections but also the interactions within the 
+network. Specifically, we examine detailed interaction activity—likes, 
+comments, and tags—associated with our sample of individuals on the 
+Facebook platform.
+Among the 57.4 million interactions observed on our sample indi-
+viduals’ Facebook profiles—including user interactions with ten million 
+uploaded photos (refer to Table 2 for details on the item-level Facebook 
+data observed in this study)—we identify 73 thousand interactions 
+exchanged directly between fund managers and firm officers. Of these, 
+eleven thousand interactions occurred between pairs that we classify as 
+‘‘traded’’. Leveraging these observations, we compute portfolio returns 
+on funds’ connected stocks, sorted by an interaction indicator that cap-
+tures whether the fund manager and firm officer associated with a given 
+connected stock have interacted with each other’s Facebook content 
+(via likes, comments, or tags) within the one-year period preceding 
+the fund’s investment in the stock, or whether no such interaction 
+was recorded. This analysis spans the period from February 2005 to 
+December 2020, following Facebook’s launch in February 2004.
+Table 9 presents our results from the above test, shown across 
+the various levels of FriendshipVisibility. For FullyVisible friendships, 
+we observe modest monthly four-factor alphas of 15 basis points 
+(t-stat = 0.41) with interactions and 13 basis points (t-stat = 0.39) 
+without interactions, both of which are statistically insignificant. For
+FirmOfcrHides friendships, the four-factor alphas increase to 38 basis 
+points in point estimate (t-stat = 1.30) with interactions and 33 basis 
+points (t-stat = 1.19) without interactions, but again, these results 
+are statistically indistinguishable from zero. For FundMgrHides friend-
+ships, we see four-factor alphas of 136 basis points (t-stat = 3.08) 
+with interactions compared to 56 basis points (t-stat = 1.70) without. 
+However, for stocks in the FullyHidden category, we again observe the 
+strongest and most telling results: four-factor alphas of 235 basis points 
+(t-stat = 3.80) with interactions and 129 basis points (t-stat = 2.56) 
+without interactions. These findings suggest that while the intensity of 
+relationships (indicated by interactions) influences performance across 
+all categories, stocks in the FullyHidden category drive the largest and 
+statistically most significant outperformance.
+3. Indicators of informed trading
+3.1. Returns around corporate news
+Building on our previous analyses of returns earned on stocks 
+associated with varying levels of FriendshipVisibility, we now seek to 
+better understand the mechanisms driving the superior performance 
+of connected stocks in the FullyHidden category. If the fund managers 
+that are trading these stocks are better informed, we would expect the 
+returns on these stocks to be more concentrated around realizations 
+of firm-specific information into capital markets—such as corporate 
+news announcements. By contrast, we would not expect to observe 
+similarly pronounced return patterns for either non-connected stocks 
+or connected not-held stocks. In the former case, the fund manager is 
+less likely to have privileged access to information. The latter refers to 
+instances where the fund manager is connected to a firm officer but 
+elects not to hold the associated stock during the relevant period.
+To investigate this further, we extend the portfolio construction 
+methodology introduced in Sections 2.2 and 2.3. Specifically, we con-
+struct the Connected Held/Non-Connected Held and Connected Not-
+Held portfolios by assigning to each stock in each fund portfolio its 
+daily return earned in the following month. For each fund-day obser-
+vation, we sort the stocks in each fund portfolio into ‘‘News’’ and ‘‘No 
+News’’ portfolios based on whether the given stock was the subject of 
+a news announcement on that particular day. We weight stocks in the 
+Connected Held/Non-Connected Held portfolios by their dollar values 
+and those in the Connected Not-Held portfolios by their respective 
+market capitalizations. We then compute value-weighted returns by 
+aggregating across funds, weighting each fund portfolio return by the 
+fund’s total net asset value in the subportfolio.
+To compile information on firm-specific news events, we use data 
+available via RavenPack. The service provides collection and analysis 
+of entity-related news using natural language processing and machine 
+learning techniques. The RavenPack data are extracted from Dow Jones 
+Newswires, The Wall Street Journal, FactSet, and tens of thousands of 
+other traditional and social media sources. To ensure that the news 
+items we use for our test convey material information about the firms 
+rather than information about market movements, we follow Weller 
+(2018) in excluding news reports on trading or prices (technical anal-
+ysis signals, stock price movements, order imbalance reports) and on 
+investor relations themes (typically announcements of future informa-
+tion revelation dates). We further filter the data down to include only 
+news in which RavenPack considers the related firm to be playing a 
+Journal of Financial Economics 178 (2026) 104225 
+15 
+M. Ammann et al.
+Table 9
+Returns on connected stocks by interaction intensity.
+ 
+Raw Return
+Four-Factor Alpha
+DGTW-Adjusted
+ 
+Interacted
+Non-Inter.
+LS
+Interacted
+Non-Inter.
+LS
+Interacted
+Non-Inter.
+LS
+ 
+ FullyVisible
+1.12***
+1.07***
+0.05
+0.15
+0.13
+0.02
+0.13
+0.18
+−0.05  
+ 
+(2.86)
+(3.05)
+(0.25)
+(0.41)
+(0.39)
+(0.28)
+(0.29)
+(0.34)
+(−0.19) 
+ FirmOfcrHides
+1.29***
+1.18***
+0.12
+0.38
+0.33
+0.05
+0.39
+0.37
+0.02
+ 
+ 
+(2.99)
+(3.41)
+(0.33)
+(1.30)
+(1.19)
+(0.51)
+(1.18)
+(1.12)
+(0.06)  
+ FundMgrHides
+2.36***
+1.47***
+0.89*
+1.36***
+0.56*
+0.81*
+1.21***
+0.68*
+0.53*  
+ 
+(4.03)
+(3.61)
+(1.87)
+(3.08)
+(1.70)
+(1.82)
+(2.67)
+(1.85)
+(1.69)  
+ FullyHidden
+3.42***
+2.32***
+1.11**
+2.35***
+1.29**
+1.06**
+2.46***
+1.38***
+1.09*** 
+ 
+(4.41)
+(4.89)
+(2.16)
+(3.80)
+(2.56)
+(2.43)
+(3.94)
+(2.68)
+(2.59)  
+This table reports monthly calendar-time portfolio returns on funds’ connected stocks, sorted by an interaction dummy 
+indicating whether the fund manager and firm officer associated with each connected stock have interacted with each other’s 
+Facebook content (through likes, comments, or tags) within the one-year period preceding the fund’s investment in the stock 
+(‘‘Interacted’’), or whether no such interaction was recorded (‘‘Non-Interacted’’). Additionally, portfolios are sorted by levels of
+FriendshipVisibility, which include the expressions FullyVisible, FirmOfcrHides, FundMgrHides, and FullyHidden. To construct the 
+connected portfolios for this analysis, we use the portfolio construction approach detailed in Table 6. Long-Short (LS) is the 
+monthly return of a zero-cost strategy that buys the Interacted portfolio and shorts the Non-Interacted portfolio. We report 
+raw returns, four-factor alphas, and DGTW-adjusted returns in the period 2005–2020. 𝑡-statistics appear in brackets beneath 
+each estimate. Statistical significance at the 10%, 5%, and 1% levels is indicated by *, **, and ***, respectively.
+Table 10
+Returns on connected stocks around news.
+ 
+Connected Held
+Non-Connected Held
+Connected Not-Held
+Long CH/
+Long CH/
+ 
+(CH)
+(NCH)
+(CNH)
+Short NCH
+Short CNH
+ 
+News
+No News
+News
+No News
+News
+No News
+News
+No News
+News
+No News 
+ FullyVisible
+0.031*
+0.006
+0.019***
+0.004
+0.019**
+−0.006
+0.012
+0.002
+0.012
+0.011
+ 
+ 
+(1.68)
+(0.76)
+(3.94)
+(1.08)
+(2.21)
+(−0.75)
+(1.02)
+(0.24)
+(1.04)
+(1.21)
+ 
+ FirmOfcrHides
+0.035*
+0.006
+0.019***
+0.004
+0.019**
+−0.005
+0.016
+0.002
+0.016
+0.011
+ 
+ 
+(1.80)
+(0.77)
+(3.96)
+(1.08)
+(2.20)
+(−0.72)
+(1.32)
+(0.25)
+(1.44)
+(1.17)
+ 
+ FundMgrHides
+0.043**
+0.007
+0.019***
+0.004
+0.020***
+−0.009
+0.024**
+0.002
+0.023*
+0.017*  
+ 
+(2.06)
+(0.79)
+(3.92)
+(1.08)
+(2.69)
+(−1.20)
+(2.04)
+(0.29)
+(1.94)
+(1.70)
+ 
+ FullyHidden
+0.060***
+0.005
+0.020***
+0.004
+0.023*
+−0.005
+0.040***
+0.001
+0.037**
+0.011
+ 
+ 
+(2.87)
+(0.48)
+(4.27)
+(1.08)
+(1.67)
+(−0.44)
+(2.69)
+(0.08)
+(2.39)
+(0.81)
+ 
+This table reports daily calendar-time portfolio returns on corporate news for the funds’ Connected Held (CH), Non-Connected Held (NCH), 
+and Connected Not-Held (CNH) portfolios. Portfolios are sorted by levels of FriendshipVisibility, which include the expressions FullyVisible,
+FirmOfcrHides, FundMgrHides, and FullyHidden. To construct the CH, NCH, and CNH portfolios for this analysis, we modify the portfolio 
+construction approaches used in Tables 6 and 8 by assigning to each stock in each fund portfolio its daily return earned in the following 
+month. For each fund-day observation, we sort the stocks in each fund portfolio into ‘‘News’’ and ‘‘No News’’ portfolios based on whether the 
+given stock was the subject of a news announcement on that particular day. We weight stocks in the Connected Held/Non-Connected Held 
+portfolios by their dollar values and those in the Connected Not-Held portfolios by their respective market capitalizations. We then compute 
+value-weighted returns by aggregating across funds, weighting each fund portfolio return by the fund’s total net asset value in the subportfolio. 
+Long/Short represents the daily return of a zero-cost portfolio that buys the Connected Held portfolio and either sells short the Non-Connected 
+Held portfolio or sells short the Connected Not-Held portfolio. We report daily four-factor alphas in the period 2000–2020. 𝑡-statistics appear 
+in brackets beneath each estimate. Statistical significance at the 10%, 5%, and 1% levels is indicated by *, **, and ***, respectively.
+key role (i.e., news items with an ‘‘event relevance’’ score of 100). To 
+remove duplicate news reports, we isolate the first news item in chains 
+of items that relate to the same subject (using RavenPack’s ‘‘event 
+similarity days’’ analytic). Following these preliminary data cleaning 
+steps, we use the CUSIP bridge provided by RavenPack’s entity mapping 
+file to merge RavenPack’s firm identifier (rp entity id) with CRSP’s firm 
+identifier (permco) and map the firms’ news items to their respective 
+stock returns. We align news items and stock returns using the New 
+York Stock Exchange trading calendar. In this procedure, we follow 
+a close-to-close rationale in accordance with CRSP’s return formula.18 
+Because the RavenPack data begin in 2000, the following analysis runs 
+from January 2000 to December 2020.
+Table 10 compares the average daily performance of the Connected 
+Held, Non-Connected Held, and Connected Not-Held portfolios across 
+18 For example, if a news item becomes public during Friday evening after-
+market hours, we map it to the stock’s Monday return to take into account 
+that CRSP-reported daily stock returns are calculated based on a stock’s closing 
+price on a given day relative to the most recent valid closing price prior to 
+this day.
+all levels of FriendshipVisibility on days with and without news an-
+nouncements. Initially, we observe that the Connected Held portfolio 
+earns significantly positive returns around news announcements for 
+all levels of FriendshipVisibility, with the most pronounced results in 
+the FullyHidden specification, showing a daily four-factor alpha of six 
+basis points (significant at the 1% level). In contrast, returns for the 
+Connected Held portfolio on non-news days are small and statisti-
+cally indistinguishable from zero, suggesting that the observed return 
+premium is primarily generated on days with news headlines.
+This pattern is also evident for stocks in the Non-Connected Held 
+portfolio. Notably, a long-short strategy that buys connected stocks in 
+the FullyVisible specification on news days and sells short non-connected 
+stocks yields an insignificant daily four-factor alpha of 1.2 basis points, 
+which more than triples to four basis points in point estimate (sig-
+nificant at the 1% level) in the FullyHidden specification. A similar 
+trend is observed in the Connected Not-Held portfolio, with positive 
+returns concentrated around news announcements. However, a long-
+short portfolio strategy that buys the Connected Held portfolio in the
+FullyHidden specification and sells short Connected Not-Held portfolio 
+reveals that the Connected Held portfolio experiences significantly 
+greater news returns on average than the Connected Not-Held portfolio, 
+corroborating the evidence presented in Section 2.3.
+Journal of Financial Economics 178 (2026) 104225 
+16 
+M. Ammann et al.
+Table 11
+Returns by news type, expertise, and analyst coverage.
+ 
+FullyHidden
+Non-Connected
+Long-Short 
+ Panel A: News Event Type
+ Analyst Ratings
+0.046
+−0.009
+0.055
+ 
+ 
+(0.53)
+(−0.13)
+(0.56)
+ 
+ Earnings and Revenues
+0.234**
+0.030
+0.203**
+ 
+ 
+(2.27)
+(0.21)
+(2.26)
+ 
+ Capital Structure Changes
+0.022
+0.029
+−0.007
+ 
+ 
+(0.21)
+(1.21)
+(−0.08)
+ 
+ Marketing and Investor Relations
+0.076
+0.008
+0.068
+ 
+ 
+(1.24)
+(0.40)
+(1.22)
+ 
+ Mergers & Acquisitions
+0.574***
+0.184***
+0.391***  
+ 
+(4.80)
+(6.98)
+(3.37)
+ 
+ Other News
+0.030
+0.000
+0.030
+ 
+ 
+(0.85)
+(0.07)
+(0.87)
+ 
+ Panel B: Firm Officer Expertise
+ 
+CEO
+Earnings and Revenues
+0.371
+0.015
+0.356
+ 
+ 
+(1.63)
+(0.13)
+(1.62)
+ 
+ 
+Mergers & Acquisitions
+0.422*
+0.103
+0.319*
+ 
+ 
+(1.94)
+(1.16)
+(1.74)
+ 
+ 
+CFO
+Earnings and Revenues
+0.683**
+0.007
+0.676**
+ 
+ 
+(2.31)
+(0.09)
+(2.27)
+ 
+ 
+Mergers & Acquisitions
+1.083***
+0.208
+0.875**
+ 
+ 
+(2.59)
+(1.38)
+(2.00)
+ 
+ 
+Other C-suite
+Earnings and Revenues
+0.068
+0.010
+0.058
+ 
+ 
+(0.59)
+(0.18)
+(0.56)
+ 
+ 
+Mergers & Acquisitions
+0.108*
+0.099
+0.008
+ 
+ 
+(1.74)
+(1.53)
+(0.20)
+ 
+ Panel C: Analyst Coverage
+ High Coverage
+0.883*
+−0.037
+0.921**
+ 
+ 
+(1.90)
+(−0.45)
+(1.98)
+ 
+ Low Coverage
+1.410***
+−0.023
+1.433***  
+ 
+(3.51)
+(−0.43)
+(3.57)
+ 
+This table reports daily four-factor alphas for portfolios of stocks held by connected fund managers, where the underlying connection falls into 
+the FullyHidden specification, non-connected stocks, and the corresponding long–short spread. Panels A and B build on the portfolio construction 
+approach in Table 10 by splitting returns based on firm-level news events. Panel A reports alphas by news category: Analyst Ratings, Earnings 
+and Revenues, Capital Structure Changes, Marketing and Investor Relations, Mergers & Acquisitions, and Other News. Panel B focuses solely on 
+Earnings and Revenues and M&A events, further broken out by selected executive roles—CEO, CFO, Other C-Suite—of the firm officer to whom 
+the fund manager is connected. Panel C replicates the test from Table 6, dividing the FullyHidden portfolio by high versus low analyst coverage. 
+We report daily four-factor alphas in the period 2000–2020. 𝑡-statistics appear in brackets beneath each estimate. Statistical significance at the 
+10%, 5%, and 1% levels is indicated by *, **, and ***, respectively.
+3.2. Finer exploration of firm events
+To further probe the nature of the informational advantage con-
+veyed by hidden connections, we now examine which types of cor-
+porate events primarily drive the premia observed in the FullyHidden
+portfolios. Building on the methodology from Section 3.1, we classify 
+firm-specific news according to six major event categories: (i) Earn-
+ings and Revenues, (ii) Mergers and Acquisitions (M&A), (iii) Capital 
+Structure Changes, (iv) Marketing and Investor Relations, (v) Analyst 
+Ratings, and (vi) Other News. This classification follows Jeon et al. 
+(2022), and relies on RavenPack’s event tagging framework. For each 
+category, we compute daily four-factor alphas for three portfolios: 
+stocks held by fund managers connected through FullyHidden ties, 
+non-connected stocks, and the resulting long–short spread.
+As reported in Panel A of Table 11, the strongest effects arise around 
+earnings and M&A events. On earnings days, the long–short portfolio 
+earns an economically meaningful and statistically significant alpha of 
+20 basis points (t-stat = 2.26). On M&A days, the effect is even more 
+pronounced, with a daily alpha of 39 basis points (t-stat = 3.37). These 
+patterns suggest that FullyHidden connections are particularly valuable 
+during major corporate events where informational asymmetries are 
+likely to be most pronounced. By contrast, return differentials are small 
+and statistically insignificant on analyst rating days, capital structure 
+announcements, and other residual news types.
+3.3. Linking specific firm-role connections to firm events
+Firm-level connections of fund managers may vary in the extent to 
+which they provide informational advantages. We continue our focus 
+on FullyHidden connections to examine whether the value of a hidden 
+tie depends on the specific role of the connected firm officer. Certain 
+positions—such as the CEO or CFO—may provide closer proximity 
+to strategically or financially relevant information than others. To 
+investigate this, we identify the role of the connected firm officer using 
+the data available from BoardEx and sort returns by firm officer role 
+around the two types of corporate events that previously exhibited the 
+strongest return effects: earnings announcements and M&A activity (see 
+Section 3.2).
+Panel B of Table 11 shows that ties to CEOs and CFOs are especially 
+informative. FullyHidden connections to CFOs, in particular, yield the 
+highest long-short alphas around both event types—67 basis points 
+on earnings days (t-stat = 2.27) and 88 basis points on M&A days 
+(t-stat = 2.00). This aligns with CFOs playing a central role in financial 
+disclosures and corporate transactions. Ties to CEOs also yield eco-
+nomically meaningful effects, though somewhat smaller in magnitude. 
+By contrast, connections to other C-suite officers translate into more 
+modest or insignificant return differentials. These results suggest that 
+the value of hidden connections is shaped not only by whether the 
+tie is concealed but also by the organizational role of the connected 
+individual within the firm.
+Journal of Financial Economics 178 (2026) 104225 
+17 
+M. Ammann et al.
+Table 12
+Cross-sectional Fama–Macbeth regressions.
+ 
+FullyVisible
+FirmOfcrHides
+FundMgrHides
+FullyHidden 
+ Constant
+0.0104***
+0.0108***
+0.0124***
+0.0111***  
+ 
+[0.0038]
+[0.0038]
+[0.0038]
+[0.0039]
+ 
+ 𝛽(DiffWeight)
+0.0142
+0.0152*
+0.0171**
+0.0228***  
+ 
+[0.0088]
+[0.0089]
+[0.0085]
+[0.0083]
+ 
+ ME
+−0.0006**
+−0.0006**
+−0.0008**
+−0.0007**  
+ 
+[0.0003]
+[0.0003]
+[0.0003]
+[0.0003]
+ 
+ BM
+0.0005
+0.0005
+0.0005*
+0.0004
+ 
+ 
+[0.0003]
+[0.0003]
+[0.0003]
+[0.0003]
+ 
+ MOM
+0.0002
+0.0003
+0.0002
+0.0002
+ 
+ 
+[0.0023]
+[0.0023]
+[0.0023]
+[0.0024]
+ 
+ STR
+−0.0238***
+−0.0240***
+−0.0230***
+−0.0238*** 
+ 
+[0.0057]
+[0.0057]
+[0.0057]
+[0.0058]
+ 
+ IMOM
+0.0846***
+0.0830***
+0.0826***
+0.0839***  
+ 
+[0.0187]
+[0.0186]
+[0.0190]
+[0.0190]
+ 
+ SUE
+−0.0009
+−0.0010
+−0.0006
+−0.0011
+ 
+ 
+[0.0012]
+[0.0013]
+[0.0012]
+[0.0013]
+ 
+ Adj. R Squared
+0.0680
+0.0702
+0.0783
+0.0814
+ 
+ N
+1,234,981
+1,234,612
+1,235,862
+1,233,925  
+ N Months
+290
+290
+289
+288
+ 
+This table reports risk premium estimates from monthly cross-sectional (Fama and 
+MacBeth, 1973) regressions for the period 1984–2020. The main independent variable 
+of interest is 𝛽(DiffWeight), estimated from a rolling regression of 𝑟𝑘,𝑡 on DiffWeight 𝑘,𝑡−1. 
+DiffWeight 𝑘,𝑡 is the difference between the average weight that Facebook-connected 
+funds allocate to a given stock and the average weight that all other funds allocate to 
+the stock. Other independent variables include firm size (ME), book-to-market ratio
+(BM), momentum (MOM), short-term reversal (STR), industry momentum (IMOM), 
+and standardized unexpected earnings (SUE). The dependent variable in the Fama-
+MacBeth regressions is next month’s stock excess returns (ExcessRet), calculated as 
+raw return minus the risk-free rate. All dependent and independent variables are 
+winsorized at the 1st and 99th percentile each month. Regressions are run separately 
+for levels of FriendshipVisibility, which include the categories FullyVisible, FirmOfcrHides,
+FundMgrHides, and FullyHidden. Standard errors are adjusted for clustering at the period 
+level and are reported in brackets. Statistical significance at the 10%, 5%, and 1% levels 
+is indicated by *, **, and ***, respectively.
+3.4. Analyst coverage
+To examine whether the effect of hidden connections depends on 
+the availability of external information, we examine variation by ana-
+lyst coverage. The underlying logic is that if fully hidden ties convey in-
+cremental information, their return effects should be most pronounced 
+when alternative sources are scarce. We obtain quarterly analyst cov-
+erage from IBES and compute the median number of analysts covering 
+each stock in each month. Using the global median across all firm-
+months as a cutoff, we split the FullyHidden portfolio into high- and 
+low-coverage subgroups. Panel C of Table 11 shows that the effect is 
+indeed stronger in low-coverage environments: the long-short return 
+spread is 143 bps per month (t-stat = 3.57) in the low-coverage group 
+compared with 92 bps (t-stat = 1.98) in the high-coverage group. While 
+the magnitude remains economically meaningful even under greater 
+analyst scrutiny, the difference is consistent with hidden ties being most 
+valuable when traditional information channels are weaker.
+3.5. SEC insider trading actions
+Given the economic significance of hidden connections—particularly 
+those classified as FullyHidden—and the abnormal returns associated 
+with them, we examine whether such connections are also linked to 
+regulatory enforcement. To this end, we compile the full universe of 
+administrative proceedings and litigation releases published by the 
+U.S. Securities and Exchange Commission (SEC) between 1996 and 
+2024, encompassing over 29,800 individual cases.19 We match this 
+enforcement dataset to our sample of fund managers using names and 
+19 Data obtained from SEC Administrative Proceedings and SEC Litigation
+Releases.
+additional identifying details to detect any individuals named in insider 
+trading investigations or legal actions. Using this matched sample, 
+we find that fund managers subject to SEC enforcement actions are 
+significantly more likely to conceal their Facebook friendships. Specifi-
+cally, 71% of managers facing SEC charges hide their Facebook friends 
+lists, compared to 44% among the broader manager population—an in-
+crease of over 60% that is statistically significant (t-stat = 3.14). These 
+findings further support our interpretation that Facebook connection 
+concealment is systematically associated with elevated insider trading 
+risk.
+To further contextualize our findings, we build on Ahern (2017), 
+who documents that insider information frequently travels through 
+strong social ties, and that such ties are associated with sizable ab-
+normal trading gains. The underlying dataset, constructed from en-
+forcement filings involving individuals prosecuted by the SEC or the 
+Department of Justice (DOJ), records 1,139 insider tips exchanged 
+among 622 individuals during the period 1996–2013. These records 
+were augmented by the author to include, where available, detailed 
+biographical information such as full names, birth years, educational 
+histories, graduation dates, occupational backgrounds, and places of 
+residence. Drawing on this data, we first exclude observations in which 
+the identities of either the tipper or the tippee in a co-conspirator pair 
+are unknown. We then follow the procedure outlined in Section 1.2 to 
+identify these individuals’ Facebook profiles. After these data cleaning 
+steps, 399 individuals remain, of whom we are able to identify 157 
+on Facebook.20 We find that 64% of the pairs in which both tipper and 
+tippee are Facebook-identified in Ahern (2017)’s data appear connected 
+on the platform. More broadly, 72% of those identified on Facebook 
+hide their friends lists, exhibiting concealment behavior strikingly simi-
+lar to that observed in our main sample. This exercise provides valuable 
+external validation from an enforcement setting, reinforcing our in-
+terpretation of FriendshipVisibility as a meaningful marker for insider 
+trading risk—and more generally, as a proxy for information-sensitive 
+relationship management in financially sensitive contexts.
+4. Robustness
+4.1. Alternative stock-level performance test
+To assess the robustness of our main findings in Section 2, we 
+complement the portfolio analysis with an alternative stock-level per-
+formance test. Specifically, we implement multivariate cross-sectional 
+Fama-MacBeth regressions (Fama and MacBeth, 1973) to evaluate 
+the persistence of abnormal returns associated with fund managers’ 
+hiddenly-connected stocks. This approach enables us to control for 
+a range of firm- and stock-level characteristics that are known to 
+influence returns and are widely used in the asset pricing literature. 
+These control variables include firm size (ME), book-to-market ratio
+(BM), momentum (MOM), short-term reversal (STR), industry mo-
+mentum (IMOM), and standardized unexpected earnings (SUE). The 
+dependent variable in the Fama-MacBeth regressions is the stock’s 
+excess return in the subsequent month. We calculate our primary 
+regressor, DiffWeight𝑘,𝑡, for each month 𝑡 and stock 𝑘 as the difference 
+between the average weight that Facebook-connected funds allocate to 
+the stock and the average weight allocated by all other funds. To ensure 
+comparability across models, we standardize DiffWeight𝑘,𝑡 by dividing it 
+by its cross-sectional standard deviation each month. We lag DiffWeight
+by one month when forming the rolling betas; thus 𝛽(DiffWeight) is 
+estimated using information through 𝑡-1 and is priced against 𝑟𝑘,𝑡.
+Table 12 presents the regression coefficient estimates for the av-
+erage risk premia. The sample covers 1.24 million stock-month ob-
+servations across 290 months (1984–2020). Control variables load 
+20 The lower identification rate relative to our main sample likely reflects 
+the fact that individuals in Ahern (2017)’s sample are, on average, nine years 
+older.
+Journal of Financial Economics 178 (2026) 104225 
+18 
+M. Ammann et al.
+Table 13
+Characteristics by Facebook identification and friends list visibility.
+ 
+Panel A
+Panel B
+ 
+FB-identified
+Non-identified
+Diff.
+Hidden Friends
+Public Friends
+Diff.
+ 
+Mean
+SD
+Mean
+SD
+Mean
+SD
+Mean
+SD
+ 
+ 
+Fund Managers
+Age
+44.43
+3.53
+47.67
+2.29
+−3.25***
+43.52
+3.91
+44.98
+3.41
+−1.45*  
+ 
+Tenure
+4.59
+1.24
+5.37
+1.11
+−0.78***
+4.32
+1.27
+4.77
+1.25
+−0.46
+ 
+ 
+Male
+0.86
+0.02
+0.93
+0.02
+−0.06***
+0.86
+0.05
+0.87
+0.02
+−0.01
+ 
+ 
+CFA
+0.56
+0.06
+0.54
+0.07
+0.02
+0.58
+0.08
+0.56
+0.07
+0.02
+ 
+ 
+MBA
+0.61
+0.05
+0.59
+0.04
+0.02*
+0.60
+0.06
+0.61
+0.04
+−0.01
+ 
+ 
+Ivy League
+0.33
+0.09
+0.30
+0.09
+0.02
+0.33
+0.11
+0.32
+0.09
+0.01
+ 
+ 
+Growth Fund
+0.41
+0.07
+0.38
+0.08
+0.03
+0.39
+0.06
+0.41
+0.08
+−0.02
+ 
+ 
+Value Fund
+0.20
+0.03
+0.22
+0.07
+−0.02
+0.21
+0.05
+0.20
+0.05
+0.01
+ 
+ 
+Small-Cap Fund
+0.21
+0.04
+0.19
+0.07
+0.02
+0.22
+0.14
+0.20
+0.04
+0.02
+ 
+ 
+Large-Cap Fund
+0.50
+0.03
+0.52
+0.08
+−0.02
+0.51
+0.08
+0.49
+0.04
+0.01
+ 
+ 
+Fund TNA (bn)
+1.29
+1.01
+0.98
+0.60
+0.31
+1.45
+1.13
+1.18
+0.93
+0.27
+ 
+ 
+Firm Officers
+Age
+47.50
+4.86
+53.68
+2.18
+−6.18***
+46.01
+5.62
+48.39
+4.77
+−2.38*  
+ 
+Tenure
+5.42
+0.65
+6.56
+0.66
+−1.14***
+4.94
+0.70
+5.72
+0.69
+−0.78*** 
+ 
+Male
+0.80
+0.07
+0.85
+0.04
+−0.05***
+0.78
+0.09
+0.81
+0.06
+−0.04**  
+ 
+MBA
+0.28
+0.04
+0.27
+0.01
+0.01
+0.26
+0.04
+0.28
+0.05
+−0.02
+ 
+ 
+Ivy League
+0.23
+0.07
+0.21
+0.06
+0.02
+0.23
+0.10
+0.23
+0.07
+0.00
+ 
+ 
+Firm Size (bn)
+47.03
+26.43
+39.50
+20.02
+7.53
+50.23
+30.50
+43.87
+22.95
+6.36
+ 
+This table presents demographic and organizational characteristics of fund managers (upper panel) and firm officers (lower panel). Panel A compares individuals by Facebook 
+identification status (FB-Identified vs. Non-Identified), and Panel B compares individuals with hidden versus public friends lists. Fund managers and firm officers are evaluated on 
+shared characteristics including age, experience, tenure, gender, MBA, and Ivy League education. Fund manager characteristics additionally include CFA designation and total net 
+assets (TNA) managed, while firm officer characteristics include firm size. Observations are weighted by fund-month for fund managers and by fund-month-stock for firm officers, 
+covering data spanning from 1984 to 2020. The table reports means, standard deviations (SD), and group differences (Diff.), with significance assessed using t-tests. Statistical 
+significance at the 10%, 5%, and 1% levels is indicated by *, **, and ***, respectively.
+with the expected signs from the literature: smaller firms earn higher 
+next-month returns, short-term reversals are negative, and industry 
+momentum is strongly positive, with value and momentum loading 
+with the correct sign, but insignificant during our sample. Corroborat-
+ing our findings in Table 6, we observe that the outperformance on 
+Facebook-connected stocks increases with the level of FriendshipVisi-
+bility. For connected stocks in the FullyVisible category, the coefficient 
+estimate of 𝛽(DiffWeight) is insignificant. However, we find significant 
+coefficients of 152 and 171 basis points for stocks in the FundMgrHides
+and FirmOfcrHides categories, respectively. For stocks in the FullyHidden
+category, the coefficient estimate indicates that a one-unit higher beta 
+to DiffWeight predicts an increase in monthly excess returns of 228 basis 
+points.
+Overall, our multivariate Fama-MacBeth regression analyses pro-
+vide corroborating evidence to the portfolio results. Namely, that now 
+even controlling for known return determinants, hidden connections 
+appear to result in significantly outperforming trades for fund man-
+agers. Moreover, these hidden connections afford a substantively larger 
+return premium than publicly visible connections, underscoring the 
+importance of concealed social ties in driving investment outcomes.
+4.2. Comparison of fund manager and firm officer characteristics
+Throughout the paper we examine the portfolio decisions of fund 
+managers in light of their Facebook friendships with firm officers—
+paying particular attention to cases in which both individuals hide their 
+friends list. Our analysis relies on the subset of individuals we can 
+match on Facebook. Although we document robust patterns in trading 
+behavior and information value, it remains possible that systematic 
+differences exist between individuals identified on Facebook and those 
+who remain unidentified. Across the full 1984–2020 sample we locate 
+the Facebook profiles for 41.8% of the 10,036 distinct fund managers 
+and for 36.1% of the 281,829 distinct firm officers in our benchmark 
+universes (see Fig. 2). Table 13 uses these coverage groups in two ways: 
+it first compares Facebook-identified and non-identified individuals, 
+and—within the matched sample—contrasts those with hidden friends 
+lists to those with public friends lists.
+Panel A of Table 13 shows that Facebook-identified fund managers 
+are largely similar to their non-identified peers across a range of demo-
+graphic and portfolio characteristics. The only significant differences 
+are that Facebook-identified fund managers are modestly younger on 
+average (hence slightly shorter tenure) and include a higher share of 
+females (roughly seven percentage points). Otherwise, the two groups 
+are comparable in terms of portfolio sizes (TNA), prevalence of MBA, 
+CFA, and Ivy League degrees, and the distribution of growth, value, 
+small-cap, and large-cap funds. Fig. 5 corroborates this similarity: the 
+value-weighted four-factor alphas of funds run by Facebook-identified 
+and non-identified fund managers move almost one-for-one, with a 
+performance correlation of 97%. However, a specific subset of stocks—
+those in the FullyHidden category—shows significant outperformance 
+when held by Facebook-identified managers, highlighting an area of 
+notable divergence. The same pattern of characteristics emerges for 
+firm officers. Facebook-identified firm officers are slightly younger 
+(with shorter tenure) and modestly less male than their non-identified 
+counterparts, but they do not differ in MBA or Ivy-League incidence, 
+and their firms are only marginally larger on average. All other mea-
+sures between Facebook-identified and non-identified firm officers are 
+comparable across the two groups.
+Panel B of Table 13 turns to exploring the characteristics of fund 
+managers and firm officers with hidden friends lists versus those with 
+public friends lists. Fund managers with hidden friends lists are nearly 
+identical to those with public friends across all demographic and port-
+folio characteristics. The lone marginal gap is in age—a difference of 
+1.45 years (t-stat = 1.71)—which does not translate into meaningful 
+implications for tenure, experience, or investment mandate. In the 
+remaining portfolio dimensions, the groups are statistically indistin-
+guishable. Firm officers who hide their friends lists show the same 
+small age and gender differences, but are otherwise equivalent to their 
+public-list counterparts.21
+Although fund managers and firm officers with hidden friends lists 
+do not differ observably from their peers—and the funds’ overall perfor-
+mance outside of connected stocks is not unusually strong—one might 
+worry that friendships are formed or maintained more intensely after 
+21 For those characteristics that are static across time (CFA, MBA, Gender, 
+Ivy), we have also estimated this table at a purely cross-sectional level. The 
+results are nearly identical; the only notable difference is that Facebook-
+identified fund managers and firms officers are slightly less likely to be male 
+than those who are not Facebook-identified.
+Journal of Financial Economics 178 (2026) 104225 
+19 
+M. Ammann et al.
+Fig. 5. Performance of Facebook-identified vs. non-identified funds.
+This figure contrasts the annual value-weighted four-factor alpha of Facebook-identified funds (dashed line) versus all other, non-identified funds in the benchmark 
+universe of mutual funds defined in Section 1.4 (solid line) over the 1984–2020 sample period. A fund is ‘‘Facebook-identified’’ if it is managed by a fund manager 
+who was identified on Facebook. Each plotted point is obtained by first estimating, for each fund in each month, a four-factor alpha from a rolling 36-month 
+regression (requiring at least 24 months of valid return observations) of the fund’s excess return (net return minus the risk-free rate) on contemporaneous 
+market excess return, SMB, HML, and momentum factors. These regressions use monthly net returns and total net assets (TNA) from MS Direct, together with 
+factor returns from the Fama–French data library. The resulting monthly fund-level alpha is then weighted by the fund’s one-month-lagged TNA to form two 
+subportfolio aggregates (Facebook-identified vs. non-identified); these value-weighted alphas are summed to yield each subportfolio’s monthly aggregate. Finally, 
+for each calendar year, we take the simple average of its twelve monthly aggregate alphas to obtain that year’s annual value-weighted alpha for each group. 
+In the chart, the vertical axis measures annual alpha (in decimal form), and the horizontal axis measures calendar year; the dashed and solid lines trace the 
+trajectories of Facebook-identified and non-identified funds, respectively.
+good performance (reverse causality). Several pieces of evidence argue 
+against this. First, Table 8 demonstrates that fund managers exhibit 
+timing ability, suggesting that they know when to hold connected 
+stocks poised to outperform and when to sell the others, pointing to 
+an information-flow channel rather than an ex-post link. Second, Table 
+9 in Section 3.1 shows that returns are significantly larger following 
+interactions with firm officers, indicating that hidden ties are being 
+used contemporaneously rather than being ex-post friendship links. 
+Together, these findings suggest that the abnormal returns associated 
+with hidden Facebook friendships are not explained by observable 
+demographics or simple reverse-causality stories.
+4.3. Stronger results in post-inception period
+Although Facebook was launched in 2004, the data that we observe 
+extends back to 1984, enabling us to capture many long-standing 
+relationships between fund managers and firm officers. For example, 
+we locate a fund manager in a 1977 high-school graduation photograph 
+alongside a friend who would later become the board chair of a firm 
+whose stock she would eventually trade with notable success. In this 
+sense, Facebook supplies a footprint that allows us to uncover and 
+document these deeply rooted personal links. Nonetheless, a potential 
+concern is that among the fund managers active in the earlier portion 
+of our sample period (prior to Facebook’s launch in 2004), we are 
+only able to identify individuals who survived long enough and were 
+sufficiently skilled to remain in the industry through 2010, 2015, 
+and beyond—potentially introducing selection bias. However, Table 
+13 eases this worry, showing that Facebook-identified fund managers 
+are indistinguishable from their peers on all observable characteristics. 
+Moreover, throughout our analyses, we find no evidence that Facebook-
+identified fund managers outperform their peers on average. Rather, 
+they perform curiously (and robustly) well on their hiddenly-connected 
+stocks relative to their other holdings. In Table 14, we take this analysis 
+one step further by conducting an additional robustness test that splits 
+the sample into pre- and post-2004 sub-periods. This comparison is 
+designed to assess whether look-ahead or survivorship effects might 
+cause the earlier period to appear stronger. Instead, the opposite holds: 
+the effects are more pronounced in the post-2004 sub-period, when 
+our Facebook-identified coverage expands to include 40% of all fund 
+managers. This finding is reassuring, as it empirically demonstrates that 
+the strength of our results increases in tandem with the expansion of 
+the sample’s depth and breadth.
+4.4. Replication with index funds
+As a final robustness check, we conduct a falsification test using 
+index funds. Naturally, our findings imply that the beneficial effects of 
+hidden connections between fund managers and firm officers should 
+be confined to actively managed funds, where managers exercise dis-
+cretion in stock selection. In contrast, index funds—which follow pas-
+sive investment strategies—should not exhibit performance variation 
+related to FriendshipVisibility.
+To test this implication, we replicate the core performance analysis 
+from Table 6 using a sample of passively managed funds. We follow the 
+same procedures described in Sections 1.2 through 1.6 to select U.S.-
+domiciled U.S.-equity index mutual funds available in MS Direct and 
+to gather the data on fund managers, corresponding firm officers, and 
+any friendship ties between them. We identify index funds by using the 
+index fund flag in MS Direct and by scanning fund names for the terms 
+‘‘index’’ or ‘‘idx’’. This yields a sample of 434 index funds spanning the 
+period 1984 and 2020, averaging 115 funds per calendar quarter and 
+totaling 34,003 fund-month observations. These funds are managed by 
+677 distinct fund managers. Among these fund managers, we identify 
+284 individuals (41.9%) on Facebook, resulting in a final sample of 385 
+funds and 24,587 fund-month observations.
+Using this dataset, we construct portfolios of connected and non-
+connected stocks, sorting these on levels of FriendshipVisibility. As 
+shown in Table 15, we find no significant return differentials across 
+those levels. Specifically, four-factor alphas are statistically insignifi-
+cant for all expressions of this variable. The absence of performance 
+Journal of Financial Economics 178 (2026) 104225 
+20 
+M. Ammann et al.
+Table 14
+Returns before and after Facebook’s inception.
+ 
+Pre-Facebook four-factor alpha
+Post-Facebook four-factor alpha
+ 
+Connected
+Non-Conn.
+LS
+Connected
+Non-Conn.
+LS
+ 
+ FullyVisible
+0.13
+0.04
+0.08
+0.09
+−0.01
+0.10
+ 
+ 
+(0.26)
+(0.08)
+(0.21)
+(0.47)
+(−0.18)
+(0.49)  
+ FirmOfcrHides
+0.27
+0.01
+0.26
+0.34
+−0.01
+0.36
+ 
+ 
+(0.68)
+(0.35)
+(0.67)
+(0.82)
+(−0.39)
+(0.84)  
+ FundMgrHides
+0.49*
+0.02
+0.47*
+0.79**
+−0.01
+0.81**  
+ 
+(1.73)
+(0.18)
+(1.70)
+(1.99)
+(−0.20)
+(2.03)  
+ FullyHidden
+1.21**
+0.01
+1.19**
+1.57***
+−0.01
+1.58*** 
+ 
+(2.15)
+(0.06)
+(2.12)
+(3.76)
+(−0.12)
+(3.79)  
+This table reports monthly calendar-time portfolio returns for connected and non-connected holdings of mutual funds, evaluated separately for 
+the pre-Facebook period (1984–2003) and a post-Facebook period (2004–2020), split around Facebook’s inception in February 2004. Portfolios 
+are sorted by levels of FriendshipVisibility, which include the expressions FullyVisible, FirmOfcrHides, FundMgrHides, and FullyHidden. Portfolios 
+are constructed according to the approach detailed in Table 6. Long-Short (LS) is the monthly return of a zero-cost strategy that buys the 
+Connected portfolio and shorts the Non-Connected portfolio. We report four-factor alphas for each sub-sample. 𝑡-statistics appear in brackets 
+beneath each estimate. Statistical significance at the 10%, 5%, and 1% levels is indicated by *, **, and ***, respectively.
+Table 15
+Returns on connected stocks of index funds.
+ 
+Raw Return
+Four-Factor Alpha
+ 
+Connected
+Non-Conn.
+LS
+Connected
+Non-Conn.
+LS
+ 
+ FullyVisible
+0.87**
+0.88***
+−0.01
+−0.03
+0.03
+−0.06  
+ 
+(2.38)
+(3.33)
+(−0.09)
+(−0.25)
+(0.85)
+(−0.12) 
+ FirmOfcrHides
+0.84**
+0.82***
+0.02
+0.03
+−0.00
+0.03
+ 
+ 
+(2.34)
+(2.97)
+(0.12)
+(0.31)
+(−0.06)
+(0.28)  
+ FundMgrHides
+0.84**
+0.84***
+0.00
+0.01
+0.02
+−0.01  
+ 
+(2.36)
+(2.91)
+(0.08)
+(0.20)
+(0.66)
+(−0.09) 
+ FullyHidden
+0.88**
+0.86***
+0.02
+0.02
+0.02
+0.00
+ 
+ 
+(2.41)
+(2.79)
+(0.13)
+(0.19)
+(0.52)
+(0.11)  
+This table reports monthly calendar-time portfolio returns for connected and non-
+connected holdings of index funds. Portfolios are sorted by levels of FriendshipVisibility, 
+which include the expressions FullyVisible, FirmOfcrHides, FundMgrHides, and FullyHid-
+den. We construct the portfolios using the portfolio construction approach detailed in 
+Table 6. Long-Short (LS) is the monthly return of a zero-cost strategy that buys the 
+Connected portfolio and shorts the Non-Connected portfolio. We report raw returns and 
+four-factor alphas in the period 1984–2020. 𝑡-statistics appear in brackets beneath each 
+estimate. Statistical significance at the 10%, 5%, and 1% levels is indicated by *, **, 
+and ***, respectively.
+variation in index funds strengthens the interpretation that hidden 
+connections confer informational advantages, but only when fund 
+managers have the discretion to act on them.
+5. Conclusion
+This paper examines the trading performance associated with hid-
+den connections between fund managers and firm officers. Such ties 
+are suggestive of informed trading behavior and provide novel ev-
+idence consistent with insider trading. Our analysis draws on more 
+than 100,000 manually identified Facebook profiles and their 35 mil-
+lion friendship ties. Leveraging unique features of the platform, we 
+distinguish publicly observable friendships from those that are con-
+cealed. Trades linked to hidden connections earn the largest subsequent 
+returns, whereas visible ties convey little predictive power. The endoge-
+nous behavioral choice to hide connections proves more informative 
+than any previously documented, publicly observable network charac-
+teristic and emerges as the strongest single predictor of future stock 
+returns.
+Our results underscore that it is not merely the existence of social 
+connections, but their deliberate obscurity, that shapes the investment 
+decisions and outcomes we observe. The premium associated with 
+hidden ties remains robust and significant to the present day and 
+does not appear to reflect familiarity or selection biases. Instead, fund 
+managers exhibit a nuanced awareness of when to engage with or avoid 
+stocks linked to their concealed relationships. This effect persists across 
+industries, firm types, time periods, and investment styles, underscoring 
+its broad relevance.
+By illuminating the hidden dimensions of financial networks, this 
+paper advances understanding of how personal ties shape market be-
+havior. It emphasizes the need to look beyond publicly observable links 
+and to consider the concealment of relationships when assessing infor-
+mation flow, market efficiency, and compliance risk. Future research 
+should probe the mechanisms through which hidden ties transmit 
+information, the conditions that amplify their value, and the policy 
+challenges they pose. More broadly, the findings highlight the interplay 
+between strategic social behavior and market performance, offering 
+insights for academics, policymakers, and investors alike.
+CRediT authorship contribution statement
+Manuel Ammann: Writing – review & editing, Writing – origi-
+nal draft, Visualization, Validation, Supervision, Software, Resources, 
+Project administration, Methodology, Investigation, Funding acquisi-
+tion, Formal analysis, Data curation, Conceptualization. Alexander 
+Cochardt: Writing – review & editing, Writing – original draft, Vi-
+sualization, Validation, Supervision, Software, Resources, Project ad-
+ministration, Methodology, Investigation, Funding acquisition, Formal 
+analysis, Data curation, Conceptualization. Lauren Cohen: Writing – 
+review & editing, Writing – original draft, Visualization, Validation, 
+Supervision, Software, Resources, Project administration, Methodology, 
+Investigation, Funding acquisition, Formal analysis, Data curation, Con-
+ceptualization. Stephan Heller: Writing – review & editing, Writing 
+– original draft, Visualization, Validation, Supervision, Software, Re-
+sources, Project administration, Methodology, Investigation, Funding 
+acquisition, Formal analysis, Data curation, Conceptualization.
+Declaration of competing interest
+The authors declare that they have no known competing finan-
+cial interests or personal relationships that could have appeared to 
+influence the work reported in this paper.
+Appendix A. Supplementary data
+Supplementary material related to this article can be found online 
+at https://doi.org/10.1016/j.jfineco.2025.104225.
+Data availability
+The mendeley data is available at https://data.mendeley.com/data
+sets/tjjf39mjng/2.
+Journal of Financial Economics 178 (2026) 104225 
+21 
+M. Ammann et al.
+References
+Ahern, Kenneth R., 2017. Information networks: Evidence from illegal insider trading 
+tips. J. Finance Econ. 125 (1), 26–47.
+Cai, Ye, Sevilir, Merih, 2012. Board connections and M&A transactions. J. Finance Econ. 
+103 (2), 327–349.
+Carhart, Mark M., 1997. On persistence in mutual fund performance. J. Finance 52 
+(1), 57–82.
+Chen, Huaizhi, Cohen, Lauren H., Gurun, Umit, Lou, Dong, Malloy, Christopher J., 
+2020. IQ from IP: Simplifying search in portfolio choice. J. Finance Econ. 138 (1), 
+118–137.
+Cline, Brandon N., Posylnaya, Valeriya V., 2019. Illegal insider trading: Commission 
+and SEC detection. J. Corp. Financ. 58, 247–269.
+Cohen, Lauren H., Frazzini, Andrea, Malloy, Christopher J., 2008. The small world of 
+investing: Board connections and mutual fund returns. J. Political Econ. 116 (5), 
+951–979.
+Cohen, Lauren H., Frazzini, Andrea, Malloy, Christopher J., 2010. Sell-side school ties. 
+J. Finance 65 (4), 1409–1437.
+Coval, Joshua D., Moskowitz, Tobias J., 2001. The geography of investment: Informed 
+trading and asset prices. J. Political Econ. 109 (4), 811–841.
+Cremers, K. J. Martijn, Petajisto, Antti, Zitzewitz, Eric W., 2013. Should benchmark 
+indices have alpha? Revisiting performance evaluation. Crit. Finance Rev. 2 (1), 
+1–98.
+Daniel, Kent, Grinblatt, Mark, Titman, Sheridan, Wermers, Russ, 1997. Measuring 
+mutual fund performance with characteristic-based benchmarks. J. Finance 52 (3), 
+1035–1058.
+Elton, Edwin J., Gruber, Martin J., Blake, Christopher R., 2011. Holdings data, security 
+returns, and the selection of superior mutual funds. J. Finance Quant. Anal. 46 (2), 
+341–367.
+Engelberg, Joseph, Gao, Pengjie, Parsons, Christopher A., 2012. Friends with money. 
+J. Finance Econ. 103 (1), 169–188.
+Engelberg, Joseph, Gao, Pengjie, Parsons, Christopher A., 2013. The price of a CEO’s 
+rolodex. Rev. Finance Stud. 26 (1), 79–114.
+Fama, Eugene F., French, Kenneth R., 1993. Common risk factors in the returns on 
+stocks and bonds. J. Finance Econ. 33 (1), 3–56.
+Fama, Eugene F., French, Kenneth R., 1997. Industry costs of equity. J. Finance Econ. 
+43 (2), 153–193.
+Fama, Eugene F., MacBeth, James D., 1973. Risk, return, and equilibrium: Empirical 
+tests. J. Political Econ. 81 (3), 607–636.
+Jagolinzer, Alan D., Larcker, David F., Ormazabal, Gaizka, Taylor, Daniel J., 2020. 
+Political connections and the informativeness of insider trades. J. Finance 75 (4), 
+1833–1876.
+Jeon, Yoontae, McCurdy, Thomas H., Zhao, Xiaofei, 2022. News as sources of jumps 
+in stock returns: Evidence from 21 million news articles for 9000 companies. J. 
+Finance Econ. 145 (2), 1–17.
+Massa, Massimo, Reuter, Jonathan, Zitzewitz, Eric W., 2010. When should firms share 
+credit with employees? Evidence from anonymously managed mutual funds. J. 
+Finance Econ. 95 (3), 400–424.
+Patel, Saurin, Sarkissian, Sergei, 2017. To group or not to group? Evidence from mutual 
+fund databases. J. Finance Quant. Anal. 52 (5), 1989–2021.
+Pool, Veronika K., Stoffman, Noah, Yonker, Scott E., 2015. The people in your 
+neighborhood: Social interactions and mutual fund portfolios. J. Finance 70 (6), 
+2679–2732.
+Weller, Brian M., 2018. Does algorithmic trading reduce information acquisition? Rev. 
+Finance Stud. 31 (6), 2184–2226.
+Journal of Financial Economics 178 (2026) 104225 
+22 

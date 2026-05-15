@@ -1,0 +1,455 @@
+How to Write Academic 
+Papers in Finance– Module 2
+Bingfeng CEN
+SoF, SHUFE
+Overview
+Module 2: Writing Abstracts, Introduction, and
+Literature Review
+Abstract
+Exercises
+Introduction
+Literature Review
+Why Writing Matters
+Writing is Not Just "Writing Up" Research
+"Many economists falsely think of themselves as scientists who just 'write up' research. 
+We are not; we are primarily writers. Economics and finance papers are essays."
+— John Cochrane
+Communication: Convey your message clearly
+Persuasion: Convince readers your research matters
+Thinking: Good writing forces clear thinking
+Publication: Writing quality affects acceptance
+Cochrane's rule: 50%+ of research time should be spent on writing
+Learning Objective
+Identify key elements of a good abstract
+Distinguish theory, empirical, and experimental abstracts
+Write a clear 5-sentence abstract
+Understand the logic of a strong introduction
+Avoid common writing mistakes
+Big Picture
+A good paper answers:
+Your job as a writer:
+Make this logic clear in 1 minute
+Question
+Method
+Result
+Contribution
+What is an Abstract
+If I only read your abstract, do I understand your paper?
+A good abstract:
+is short (4-6 sentences, typically 100-150 words)
+is complete
+Is precise
+Abstract Structure
+1.
+Purpose (Motivation/ Research Question)
+2.
+Method (Date/Model/Experiment)
+3.
+Key Findings (Quantified when possible), Mechanism
+4.
+Contribution/Implication
+Purpose (Motivation/Research Question)
+Paper Type
+How It's Expressed
+Example Phrasing
+Empirical
+What relationship or phenomenon is 
+tested, often with a specific hypothesis 
+or question.
+"This paper examines whether board 
+independence affects firm performance."
+Theoretical
+What gap in existing theory is 
+addressed, or what new framework is 
+proposed.
+"We develop a model of optimal 
+contracting when agents have time-
+inconsistent preferences."
+Experimental
+What behavioral or causal question is 
+investigated through controlled 
+conditions.
+"We investigate whether traders exhibit 
+herding behavior in a laboratory asset 
+market."
+Methodology
+Paper Type
+What to Include
+Example
+Empirical
+Data source, sample period, sample 
+size, key variables, main 
+identification strategy (e.g., 
+regression, diff-in-diff, IV).
+"Using Compustat data from 2000–2020, we 
+employ a fixed effects panel regression to 
+estimate the effect of board independence on 
+ROA."
+Theoretical
+Type of model (e.g., general 
+equilibrium, game theory), key 
+assumptions, solution concept.
+"We set up a dynamic principal-agent model 
+with moral hazard and solve for the optimal 
+contract using recursive methods."
+Experiment
+al
+Subject pool, experimental design 
+(treatments), key tasks, incentives, 
+sample size (number of 
+subjects/sessions).
+"We conduct a laboratory experiment with 120 
+undergraduate students. Subjects trade in a 
+simulated asset market under two volatility 
+treatments, with performance-based payments."
+Results
+Paper Type
+What to Report
+Example
+Empirical
+Specific coefficient estimates, effect 
+sizes, statistical significance, and (if 
+space) key robustness checks.
+"We find that a one-standard-deviation 
+increase in board independence raises ROA by 
+2.3 percentage points (p<0.01)."
+Theoretical
+Main propositions or theorems, key 
+comparative statics, or 
+characterizing properties of the 
+equilibrium.
+"We show that the optimal contract is linear in 
+output and that effort is increasing in the 
+agent’s risk aversion."
+Experimental
+Main treatment effects, comparison 
+between control and treatment 
+groups, statistical significance, and 
+often a summary of the pattern 
+observed.
+"In the high-volatility treatment, asset prices 
+exceed fundamental values by 30% on 
+average, while in the low-volatility treatment, 
+no bubble forms (p<0.001)."
+Contribution/Implication
+Paper Type
+What to Include
+Example
+Empirical
+Economic significance, policy 
+relevance, or contribution to 
+the literature.
+"Our findings suggest that increasing board 
+independence can enhance firm value, 
+supporting recent regulatory initiatives."
+Theoretical
+Broader implications for 
+theory, testable predictions, 
+or guidance for future 
+empirical work.
+"The model predicts that firms with higher CEO 
+overconfidence will invest more in R&D, a 
+prediction that can be tested empirically."
+Experimental
+What the experiment reveals 
+about behavior, its external 
+validity, or its relevance to 
+real-world markets.
+"Our results show that market volatility alone 
+can generate speculative bubbles, providing a 
+laboratory foundation for theories of irrational 
+exuberance."
+Second Chance: Life with Less Student 
+Debt, Di Maggio, Kalda, and Yao (2026), JF
+We exploit an episode of plausibly random debt discharge due to the loss of
+paperwork for thousands of defaulted borrowers to examine the effects of private
+student debt relief on borrower outcomes. We find that borrowers who receive debt 
+relief (treated) experience declines in debt balances and delinquency rates on other 
+accounts, and increases in mobility and income relative to those who bear the costs of 
+default like wage garnishment and collections (control). Borrowers in both groups 
+contribute to our findings through different mechanisms. While our estimates may 
+not directly apply to blanket student loan forgiveness, they speak to the benefits of 
+forgiveness in reducing the consequences of debt burden for distressed borrowers.
+Danymic Trading with Realization Utility, Dai,
+Qin and Wang (2026), JF
+An investor receives utility bursts from realizing gains and losses at the individual
+stock level and dynamically allocates his mental budget between risky and risk-free
+assets at the trading account level. Using savings, he reduces his stockholdings and is
+more willing to realize losses. Using leverage, he increases his stockholdings beyond
+his mental budget and is more reluctant to realize losses. While leverage strengthens
+the disposition effect, introducing leverage constraints mitigates it. Our model
+predicts that investors with stocks in deep losses sell them either immediately or after
+stocks rebound a little.
+Danymic Trading with Realization Utility, Dai,
+Qin and Wang (2026), JF
+An investor receives utility bursts from realizing gains and losses at the individual
+stock level and dynamically allocates his mental budget between risky and risk-free
+assets at the trading account level. Using savings, he reduces his stockholdings and is
+more willing to realize losses. Using leverage, he increases his stockholdings beyond
+his mental budget and is more reluctant to realize losses. While leverage strengthens
+the disposition effect, introducing leverage constraints mitigates it. Our model
+predicts that investors with stocks in deep losses sell them either immediately or after
+stocks rebound a little.
+金融市场与企业创新发展——基于专利价值折损
+缓解的新视角, 欧阳鑫，汤珂，孙震(2026)，管理世界
+企业创新价值的快速折损已经成为数字时代制约科技创新发展的关键问题。本文拓展科根等
+（2017）的专利价值评估模型，测算中国上市公司每项专利的专利价值和价值折损速度，识别
+金融市场对专利价值折损的缓解功能及其对企业创新发展的促进作用。测算结果表明，2000～
+2020年中国上市公司的授权发明专利平均价值为2583万元，且平均年折损速度高达13.4%。金
+融市场可以帮助公司提前获得专利的垄断租金，减少其因知识产权保护不足而遭受的创新收益
+损失。在专利公开到授权期间，金融市场平均为每个发明专利缓解843万元的价值折损，将年
+均折损速度降低至4.2%。使用份额移动法实证检验发现，金融市场对企业专利价值折损的缓解，
+可以显著提高企业的高质量专利申请和创新经济效益，并改善企业经营绩效，对促进高质量创
+新和社会整体技术进步具有重要意义。本文不仅推动了中国知识产权和企业创新研究的数据库
+建设，还将“金融促进创新发展”的研究主题进一步延伸到企业专利价值实现的时序维度，为新
+发展阶段金融支撑实体经济发展提供了有益参考。
+客户环境关注、压力传导与供应商企业绿色创新,
+王红建，张高昂，吴涛，李青原(2026), 经济研究
+建立并完善市场导向的绿色创新体系是推动经济社会发展全面绿色转型的关键。客户环境关
+注作为一种市场需求信号，是驱动企业进行绿色创新的重要经济动力。本文从理论与实证两
+个方面研究客户环境关注对供应商企业绿色创新的影响。首先，通过将产品质量区分为物理
+质量与绿色质量，构建包含客户环境关注的企业决策模型，揭示其激励供应商企业绿色创新
+的理论路径。其次，使用包含非上市公司客户的供应商企业—客户配对数据进行实证检验，
+发现客户环境关注每增加1个单位，供应商企业绿色专利申请总量增加19.6%，其中压力传导
+是主要作用机制。最后，经济效应分析表明，客户环境关注驱动的绿色创新能够有效提升供
+应商企业的产品市场表现与财务绩效。本研究从供应链传导视角拓展了企业绿色创新的市场
+内生动力，为融合市场激励与政府环境规制的政策设计提供依据。
+The Benefits of Access: Evidence from Private Meetings 
+with Portfolio Firms, Betcht, Franks, and Wagner (2026), JF
+We use large language models to analyze the content of 4,700 private meetings 
+between a large active asset manager and its portfolio firms. The high-level meetings 
+convey mostly soft information about the firm, and little about industry or market. 
+Fund manager meetings focus on business models and financial metrics, while 
+governance specialist meetings focus on environmental, social, and governance risks; 
+0.4% of meetings discuss material nonpublic information. Trades by fund managers 
+increase with meetings attended by senior management, rated as unusually good or 
+bad, where the tone is significantly positive or negative, or assessed as creating 
+consensus. Meeting-informed portfolios can generate significant outperformance.
+When Large Traders Create Noise, Glebkin and
+Kuong (2023), JFE
+We consider a market where large investors do not only trade on information about asset 
+fundamentals. When they trade more aggressively, the price becomes less informative. 
+Other investors who learn from prices, in turn, are less concerned about adverse selection 
+and provide more liquidity, causing large investors to trade even more aggressively. This 
+trading complementarity can engender three unconventional results: i) increased 
+competition among large investors makes all investors worse off, ii) more precise private 
+information reduces price informativeness, creating complementarities in information 
+acquisition, and iii) multiple equilibria emerge. Our results have implications for 
+competition and transparency policies in financial markets.
+What Distinguishes Good Abstracts
+Extreme specificity
+Numbers
+Magnitudes
+Direction of effects
+No vague language
+Interesting results
+Improves loan performance by...
+Strong verbs
+Show, find, demonstrate, estimate...
+Do not mention literature.
+Rewriting Exercises 1
+Original
+This paper analyzes data on corporate governance and firm performance. Interesting 
+results are found. The findings have important implications for managers and 
+policymakers. Further research is recommended.
+Information for Rewriting
+Research question: Does board independence affect firm performance?
+Data: S&P 500 firms, 2010-2020
+Method: Fixed effects panel regression
+Result: Board independence positively related to ROA; firms with more 
+independent directors have 2.3% higher ROA
+Rewriting Exercises 2
+Original
+The relationship between CEO compensation and firm performance has long been a 
+topic of interest in the finance literature. Many studies have examined this issue, but 
+the results are mixed. This paper attempts to shed new light on this important topic 
+using a large dataset.
+Information for Rewriting
+Research question: Does CEO equity incentives affect corporate risk-taking?
+Data: Compustat + Execucomp, 2000-2020, 5,000 firms
+Method: 2SLS with industry-average equity incentives as IV
+Result: CEO equity incentives positively related to R&D, negatively related to 
+leverage; IV results confirm causality
+Rewriting Exercises 3
+Original
+This paper introduces state-based managerial overconfidence to finance literature. 
+Using regression analysis and t-test for two studies, we examine the concept and its 
+implication to the credit market under external economic/environmental shocks, 
+Global Financial Crisis in 2008 and Sarbanes Oxley Acts in 2002.
+Information for Rewriting
+Research question: Do overconfident CEOs rely more on debt financing during 
+crises?
+Data: 1,500 U.S. public firms, 2005-2010
+Method: Difference-in-differences (before/after 2008 crisis)
+Result: Overconfident CEOs reduced debt 15% less than rational CEOs after crisis
+Rewriting Exercises 4
+Original
+公司治理是近年来学术界关注的热点问题。本文对上市公司治理结构与公司绩效的关系
+进行了实证研究。我们收集了相关数据，运用计量方法进行分析，得出了一些有意义的
+结论。研究发现，公司治理对绩效有重要影响。本研究丰富了公司治理领域的文献，对
+实践也有一定启示意义。
+Information for Rewriting
+Research question: 机构投资者持股是否影响企业创新?
+Data: A股上市公司，2010-2020年，10,000观测值
+Method: 面板固定效应+ 工具变量
+Result: 机构持股比例与专利申请正相关；持股提高10%，专利申请增加8.3%
+Cheklist for Abstract Writing
+Problem Type
+Ask Yourself
+Check
+Vague question
+Can the reader identify the exact research question?
+☐
+No results
+Did I report specific numbers/findings?
+☐
+Missing method/data
+Did I specify data source, sample, and method?
+☐
+Too much jargon
+Can a non-expert understand this?
+☐
+Exaggeration
+Am I using adjectives instead of facts? ("first-ever", 
+"revolutionary")
+☐
+Wrong structure
+Is the most important information at the beginning?
+☐
+Empty phrases
+Do I have "fillers" like "further research needed"?
+☐
+Why Introductions Matter
+Editors decide in 2 mins
+Is the question interesting?
+Is the contribution clear?
+Is the method credible?
+Common problems
+Too general
+No clear gap
+Listing literature
+Weak contribution
+Introduction
+1.
+Motivation (real-world or literature gap)
+Why is this important? 
+2. Research question
+What exactly is missing? 
+3. Preview of approach
+What do we do? 
+4. Contribution
+Why is this new / important?
+Keep it 1 - 2 pages
+ Introduction is NOT a summary
+ It is an argument for why the paper should exist
+Motivation (Be Concrete)
+Goal: grab attention with a fact, pattern, or puzzle
+ Bad:
+ 
+Financial markets are important.
+ Good:
+ 
+Many investors hold under-diversified portfolios despite the benefits of 
+diversification.
+Research Question (Be Explicit)
+Goal:
+ State clearly what you study
+ Bad:
+ 
+This paper looks at investor behavior.
+ Good:
+ 
+Why do investors fail to diversify their portfolios?
+Why It Matters (Be Economic)
+Goal:
+ Show importance (not just interest)
+ Bad:
+ 
+This is an interesting topic.
+ Good:
+ 
+Understanding this behavior is crucial for evaluating household financial 
+welfare.
+Approach (Be Credible)
+Goal:
+ Explain identification or method
+ Bad:
+ 
+We use data to study this question.
+ Good:
+ 
+We exploit variation in default investment options in retirement accounts as 
+a natural experiment.
+Main Findings (Be Specific)
+Goal:
+ Preview key results
+ Bad:
+ 
+We find significant effects.
+ Good:
+ 
+We find that default options increase equity participation by 30%.
+Contribution (Be Strong)
+Goal:
+ Explain what is new
+ Bad:
+ 
+This paper contributes to the literature.
+ Good:
+ 
+Our findings provide causal evidence on the role of choice architecture in 
+shaping investment behavior.
+Literature Review
+A literature review is NOT a summary. It is an argument about what is 
+missing.
+Positioning your paper in existing research
+Answer:
+What do we already know? 
+What do we NOT know? 
+Where does my paper fit?.
+Literature Review - Practical Advices
+Papers show X → BUT miss Y → I do Z
+State with your contribution.
+Do not just summarize other papers.
+Smith (2000)… Jones (2005)… Lee (2010)…
+Mention papers by idea, not by author
+“A large literature on X…” “Another strand focuses on Y…”
+Do not understate the contribution of other papers.
+Omitting a related paper
+Highlight the differences and marginal contribution.
+Discussion
+科创板公司IPO抑价影响因素研究
+摘要
+ 
+IPO抑价现象存在于各个国家，其中中国股市IPO抑价水平普遍偏高。同时，
+由于科创板成立时间较晚，发行制度变革较多，IPO抑价值得深入研究，有助于
+更好地了解科创板的IPO抑价现状，分析原因及提出可能的解决方案。
+ 
+因此，本文基于信息不对称等理论，主要从研发投入和投资者情绪的两个角
+度解释科创板IPO抑价产生的原因。本文选择了2020年1月至2022年3月在科创板
+上市的299家企业作为样本，用多元线性回归模型进行分析。得出如下结论，研发
+投入比例与IPO抑价率呈正相关，投资者情绪与IPO抑价率也呈正相关。
+针对信息不对称问题的研究，Rock（1986）提出“赢家诅咒”理论，投资人对各种信息的掌握程度不尽
+相同。有些投资者掌握的信息丰富，有些投资者所获信息不足。掌握更丰富信息的投资者只会购买公司内
+在价值比新股发行价格高的股票，而那些内在价值低于发行价格的公司股票，只有信息匮乏的投资者会购
+买。因此对处于信息劣势的投资者来说，成功申购到新股并不是一件好事，即所谓的赢家诅咒。因此信息
+匮乏的投资者会不再购买新股，为了吸引信息较为匮乏的投资者购买股票，企业和承销商需要降低发行价
+格，来弥补他们可能会遭受的损失，因此产生了IPO抑价现象。Beatty and Ritter（1986）提出首次公开发行
+的预期低价和投资者对企业价值的不确定性之间存在平衡关系。投资者对于新股价值的不确定性越大，赢
+家诅咒问题会加剧，抑价率就会越高。如果不定一个较低的价格，承销商会失去可能对新股有购买意愿的
+投资者，但是如果价格设置过低，会失去找该投资银行承销发行的公司。因此，发行价格存在一个低定价
+的均衡。违背低定价均衡的投资银行会失去未来的市场份额。张矢的（2014）用我国国内沪深股市2000年
+至2010年十年间上市公司的样本验证了“赢家诅咒”假说在中国市场是适用的。
+基于对研究投资水平与IPO抑价关系的研究，付雷鸣等（2011）通过对创业板已发行公司的研究，表明
+当期、分别滞后第一、二、三期的研究投资多少与IPO抑价显著正相关，其结论是相对稳定的。邱冬阳和曹
+奥臣（2020）从承销商和发行人两条路径分别阐述了研发投入对IPO抑价的影响，并以2019年发行的70家中
+国科创板公司为样本，证实了研究开发强度对IPO抑价的正向影响，而且影响效果是明显的。在同年董秀良、
+刘佳宁、满媛媛的研究中表明研发投入是科创板的重要特征，且研发投入与抑价率是正相关关系。
+针对投资者情绪和心态方面，李博（2010）建立了投资者情绪指数，在调研了2000年至2008年上市新股
+的首日收益情况后表明，流通市场的投资者心态对新股首日收益会产生显著为正的影响，而采用询价的发
+行方式更能体现二级市场投资者的情绪和需求。且在2019年的研究中，宋华和赵婷婷证实了861家于2006年
+至2018年在中小板市场上市的公司，投资人心情对IPO抑价产生了影响，用网上发行中签率和上市首日换手
+率作为代表投资者心情的重要变量，并证明IPO抑价率与中签率成反比，与首日换手率成正比。张笑僮和冉
+江南（2021）在对中国创业板IPO抑价的调研中发现，信息披露质量和投资人心态均与IPO抑价呈正相关，
+因为信息披露质量会给投资人的心理传递信息，有助于促进投资人情绪的高涨，从而引导更多投资者参与
+投资，进而产生更高的抑价。

@@ -1,0 +1,374 @@
+How to Read Academic 
+Papers in Finance
+Bingfeng CEN
+SoF, SHUFE
+Why This Matters
+Why learn to read academic papers?
+Core skill for your degree and career
+Saves hours of frustration
+Helps you:
+Keep up with research
+Prepare for dissertations
+Write literature reviews
+Understand course material deeply
+Overview
+The Anatomy – Types of finance papers
+The Method – How to read strategically
+Based on the Three-Pass Method (Keshav, 2007)
+The System – How to keep records for future
+Types of finance papers
+Academic Papers Come in Types
+Each type has a different purpose and structure
+Knowing the type = knowing what to look for
+Main Types
+Theory Paper
+Empirical Paper, Empirical paper with a small sample
+Experimental
+Methodological
+Review Paper
+Replication/Meta-Analysis
+Type 1 – Theory Paper
+Goal: Develop a new model or theory
+Core: Abstract reasoning + mathematical proof
+Structure:
+1.
+Introduction (motivation + question)
+2.
+The Model (assumptions + equations)
+3.
+Proofs / Calibration
+4.
+Conclusion (implications + testable predictions)
+Example: Black-Scholes option pricing model
+How to read: Focus on assumptions + implications. Don't fear the math.
+Type 2 – Empirical Paper
+
+Goal: Test a hypothesis with data
+
+Core: Evidence + statistical analysis
+
+Structure:
+1.
+Introduction (question)
+2.
+Data & Summary Statistics
+3.
+Methodology (regression model)
+4.
+Results (tables + findings)
+5.
+Robustness Checks
+6.
+Conclusion
+
+Example: "Does gender diversity on boards affect firm performance?"
+
+How to read: Focus on Data, Methodology, Results. Look at the tables!
+Type 2b – Empirical with a Small Model
+Goal: Use simple theory to guide empirical testing
+Core: Model motivates the hypothesis
+Structure:
+1.
+Conceptual Framework / Simple Model (short section)
+2.
+Makes a clear, testable prediction
+3.
+Then standard empirical sections (Data, Results, etc.)
+Example: Model shows why CEOs might prefer stock compensation → test if 
+firms with more stock compensation perform better
+How to read: Understand the model's prediction. Then read it like an 
+empirical paper.
+Type 4 – Experimental Paper
+
+Goal: Study behavior in controlled settings
+
+Core: Lab/field design + human subjects
+
+Structure:
+1.
+Introduction
+2.
+Theory / Hypotheses
+3.
+Experimental Design (treatments, variables)
+4.
+Procedures (subjects, incentives)
+5.
+Results
+6.
+Discussion + Conclusion
+
+Example: Testing if traders form bubbles in simulated asset markets
+
+How to read: Focus on Design, Treatments, Incentives. Are subjects properly 
+motivated?
+Type 5 – Methodological Paper
+Goal: Introduce, compare, or validate research methods
+Core: Focus on how research should be done, not new findings
+Structure:
+1.
+Introduction (what problem with existing methods?)
+2.
+Description of new method / technique
+3.
+Validation (simulations or applications)
+4.
+Comparison with existing approaches
+5.
+Conclusion + recommendations
+Example: "A New Approach to Testing for Market Efficiency Using Machine 
+Learning”
+How to read: Focus on what problem it solves and whether you could apply 
+this method in your own work
+Type 5 – Review Paper
+Goal: Summarize and synthesize existing research
+Core: No new results – but a roadmap of the field
+Structure:
+1.
+Introduction (scope)
+2.
+Thematic sections (organizes literature)
+3.
+Discussion + Future Research
+4.
+Comprehensive references
+Example: "Thirty Years of Prospect Theory in Finance: A Review"
+How to read: Your best friend when starting a new topic! Read for big 
+picture + key papers.
+Type 6 – Replication / Meta-Analysis
+Replication Study
+Meta-Analysis
+Goal
+Verify previous findings
+Statistically combine multiple studies
+Core
+Repeat original methodology 
+exactly
+Pool effect sizes across papers
+Output
+Confirm or challenge original 
+results
+Overall conclusion from all evidence
+Exampl
+e
+Repeating a famous CEO pay 
+study with same data
+Combining 50 studies on CEO pay → 
+true effect size
+Quick Recap – Paper Types
+Type
+Focus
+Where to look first (conditional
+on decision to read in detail)
+Theory
+Model + assumptions
+Assumptions + Implications
+Empirical
+Data + evidence
+Tables + Results
+Empirical + 
+Model
+Prediction + test
+Model prediction, then tables
+Experimental
+Lab behavior + 
+treatments
+Design + Incentives
+Methodological
+New techniques
+Problem being solved
+Review
+Summary of field
+Whole paper (it's all useful)
+Replication/Meta
+Verify / combine
+Success of replication? Overall effect?
+The Three-Pass Method
+Don't Read Like a Novel!
+Most students: start at page 1, read to end → inefficient
+Better: Three passes, each with a clear goal
+Based on Keshav (2007) – "How to Read a Paper"
+Pass 1 – The Bird's-Eye View
+Pass 1 (5–10 minutes)
+Goal: Get general idea + decide if you need to read further
+Steps:
+1.
+Read title + abstract
+▪
+Think about the research design if you were the author
+2.
+Read introduction (especially last paragraph)
+3.
+Read section headings
+4.
+Read conclusion
+5.
+(Optional) Glance at references
+At the end: You should answer the 5 Cs (next slide)
+Cookson et al. (2026) - Abstract
+The 5 Cs
+After Pass 1, ask:
+1.
+Category: What type of paper? (Theory? Empirical? Review?)
+2.
+Context: What field? (Corporate finance? Asset pricing? )
+3.
+Correctness: Do assumptions seem reasonable?
+4.
+Contributions: What is the main claim?
+5.
+Clarity: Is it well-written?
+Decision: Stop here (if not relevant) OR continue to Pass 2
+Pass 2 – The Grasp
+
+Pass 2 (About 1 hour)
+
+Goal: Understand main argument + evidence (not every detail)
+
+Steps:
+1.
+Read with more care
+2.
+Skip complex math / long proofs
+3.
+Focus on figures and tables – this is the evidence!
+4.
+Jot notes in margins
+5.
+Mark important references for later
+
+At the end: Can you summarize the paper's main argument + evidence to a 
+classmate?
+Reading Tables Like a Pro
+Tips for Regression Tables:
+Look at main variables of interest
+Check for stars (***, **, *) – statistical significance
+Ask: Is the effect economically large?
+Look at sample size (N) and R-squared
+Tips for Graphs:
+Are axes labeled?
+Do they show error bars?
+What story does the graph tell?
+Cookson et al. (2026)
+- Main Table
+•
+Linear Probability regression
+•
+Statistical Significance
+•
+Economic Significance
+Cookson et al. (2026) – Figure 3
+Pass 3 – The Deep Dive
+Pass 3 (4–5 hours beginners, 1 hour experts)
+
+Goal: Complete understanding – for papers you'll review, build on, or present
+
+The key: "Virtually re-implement" the paper
+
+Steps:
+1.
+Challenge every assumption
+2.
+Re-derive the math
+3.
+Re-create the empirical test in your mind
+4.
+Examine robustness checks
+
+Ask "What's next?" – future research ideas
+
+At the end: Can you reconstruct the entire paper from memory? Can you discuss 
+strengths + weaknesses?
+Three Passes – Summary
+Pass
+Time
+Goal
+1
+5–10 min
+Bird's-eye view + decide relevance
+2
+~1 hour
+Grasp main argument + evidence
+3
+1–5 hours
+Deep understanding + critique
+Keeping Records
+Why Keep Records?
+You will forget!
+Future you (writing a dissertation) will thank you
+Essential for literature reviews
+Helps you connect ideas across papers
+"The faintest pencil is better than the sharpest memory."
+Option 1 – The Spreadsheet
+Column
+What to write
+Full Citation
+Author, Year, Title, Journal
+Paper Type
+Theory, Empirical, Review
+Research Question
+What question?
+Data/Methodology
+What data? What method?
+Main Results
+Key findings
+Key Contributions
+Why does this matter?
+One-Sentence Summary
+Your personal takeaway
+Link/File
+Where to find PDF
+Notes/Quotes
+Your thoughts, critiques
+Simple tools: Excel or any similar tools
+Spreadsheet Example
+Citation
+Fama & French (1992), Journal of Finance
+Type
+Empirical
+Question
+What explains stock returns?
+Data
+US stocks 1963–1990
+Methodology
+Main Results
+Size + Value matter; Beta doesn't
+One-Sentence 
+Summary
+"Size and Value drive returns, not just market risk."
+Option 2 – Reference Managers
+Powerful Tolls: Zotero, Mendeley, EndNote
+Benefits:
+One-click import from web
+Store + annotate PDFs
+Searchable notes
+Auto-generate bibliographies (huge time saver!)
+Recommendation: Start with Zotero – free, easy, widely used.
+Tip: download the paper and use “link to file”
+Option 3 – Digital Notes
+Advance: Notion, Obsidian, Roam Research
+Benefits:
+Create linked databases
+Connect ideas across papers
+Build a "second brain" for research
+Best for: Students planning a thesis or long-term research
+Which system to use?
+System
+Best for
+Spreadsheet
+Getting started, small projects
+Zotero/Mendeley
+Serious students, dissertations
+Notion/Obsidian
+Building connected knowledge
+Personally, I combine Zotero, Notion, Obsidian.
+Final Tips
+Remember:
+Not every paper deserves a full Pass 3
+Skim first, then dive deep only when needed
+Build your reference library early
+Connect papers – they talk to each other!
+Review your notes, and reorganize if necessary!
+For your literature review: Start with a recent review paper. Use its 
+references as your reading list.
+Reading papers is a skill. Practice makes perfect.

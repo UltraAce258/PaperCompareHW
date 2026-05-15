@@ -1,0 +1,479 @@
+How to Write Academic 
+Papers in Finance– Module 3
+Bingfeng CEN
+SoF, SHUFE
+Overview
+Module 3: Writing the Body, Conclusion and
+Bibliography
+Abstract
+Exercises
+Introduction
+Literature Review
+Where Are We in the Paper?
+A research paper usually contains:
+1.
+Abstract 
+2.
+Introduction 
+3.
+Literature Review 
+4. Body
+5. Conclusion
+6. Bibliography / References
+Learning Objectives
+By the end of this module, you should be able to:
+Understand the standard structure of the main body 
+Explain empirical strategy clearly 
+Write results without simply reading tables 
+Present tables, figures, and equations properly 
+Write a meaningful conclusion 
+Format and use references responsibly
+Part 1 – Writing the Body
+Writing the Body
+The body answers one central question:
+Why should the reader believe your answer?
+We Focus on three types of Finance papers:
+Theoretical Paper
+The mechanism follows logically from assumptions
+Empirical Paper
+The results are supported by credible data and identification
+Experimental Paper
+The treatment causes the observed outcome
+Theoretical Paper Body Structure
+1. Motivation and Economic Setting 
+2. Model Assumptions 
+3. Agents, Timing, and Payoffs 
+4. Equilibrium / Solution Concept 
+5. Main Propositions 
+6. Economic Intuition 
+7. Predictions / Implications 
+The Role of a Model
+A theoretical paper offers a structured explanation of a economic
+mechanism/phenomenon of interest.
+The model is a tool, not a reality.
+Include the essential elements of the target problem 
+Abstract away from unnecessary details 
+Clarify a mechanism 
+Generate results or predictions
+Question: What is the minimum set of ingredients needed 
+to explain investor overtrading?
+Model Setup
+A theory model should clearly define:
+Who are the agents? 
+What information do they have? 
+What choices do they make? 
+What are their objectives? 
+What is the timing? 
+What is the equilibrium concept? 
+Assumptions: Order and Grouping
+When writing assumptions:
+
+Start with natural assumptions 
+
+Move to stronger or more restrictive assumptions 
+
+Group assumptions by category 
+
+Use meaningful names, not only numbers 
+Example categories:
+
+Investor preferences 
+
+Information structure 
+
+Asset payoff process 
+
+Market constraints
+A1: The investor is overconfident.
+A2: The return is normally distributed.
+A3: The investor has CARA utility.
+A4: Trading is costly.
+A5: The investor observes a signal.
+Preferences: The investor has CARA utility and 
+may receive psychological utility from trading.
+Information: The investor observes a noisy 
+signal about future returns.
+Asset returns: Risky asset returns are normally 
+distributed.
+Market friction: Trading involves a proportional 
+transaction cost.
+Notations
+Good notation should be easy to guess.
+Use meaningful symbols 
+Define every variable 
+Use consistent notation 
+Avoid notation used only once 
+“Let Ω denote the set of all possible psychological states.” But you never use Ω again.
+“Investors may differ in their psychological benefit from trading.”
+Avoid too many subscripts and superscripts if feasible
+Example:
+c𝑡= 𝑓𝑊𝑡
+where 𝑐𝑡is consumption and 𝑊𝑡is wealth.
+Definitions Need Examples
+For a central property, show:
+1.
+An object that satisfies it 
+2.
+An object that does not satisfy it 
+3.
+A borderline case
+Example:
+An investor is “attention constrained” if she can 
+process at most one signal per period.
+1.
+Investor observes only earnings news. 
+2.
+Investor processes all firm, industry, and 
+macro signals.
+3.
+Investor can process two signals but ignores 
+macro news.
+Theorems and Propositions
+Formal results should be:
+Stated in simple English 
+Written in parallel format 
+Clearly linked to assumptions 
+Followed by economic intuition
+Testable implications
+Proof or proof sketch is need:
+Step 1, Step 2, Claim 1, Claim 2, Case 1/Case 2
+Step 1: Show the objective function is concave.
+Step 2: Derive the first-order condition.
+Step 3: Compare the optimal trading level with the 
+benchmark case.
+Math to English in Proof: 52% - 63.5%
+Proposition Template
+A good theory result explains:
+What the proposition says 
+When it holds 
+Why it holds 
+What it implies
+Template:
+“Proposition 1 shows that when [condition], [result]. The 
+intuition is that [mechanism]. This implies that we should 
+observe [prediction].”
+Example:
+Proposition 1 shows that investors are less willing to realize 
+losses when leverage is available. The intuition is that 
+leverage allows investors to maintain risky positions 
+beyond their mental budget, increasing reluctance to close 
+losing positions. This implies that leverage may strengthen 
+the disposition effect.
+Empirical Paper Body Structure
+1. Institutional Background / Setting 
+2. Data and Sample
+3. Empirical Strategy 
+4. Main Results 
+5. Mechanism / Additional Tests 
+6. Robustness Checks 
+How do we know the estimated effect is credible?
+Institutional Background: Not a
+Textbook
+What is the relevant setting? 
+What institutional feature 
+creates useful variation?
+Why is this setting suitable for 
+the research question? 
+What does the reader need to 
+know before seeing the 
+empirical design?
+Example 1:
+China’s stock market has developed rapidly since the 1990s.
+The staggered introduction of margin trading across eligible 
+stocks creates variation in financing constraints and trading 
+opportunities, allowing us to examine how access to margin 
+trading affects stock liquidity.
+Example 2:
+China’s capital market is important and has developed 
+rapidly in recent years. Many reforms have affected listed 
+firms.
+The reform was implemented in stages across firms, creating 
+variation in treatment timing. This institutional feature 
+allows us to compare affected and unaffected firms before 
+and after the reform.
+Data and Sample Construction
+Data source 
+Sample period
+Unit of observation 
+Sample restrictions 
+Variable construction 
+Final sample size
+Example 1:
+Our sample consists of firm-year observations for Chinese A-
+share listed firms from 2010 to 2022.”
+Example 2:
+We use CSMAR data.
+We obtain accounting variables from CSMAR, stock return 
+data from RESSET, and M&A transaction data from Wind. 
+We exclude financial firms, ST firms, and observations with 
+missing key variables.”
+Empirical Results
+Do not just report significance.
+A good empirical result explains:
+Direction 
+Magnitude 
+Statistical significance 
+Economic meaning 
+Link to hypothesis 
+Example 1:
+Table 2 shows significant results. It is consistent with
+hypothesis 1.
+Example 2:
+The 
+results, 
+presented 
+in 
+Table 
+X, 
+show 
+that 
+OverseaExperience is positively and significantly associated 
+with the likelihood of cross-border M&A across all models, 
+suggesting that firms with internationally experienced 
+executives are significantly more likely to pursue foreign 
+acquisitions. This finding strongly supports the hypothesis 
+that such executives play a critical role in driving cross-
+border M&A activity. 
+Experimental Paper Body Structure
+1. Research Question and Hypotheses 
+2. Experimental Design 
+3. Treatment and Control Conditions 
+4. Randomization and Balance 
+5. Outcome Measures 
+6. Main Treatment Effects 
+7. Mechanisms / Heterogeneity 
+8. External Validity and Limitations
+Experimental Paper: Design Details
+A good experiment section should explain:
+Who are the participants? 
+What is randomly assigned? 
+What does the treatment change? 
+What does the control group receive? 
+What outcomes are measured? 
+When are outcomes measured?
+Design an experiment
+Many young investors misunderstand investment risk. You want to 
+test whether presenting risk information visually improves their 
+portfolio choices. In particular, you compare a standard text 
+warning with a visual risk chart.
+Experimental Paper: Validity Concerns
+Experiment papers must address:
+Internal validity 
+Was assignment random? 
+Are groups balanced? 
+Did participants comply? 
+External validity 
+Does the result generalize? 
+Is the setting realistic? 
+Mechanism 
+Why did the treatment work?
+Experiment Results
+A good experiment result explains:
+Treatment effect 
+Control group benchmark 
+Statistical significance 
+Magnitude Mechanism or 
+heterogeneity
+Example 1:
+The treatment group behaves differently.
+Example 2:
+Participants receiving financial literacy information are 15 
+percentage points more likely to choose diversified 
+portfolios than those in the control group.
+Variable Definitions
+For each key variable, define:
+What it measures 
+How it is constructed 
+Whether it is continuous, 
+binary, or categorical 
+Expected direction 
+Data source 
+Key variables:
+Dependent variable 
+Main explanatory variable 
+Control variables 
+Fixed effects
+Example:
+We use Size, ROA, Leverage, and Cash as controls.
+Firm size is measured as the natural logarithm of total assets. ROA is net income 
+divided by total assets. Leverage is total liabilities divided by total assets. Cash is 
+cash and cash equivalents scaled by total assets.
+Summary Statistics
+Summary statistics help readers 
+understand:
+Sample characteristics 
+Variable scale 
+Distribution 
+Outliers 
+Whether values are reasonable
+A basic summary table includes:
+Mean 
+Standard deviation 
+Median 
+Minimum 
+Maximum 
+Number of observations
+Empirical Strategy
+A regression equation is not an 
+identification strategy!
+What variation identifies the effect 
+What comparison is being made 
+What assumptions are required 
+What threats remain
+Examples:
+OLS: what are controlled for
+IV: relevance and exclusion conditions
+DiD: parallel trend
+Event Study: watch for confounding events
+RDD: cutoff windows
+Equations
+Present only necessary equations 
+Define all variables 
+Explain the coefficient or object of interest 
+Connect math to economic meaning 
+Pr(𝐼𝑛𝑡𝑀&𝐴𝑖,𝑡) = 𝛼0 + 𝛼1𝑂𝑣𝑒𝑟𝑠𝑒𝑎𝐸𝑥𝑝𝑒𝑟𝑖𝑒𝑛𝑐𝑒𝑖,𝑡+ 𝛼2𝐶𝑜𝑛𝑡𝑟𝑜𝑙𝑠𝑖,𝑡+ 𝐼𝑛𝑑𝑢𝑠𝑡𝑟𝑦𝑖𝑡+ 𝑌𝑒𝑎𝑟𝑖𝑡+ 𝜀
+𝑅𝑒𝑙𝑎𝑡𝑖𝑣𝑒𝑃𝑟𝑖𝑐𝑒𝑖=𝛼0 +𝛼1𝐼𝑛𝑠𝑡𝑖𝑡𝑢𝑖𝑜𝑛𝑁𝑢𝑚𝑖+Σ𝛽𝑖𝐶𝑜𝑛𝑡𝑟𝑜𝑙𝑠𝑖+𝛿
+Return𝑖,𝑡 = β GenAI Reliance𝑖,𝑡−1+ γ Control𝑖,𝑡−1 +α𝑡+ ε𝑖,𝑡
+𝑇𝑜𝑛𝑒𝑖,𝑡= 𝛼+ 𝛽𝑃𝑙𝑒𝑑𝑔𝑒𝑖,𝑡+ 𝛾𝐶𝑜𝑛𝑡𝑟𝑜𝑙𝑖,𝑡−1 + 𝑦𝑒𝑎𝑟𝑡+ 𝑖𝑛𝑑𝑢𝑠𝑡𝑟𝑦+ 𝜀𝑖,𝑡
+Writing Results
+Start with the main economic message 
+Refer to the table or figure 
+Explain the magnitude 
+Interpret the result 
+Connect back to the hypothesis
+Figures
+Rule: One figure = One story
+Have a clear message 
+Show trend
+Show change
+Show mechanism
+...
+Be easy to read 
+Use informative labels 
+Be discussed in the text
+Tables
+Use clear titles 
+Table 3. Results
+Table 3. Effect of Financial Literacy Training on Portfolio Diversification
+Label variables and units 
+Explain the key result in the text 
+Avoid unnecessary columns 
+Add notes for standard errors, controls, fixed effects, and sample
+Tables
+Do not use Stata output window!
+Use a table!
+Tables
+Be sensible with numbers...
+Use variable names
+Don’t report omitted variables
+Tables
+Be sensible with numbers...
+Use variable names
+Don’t report omitted variables
+Mechanism Tests
+Mechanism tests answer: Why
+does this effect occur?
+Proposed channel
+Testable implication
+Empirical test
+Interpretation
+E.g., financing constraints,
+information asymmetry,
+bargaining power, monitoring,
+investor attention...
+Exercise:
+Research question: Does analyst coverage
+affect stock liquidity?
+Possible mechanism: Analyst coverage
+reduces information asymmetry.
+Testable implication:
+Writing
+Heterogeneity vs Mechanism
+Heterogeneity asks:
+For whom is the effect stronger?
+Mechanism asks:
+Why does the effect occur?
+Heterogeneity can support mechanism only when it is linked to theory.
+Robustness Checks
+Does the result survive alternative choices?
+Alternative variable definitions 
+Alternative samples 
+Additional controls 
+Placebo tests 
+Pre-trend tests 
+Alternative estimation methods 
+A good robustness section is organized by concerns, not by tables.
+Example:
+To address the concern that our findings depend 
+on the measure of risk-taking, we replace the risky 
+asset share with the probability of holding any 
+risky asset. The coefficient remains positive and 
+statistically significant.
+Exercise: Mechanism or Heterogeneity
+Classify each statement as mechanism, heterogeneity, or neither.
+1.
+The effect is stronger for firms with high information asymmetry. 
+2.
+The coefficient remains significant after adding controls. 
+3.
+The effect is stronger for firms with limited analyst coverage, consistent with 
+an information channel. 
+4.
+The result holds after excluding financial firms.
+Part 2 – Writing the Conclusion and
+ 
+   
+Organizing the Bibliography
+Conclusion Structure
+Your last chance to shape what readers remember.
+(Typically about one page)
+Restate the research question briefly 
+Highlight the main finding 
+Explain why the finding matters 
+Suggest broader implications 
+End with a clear final message
+Abstract: What is this paper about?
+Introduction: Why should we care?
+Body: How do we know the answer?
+Conclusion: What should we remember?
+Bibliography: Who are we building on?
+Conclusion by Paper Type
+Empirical:
+Main finding, credibility, economic implication
+Theoretical:
+Mechanism, new prediction, conceptual contribution
+Experimenta
+l:
+Treatment effect, causal interpretation, external validity
+Bibliography
+Which academic conversation you enter 
+Which ideas you build on 
+Which methods you follow 
+Where your evidence comes from 
+Your academic credibility 
+❖Empirical: Data sources, identification methods, related empirical findings
+❖Theory: Foundational models, assumptions, solution concepts            
+❖Experiment: Design papers, treatment literature, behavioral mechanisms
+Citation Style and Integrity
+Cite papers you actually read 
+Cite ideas, not just names 
+Keep in-text citations and bibliography consistent 
+Use a consistent format 
+Verify all references
+Warning:
+AI may generate fake references!
+Example Reference Format
+In text:
+“Fama and French (1992) show that size and book-to-market explain cross-
+sectional stock returns.”
+Reference list:
+Fama, Eugene F., and Kenneth R. French, 1992, The cross-section of expected 
+stock returns, Journal of Finance 47, 427–465.
+Reference Format
+Order references alphabetically by the first author’s last name. 
+If the same author has multiple papers, order them by year. 
+If the same author has multiple papers in the same year, use 2020a, 2020b. 
+Make sure every in-text citation appears in the reference list. 
+Make sure every reference in the list is cited in the text. 
+Use one citation style consistently. (Don’t mix APA、MLA、Chicago citation 
+styles)

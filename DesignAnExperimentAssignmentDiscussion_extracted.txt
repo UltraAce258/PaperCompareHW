@@ -1,0 +1,235 @@
+Design An Experiment –
+Assignment Discussion
+Bingfeng CEN
+SoF, SHUFE
+Assignment Reminder
+Many
+young
+investors
+misunderstand
+investment risk. You want to test whether
+presenting
+risk
+information
+visually
+improves
+their
+portfolio
+choices.
+In
+particular, you compare a standard text
+warning with a visual risk chart.
+• Who are the participants?
+• What is randomly assigned?
+• What does the treatment change?
+• What does the control group receive?
+• What outcomes are measured?
+• When are outcomes measured?
+Compare a standard text 
+warning with a visual risk chart.
+The answers differed most in the 
+experimental setting.
+Overall Message
+A good experiment section does not need to be complicated.
+It needs to be explicit.
+• What changes?
+• What stays the same?
+• What is measured?
+• When is it measured?
+Many imperfect answers contain 
+strong research intuition.
+Q1 Participants
+Example
+Young adults aged 18–30 who have limited 
+to moderate investment experience.
+Example
+300个年龄在20–35岁之间、拥有一定可投
+资资金但投资经验较少的年轻投资者……
+What works
+• Age range is specified
+• Investment experience is considered
+• Target population is not just “young 
+people”
+Revision question
+• Finance students or ordinary 
+investors?
+• No experience, some experience, or 
+active trading?
+• Who should be excluded?
+Q1 Clean Sentence
+The study recruits young investors aged 18–30 with limited personal 
+investment experience.
+➢Add recruitment source: university clubs, online communities, or 
+brokerage users.
+➢Add exclusion criteria: professional finance workers or advanced finance 
+training.
+➢Explain why this sample fits the research question.
+Q2 Random Assignment
+Example
+平分成对照组和实验组，并确保两组在投资经验和教育背景等方面在统计上无显著差异。
+Useful idea
+• Two groups are imagined
+• Baseline comparability matters
+Revision point
+• Say random assignment explicitly
+• Do not randomize again until groups 
+look good
+• Use stratification or balance checks
+Q2 Clean Sentence
+Participants are randomly assigned at the individual level to either the 
+treatment group or the control group.
+Example
+Participants are randomly assigned at the individual level into one of two groups.
+Good writing move: name the unit of assignment.
+Q3 Treatment
+Example
+The treatment changes only the way risk information is presented. Both groups see the 
+same investment products, expected returns, fees, and basic descriptions.
+The treatment changes only the way risk information is presented.
+This is the cleanest version of the experiment.
+Q3 Treatment
+Example
+在看到标准的文本风险警告之外，还会额外看到一张可视化风险图表……
+Useful idea
+• Visual chart is clearly introduced
+• The scenario is concrete
+Design issue
+• Text plus chart is not the same as chart 
+vs text
+• The treatment may add information
+• Ask: what is the one clean difference?
+Q4 Control Group
+Example
+The control group receives a standard written risk disclosure statement, identical in 
+content to the information depicted in the visual chart, but presented as plain text 
+without any graphical elements.
+The control group receives the same underlying risk information in a standard 
+text warning.
+Control is not “no information.”
+Q5 Outcomes
+Example
+The primary outcome is the percentage of the $10,000 endowment allocated to the risky 
+asset (0–100%).
+Why this works
+• Concrete and measurable
+• Directly records portfolio choice
+• Measured before market luck appears
+Next improvement
+• Lower risk is not always better
+• Match choice to risk tolerance
+• Add comprehension as secondary 
+outcome
+Q5 Outcomes
+Example
+在经过两周后，测量比较两组参与者的投资回报率，观察投资回报率是否在风险信息可视
+化后得到提高。
+Useful idea: students want real investment consequences.
+Revision point: future realized return may reflect market luck, not 
+better risk understanding.
+Q5 Better Outcomes
+➢Risk exposure: % allocated to risky assets
+➢Risk-tolerance alignment: chosen risk vs pre-measured tolerance
+➢Diversification: number of assets or HHI
+➢Ex ante Sharpe ratio: based on information available at choice
+➢Risk comprehension: quiz or estimated probability of loss
+The primary outcome is the match between chosen portfolio risk and 
+pre-measured risk tolerance.
+Q6 Timing
+Example
+All outcomes will be measured immediately after participants have viewed the risk information 
+and made their investment decision during a single experimental session lasting approximately 
+ten minutes.
+Outcomes are measured immediately after participants view the assigned risk 
+information and submit their portfolio choice.
+Immediate measurement identifies the direct treatment effect.
+Q6 Timing
+Example
+We measured their portfolio choices one week after the information was sent.
+What follow-up can show
+• Memory
+• Persistence
+• Later trading intention
+What follow-up adds
+• New information
+• Market events
+• More noise
+Experimental Settings
+Different scenes, same causal logic
+Student Settings
+Competition / simulation idea
+可以采取一个“新一代最佳投资balabala比赛”的
+形式……可以搭建一个模拟交易投资的系统，或
+者就在同花顺等软件上。
+Platform A/B idea
+以产品 A/B 测试的形式在后台运行……当这些用
+户浏览特定高风险资产……后端的灰度发布系统
+会将他们随机分为两组。
+Both are useful ideas. They simply require different controls 
+and outcome measures.
+Choosing an Experimental Setting
+Setting
+Best for
+Main risk
+Online lab
+Clean comparison
+Lower realism
+Incentivized 
+allocation
+Serious choice
+Bonus design
+Platform A/B test
+Real behavior
+Ethics/privacy
+Competition
+Engagement
+Risk-taking pressure
+The scene can differ. The causal logic still needs to be explicit.
+Beyond the Six Questions
+•External validity: would the result matter outside this experiment?
+•Baseline information: what should be measured before treatment?
+•Blinding and demand effects: can participants guess the hypothesis?
+Do not add advanced terms unless they help the reader trust the 
+design.
+External Validity
+• Sample: finance students or ordinary young investors?
+• Task: hypothetical allocation or realistic platform behavior?
+• Setting: online survey, simulation, or brokerage app?
+• Time: immediate response or persistent behavior?
+The more realistic the setting is, the harder it is to control.
+Baseline Information
+• Demographics: describe sample and check balance
+• Investment experience: screen participants
+• Financial literacy: balance and mechanism
+• Risk preference: stratification and outcome construction
+• Visual/numerical ability: who benefits from charts?
+• Attention checks: exclude invalid responses
+Baseline information is not decoration.
+Blinding and Demand Effects
+• Participants can usually tell whether they saw a chart or text.
+• The bigger concern: can they guess the hypothesis?
+• Use a neutral title: “A study on financial decision-making.”
+• Automate assignment and material presentation.
+• Anonymize group labels during analysis when possible.
+Do not casually write “double-blind” unless you can explain what is blinded.
+Model Experiment Section
+• Participants: young investors aged 18–30 with limited experience.
+• Random assignment: assigned at the individual level.
+• Treatment: changes only the way risk information is presented.
+• Control: same underlying risk information in text.
+• Outcome: match between chosen risk and risk tolerance.
+• Timing: immediately after portfolio submission.
+Borrow the sentence structure, not necessarily the exact 
+design.
+Revision Exercise
+• Choose one useful idea from your own answer.
+• Write the clean comparison in one sentence.
+• Name one primary outcome.
+• Say when the outcome is measured.
+• Add one sentence about external validity or demand effects.
+Revision is not rejection. It is how a good intuition 
+becomes a credible design.
+A credible experiment requires
+more than random assignment.
+We also need to justify the participants, the task, the 
+outcome, the timing, and whether the result can generalize.
+Clear design first. Sophistication second.

@@ -1,0 +1,415 @@
+How to Write an Academic
+Paper in Finance – Module 1
+Bingfeng CEN
+SoF, SHUFE
+Overview
+Module 1: From Idea to Proposal
+Learning from a Classic: Fama & French (1992)
+From Idea to Proposal
+Find a Research Idea
+Write Your Research Proposal
+Why Fama-French (1992)?
+The Perfect Case Study
+Reason
+Why It Matters
+One of the most cited papers in 
+finance
+Everyone knows it
+Clear, simple idea
+Size + Book-to-Market capture 
+returns
+Revolutionary contribution
+Killed the CAPM as the sole model
+Exemplary structure
+Follows Cochrane's "newspaper 
+style"
+"Two easily measured variables, size and book-to-market equity, combine to capture the 
+cross-sectional variation in average stock returns." — Fama & French (1992), Abstract
+The Gap Between Literature and Reality
+Fama-French’s Starting Point
+Literature (CAPM – 1992 consensus)
+“Beta explains everything”
+Reality (observed anomalies)
+•
+Size effect (Banz 1981)
+•
+Value effect (Stattman 1980)
+•
+Leverage effect (Bhandari 1988)
+•
+E/P effect (Basu 1983)
+Fama-French’s question:
+“is this really true?
+The Research Question
+Observation: The Anomalies did not fit CAMP
+The Puzzle: CAPM says only beta should matter. But these variables all seem 
+to matter. Why?
+Question:
+"Since E/P, ME, leverage, and BE/ME are all scaled versions of price, it is 
+reasonable to expect that some of them are redundant for describing 
+average returns. Our goal is to evaluate the joint roles of market β, size, E/P, 
+leverage, and book-to-market equity in the cross-section of average 
+returns." — Fama & French (1992), p. 428
+Their Core Question:
+Which of these variables truly matter, and which are just proxies for others?
+Where Did Fama-French Get Their Idea?
+They built on prior anomalies literature, but their innovation was:
+Synthesis: Previous papers each found one anomaly. Fama-French asked: 
+"Which ones are real when we test them together?”
+Methodological insight: Previous tests used portfolios sorted on one variable. 
+Fama-French used double sorting to separate correlated effects.
+Parsimony: They sought the simplest model that captures everything.
+The “Ah! So that explains it! Moment
+"The greatest compliment is 'Ah! So that explains it!'" — Varian
+Before Fama-French:
+Finance profession believed: Beta explains everything
+But: Many anomalies kept appearing
+Problem: No one knew which anomalies were real vs. redundant
+The “Ah! So that explains it! Moment
+After Fama-French:
+"Ah! So size and value capture all those anomalies!"
+"Ah! That's why beta seems to work sometimes—it's correlated with size!" 
+“Our main result is that for the 1963-1990 period, size and book-to-market equity 
+capture the cross-sectional variation in average stock returns associated with size, E/P, 
+book-to-market equity, and leverage.” — Fama & French(1992) p. 450
+Idea Checklist
+Question
+Fama-French Answer
+Can I state the idea in one sentence?
+"Size and book-to-market capture the cross-section 
+of average returns."
+Is there a genuine gap between theory 
+and reality?
+CAPM says beta only; reality shows many anomalies
+Would a non-economist find it 
+interesting?
+"Why do some stocks earn higher returns than 
+others?"
+Is the question answerable?
+Yes—data exists (CRSP, Compustat)
+Have I let the idea incubate?
+Built on a decade of anomalies research
+What Would Their Proposal Have 
+Looked Like?
+Before the paper, there is a plan
+We call it a research proposal which typically includes the following part:
+1.
+Problem Statement
+2.
+Expected Result
+3.
+Research Method
+4.
+Key References
+Problem Statement
+"The Capital Asset Pricing Model (Sharpe, 1964; Lintner, 1965) predicts that
+market beta is the sole determinant of expected stock returns. However, recent
+empirical studies have documented several 'anomalies' that contradict this
+prediction: the size effect (Banz, 1981), the value effect (Stattman, 1980;
+Rosenberg, Reid, and Lanstein, 1985), the leverage effect (Bhandari, 1988), and
+the earnings-price ratio effect (Basu, 1983).
+These variables are all scaled versions of price, suggesting they may be
+redundant proxies for the same underlying risk factors. This study will evaluate
+the joint roles of beta, size, leverage, E/P, and book-to-market equity to
+determine which variables truly capture the cross-section of expected returns."
+Problem Statement
+Element
+In Their Proposal
+What we know
+CAPM predicts beta explains 
+everything
+What's puzzling
+Many anomalies don't fit CAPM
+The gap
+No one has tested all together
+What we'll do
+Jointly evaluate all variables
+Expected Results
+Hypothetical Fama-French Proposal
+"We hypothesize that many of these variables are redundant. Specifically,
+we expect that:
+1. Beta will have little or reduced explanatory power when tested alongside
+other variables.
+2. Some of the current anomaly factors will emerge as the key factors,
+absorbing the explanatory power of leverage and E/P.
+3. The combination of these key factors will provide a parsimonious model that
+captures most of the cross-sectional variation in average returns."
+Expected Results – The Benefits
+Benefit
+Explanation
+Clarifies your thinking
+Forces you to commit to a hypothesis
+Guides research design
+Helps you design tests that can reject your hypothesis
+Shows you understand the 
+literature
+Expected results come from theory and prior evidence
+Makes the contribution clear
+Readers know what to look for
+Research Method
+Data:
+NYSE, AMEX, NASDAQ stocks with CRSP returns and COMPUSTAT accounting data
+Sample period: 1963-1990 (as available)
+Non-financial firms only (leverage has different meaning for financials)
+Key Variables:
+Market beta (β) – to be estimated
+Size (ME) – market equity
+Book-to-market equity (BE/ME)
+Leverage (A/ME, A/BE)
+Earnings-price ratio (E/P)
+Research Method - The Critical Innovation
+The Double-Sort Methodology
+"To allow for variation in β that is unrelated to size, we will:
+1. First, sort stocks into 10 portfolios based on size (ME)
+2. Then, within each size decile, sort into 10 portfolios based on pre-ranking β
+This creates 100 portfolios with independent variation in size and β, allowing us to
+separate their effects."
+Key to Their Contribution!
+Research Method – Double Sort
+June of year t: 
+ 
+Step 1: Sort ALL stocks into 10 SIZE portfolios (using NYSE breakpoints)
+ 
+[Smallest] [2] [3] [4] [5] [6] [7] [8] [9] [Largest] 
+ 
+Step 2: Within EACH size group, sort into 10 beta portfolios 
+Size Group 1 (Smallest): [Low beta] [2] [3] [4] [5] [6] [7] [8] [9] [High beta] 
+Size Group 2: ........... 
+... 
+Size Group 10 (Largest): [Low beta] [2] [3] [4] [5] [6] [7] [8] [9] [High beta] 
+ 
+Result: 100 portfolios (10 × 10) 
+July t to June t+1: 
+ 
+Calculate equal-weighted monthly returns for each portfolio
+Research Method – Double Sort
+Table I in Fama & French (1992)
+Research Method – Double Sort
+Table V in Fama & French (1992)
+Research Method - The Critical Innovation
+Fama-MacBeth Regressions
+"We will use the Fama-MacBeth (1973) cross-sectional regression approach:
+1. Each month, run cross-sectional regressions of returns on the variables of 
+interest
+2. Compute time-series averages of the monthly slopes
+3. Use standard errors from the time series to test significance
+This allows us to test which variables have non-zero expected premiums."
+Research Method – Key Design Choices
+Choice
+Their Decision
+Why
+Sample period
+1963-1990
+COMPUSTAT data reliable after 
+1962
+Firm exclusion
+No financials
+Leverage has different meaning
+Beta estimation
+Portfolio betas assigned to 
+stocks
+Individual stock betas too noisy
+Timing
+Accounting data from t-1 
+matched with returns 
+from July t to June t+1
+Ensures accounting data known 
+before returns
+Key References
+Hypothetical Bibliography
+•
+Banz, R.W. (1981). "The relationship between return and market value of common stocks." Journal of 
+Financial Economics.
+•
+Basu, S. (1983). "The relationship between earnings yield, market value, and return for NYSE common 
+stocks." Journal of Financial Economics.
+•
+Bhandari, L.C. (1988). "Debt/Equity ratio and expected common stock returns." Journal of Finance.
+•
+Black, F., Jensen, M.C., and Scholes, M. (1972). "The capital asset pricing model: Some empirical tests."
+•
+Fama, E.F. and MacBeth, J. (1973). "Risk, return and equilibrium: Empirical tests." Journal of Political 
+Economy.
+•
+Rosenberg, B., Reid, K., and Lanstein, R. (1985). "Persuasive evidence of market inefficiency." Journal of 
+Portfolio Management.
+•
+Sharpe, W.F. (1964). "Capital asset prices." Journal of Finance.
+•
+Stattman, D. (1980). "Book values and stock returns." The Chicago MBA.
+One Page Summary
+Section
+Summary
+Problem
+CAPM says beta explains returns, but anomalies literature 
+suggests size, value, leverage, and E/P also matter. Which are 
+real?
+Expected Results
+Beta will have little power; key factors will absorb the others.
+Method
+Double-sort portfolios to separate key factor and beta; Fama-
+MacBeth regressions on individual stocks with portfolio betas. 
+Data: CRSP + COMPUSTAT, 1963-1990, non-financials.
+Key References
+Sharpe (1964), Banz (1981), Basu (1983), Bhandari (1988), 
+Rosenberg et al. (1985), Fama-MacBeth (1973).
+What Made Their Proposal Compelling?
+Important question: Challenges the foundation of asset pricing
+Clear hypothesis: Many variables are redundant
+Innovative method: Double sorting to separate correlated effects
+Feasible: Data exists, methods are established
+High impact potential: If correct, would change how everyone thinks about 
+risk and return
+Where to Get Ideas?
+Not always form Journals!
+Varian’s Advice: Look for ideas in the world, not in journals
+"In my experience journals really aren't a very good source of original ideas. You can 
+get lots of things from journal articles—technique, insight, even truth. But most of 
+the time you will only get someone else's ideas."
+— Hal Varian
+Sources of Ideas
+Source
+Examples
+Newspapers
+Wall Street Journal, Financial Times, NY Times, Caixin
+Magazines
+The Economist, Bloomberg Businessweek, Caixin
+Conversations
+Talk to people in business, practitioners
+Podcast
+Economic news, policy debates
+Your own life
+Varian's "A Model of Sales" came from buying a TV
+•
+Things that seem puzzling
+•
+Things that don't match theory
+•
+"What's wrong with this picture?"
+Varian’s TV Story
+A Classic Example: “A Model of Sales”
+"I had decided to get a new TV so I followed the ads in the newspaper to get an idea of
+how much it would cost. I noticed that the prices fluctuated quite a bit from week to
+week. It occurred to me that the challenge to economics was not why the prices were
+sometimes low (i.e., during sales) but why they were ever high.”
+The insight: Two types of consumers—informed (read ads) and uninformed 
+(don't read ads). Stores use sales to price discriminate.
+The result: A published paper + a good deal on the TV!
+Is Your Idea Worth Pursuing?- The "Ah! 
+So that explains it!" Test
+Can I explain this idea to a non-economist?
+Is it interesting? (If not, no one cares if it's correct)
+What would follow if this idea is correct?
+What's the opportunity cost of working on this idea?
+When to Look at the Literature?
+Varian’s Advice: Don’t Look Too Soon!
+Wait a few weeks before doing a systematic literature review
+Practice: You need the experience of developing a model
+Originality: If you read others first, your thinking will be shaped by their views
+Incubation: Ideas need time to develop—start modeling early
+"If you're very lucky and your model is not in the literature, maybe you're wrong. Here is 
+where the advisor is really important." — Varian
+When to Look at the Literature?
+But if you work on empirics
+Check early!
+You need to know what’s already been tested!
+But still, Don't Let Existing Literature Constrain Your Thinking!
+Spend a few days thinking about your idea and sketching a research design 
+before diving deep into the literature.
+MUST DOs for an Empirical Idea
+Check data availability early.
+Scan on key papers to ensure your question hasn’t been answered?
+But sometime, not the end of the story
+Think independently first—spend a few days developing your own framing 
+before diving deep
+Talk to advisors early—they can save you from dead ends
+Don't do a full literature review immediately—that can wait until you 
+have a promising research design
+Where to Find Idea - Practical Suggestions
+for Beginners
+Skim conference websites (AFA, WFA, NBER, EFA, CICF) from recent 2-3 
+years
+Check journal homepages (JF, RFS, JFE, JFQA)
+Follow researchers you love (personal website)
+Then ask:
+Can I extend this to new settings? New markets, new products, natural experiments
+Can I supply a new explanation? New variable, privileged data access
+Can I improve the method? Technical background advantage
+Idea Checklist
+Is the question important?
+Is the setting distinctive?
+Is the data hard to compile?
+Are there persuasive ex-ante reasons for the new ingredients to work?
+Proposal Template – Adapted from
+Fama-French(1992)
+Section
+What to Write
+1. Title
+Descriptive, specific
+2. Research Question
+One sentence: "This paper asks..."
+3. Motivation
+Why should anyone care? Gap between theory and reality?
+4. Expected Contribution
+What will we learn that's new?
+5. Literature Review
+Key papers (5-10), what's missing
+6. Methodology
+Data, sample, empirical strategy/model
+7. Expected Results
+What do you hypothesize?
+8. Timeline
+Milestones and deadlines
+9. References
+Complete citations
+Proposal Checklist
+Before you show your advisor
+Research question is clear and specific
+Motivation explains why anyone should care
+Contribution is clearly stated (what's new?)
+Literature review covers key papers (5-10)
+Gap in literature is identified
+Methodology is feasible (data exists!)
+Expected results are outlined
+Timeline is realistic
+References are complete and properly formatted
+Common Proposal Mistakes to Avoid
+Mistake
+Fama-French Counterexample
+Question too vague
+“Which variables explain stock returns?” → Specific: “Do 
+some key factors capture all anomalies?"
+No clear contribution
+They explicitly state: "Our main result is that size and 
+BE/ME capture the roles of leverage and E/P."
+Data not checked
+They knew CRSP and COMPUSTAT existed and were 
+mergeable
+Method beyond skills
+Fama-MacBeth was established; double sorting was their 
+innovation
+Literature as annotated 
+bibliography
+They synthesized prior work into a coherent puzzle
+Getting Feedback
+Person
+What They Can Tell You
+Advisor
+Is this worth doing? Any gaps?
+Other faculty
+Different perspective, literature you missed
+Fellow students
+Is it clear to a non-expert?
+Practitioners
+Does it match real-world experience?
+"Talk to your advisor, talk to your fellow students, talk to your wife, husband, 
+girlfriend, boyfriend, neighbor, or pet... whoever you can get to listen." — Varian
+The Golden Rules
+1.
+Start with a puzzle – Something that doesn't fit existing theory
+2. Ask a clear question – Can you state it in one sentence?
+3. Design a test that can reject your hypothesis – Don't just confirm what 
+you believe
+4. Write a proposal first – Clarify your thinking, get feedback early
+5. Check data availability – Before you fall in love with an idea
+6. Be parsimonious – The simplest model that captures the essence
